@@ -803,7 +803,6 @@ SIZ-390	hippo
 SIZ-390	rhino
 SIZ-390	manatee
 SIZ-390	giraffe
-SIZ-390	UNKNOWN
 SIZ-390	whale
 SIZ-390	bird
 SIZ-390	chimp

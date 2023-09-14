@@ -14,6 +14,6 @@ word2vec.drop([0])
 
 print(word2vec)
 word2vec.to_csv("2134.csv")
-
+        
 # list_words = df["Word"].tolist()
 # set_words = list(set(list_words)) 

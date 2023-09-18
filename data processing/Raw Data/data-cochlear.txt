@@ -373,7 +373,6 @@ CBL-698	elephant
 CBL-698	tiger
 CBL-698	zebra
 CBL-698	lice
-CBL-698	stickforn
 CBL-698	stickbug
 CBL-698	stinkbug
 CBL-698	beetle
@@ -1193,12 +1192,10 @@ SUG-544	dolphin
 SUG-544	zebra
 SUG-544	shark
 SUG-544	turtle
-SUG-544	UNKNOWN
 SUG-544	cow
 SUT-556	elephant
 SUT-556	giraffe
 SUT-556	turtle
-SUT-556	UNKNOWN
 SUT-556	zebra
 SUT-556	monkey
 SUT-556	dog

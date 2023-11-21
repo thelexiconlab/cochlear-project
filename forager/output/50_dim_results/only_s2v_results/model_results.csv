@@ -1,5 +1,5 @@
 Subject,Model,Beta_Frequency,Beta_Semantic,Beta_Phonological,Negative_Log_Likelihood_Optimized,Group
-CAF-657,forage_dynamic_simdrop,8.52970450864463,3.4711130079994077,,157.19269920617756,NH
+CAF-657,forage_dynamic_simdrop,8.52970450864463,3.471113007999408,,157.19269920617756,NH
 CAF-657,forage_random_baseline,0.0,0.0,,177.9940845685009,NH
 CAJ-663,forage_dynamic_simdrop,7.65797110916612,2.6987118095057525,,111.32981987627146,NH
 CAJ-663,forage_random_baseline,0.0,0.0,,122.75454108172474,NH

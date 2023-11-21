@@ -22,3 +22,4 @@ def switch_simdrop(fluency_list, semantic_similarity):
             simdrop.append(2)
 
     return simdrop
+

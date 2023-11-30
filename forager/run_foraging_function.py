@@ -1,6 +1,8 @@
 def run_foraging_function(dimension, type):
 
     import argparse
+    import scipy
+    import sys
     from scipy.optimize import fmin
     from forager.foraging import forage
     from forager.switch import switch_delta, switch_multimodal, switch_simdrop, switch_norms_associative, switch_norms_categorical
@@ -24,9 +26,9 @@ def run_foraging_function(dimension, type):
     #  – pipeline models –switch simdrop –model all 
     
     
-    model = 'dynamic'
+    model = ['static','dynamic','pstatic','pdynamic','all']
     switch_method = 'simdrop'
-    data = '/Users/mkang2/Library/CloudStorage/OneDrive-BowdoinCollege/Desktop/cochlear-project/forager/new_data.txt'
+    data = '/Users/mingikang/Desktop/cochlear-project/data/participant_data/new_data.txt'
     
     def retrieve_data(path):
         """
@@ -55,6 +57,19 @@ def run_foraging_function(dimension, type):
         model_name = []
         model_results = []
         
+        # forage_static 
+        r1 = np.random.rand()
+        r2 = np.random.rand()
+
+        v = minimize(forage.model_static, [r1,r2], args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1])).x
+        beta_df = float(v[0]) # Optimized weight for frequency cue
+        beta_ds = float(v[1]) # Optimized weight for similarity cue
+        
+        nll, nll_vec = forage.model_static_report([beta_df, beta_ds], history_vars[2], history_vars[3], history_vars[0], history_vars[1])
+        model_name.append('forage_static')
+        model_results.append((beta_df, beta_ds, nll, nll_vec))
+        
+        # forage dynamic
         for i, switch_vec in enumerate(switch_vecs):
             r1 = np.random.rand()
             r2 = np.random.rand()
@@ -66,6 +81,64 @@ def run_foraging_function(dimension, type):
             nll, nll_vec = forage.model_dynamic_report([beta_df, beta_ds], history_vars[2], history_vars[3], history_vars[0], history_vars[1],switch_vec)
             model_name.append('forage_dynamic_' + 'simdrop')
             model_results.append((beta_df, beta_ds, nll, nll_vec))
+
+        # forage phonological static 
+        r1 = np.random.rand()
+        r2 = np.random.rand()
+        r3 = np.random.rand()
+        v = minimize(forage.model_static_phon, [r1,r2,r3], args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1], history_vars[4],history_vars[5])).x
+        beta_df = float(v[0]) # Optimized weight for frequency cue
+        beta_ds = float(v[1]) # Optimized weight for similarity cue
+        beta_dp = float(v[2]) # Optimized weight for phonological cue
+
+        nll, nll_vec = forage.model_static_phon_report([beta_df, beta_ds, beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5])
+        model_name.append('forage_phonologicalstatic')
+        model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
+        
+        # forage phonological dynamic
+        
+        for i, switch_vec in enumerate(switch_vecs):
+            # Global Dynamic Phonological Model
+            r1 = np.random.rand()
+            r2 = np.random.rand()
+            r3 = np.random.rand()
+            v = minimize(forage.model_dynamic_phon, [r1,r2,r3], args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5], switch_vec,'global')).x
+            beta_df = float(v[0]) # Optimized weight for frequency cue
+            beta_ds = float(v[1]) # Optimized weight for similarity cue
+            beta_dp = float(v[2]) # Optimized weight for phonological cue
+            
+            nll, nll_vec = forage.model_dynamic_phon_report([beta_df, beta_ds,beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5],switch_vec,'global')
+            model_name.append('forage_phonologicaldynamicglobal_' + switch_names[i])
+            model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
+    
+            # Local Dynamic Phonological Model
+            r1 = np.random.rand()
+            r2 = np.random.rand()
+            r3 = np.random.rand()
+            v = minimize(forage.model_dynamic_phon, [r1,r2,r3], args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5], switch_vec,'local')).x
+            beta_df = float(v[0]) # Optimized weight for frequency cue
+            beta_ds = float(v[1]) # Optimized weight for similarity cue
+            beta_dp = float(v[2]) # Optimized weight for phonological cue
+            
+            nll, nll_vec = forage.model_dynamic_phon_report([beta_df, beta_ds,beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5],switch_vec,'local')
+            model_name.append('forage_phonologicaldynamiclocal_' + switch_names[i])
+            model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
+    
+            # Switch Dynamic Phonological Model
+            r1 = np.random.rand()
+            r2 = np.random.rand()
+            r3 = np.random.rand()
+            v = minimize(forage.model_dynamic_phon, [r1,r2,r3], args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5], switch_vec,'switch')).x
+            beta_df = float(v[0]) # Optimized weight for frequency cue
+            beta_ds = float(v[1]) # Optimized weight for similarity cue
+            beta_dp = float(v[2]) # Optimized weight for phonological cue
+            
+            nll, nll_vec = forage.model_dynamic_phon_report([beta_df, beta_ds,beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5],switch_vec,'switch')
+            model_name.append('forage_phonologicaldynamicswitch_' + switch_names[i])
+
+            model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
+
+
 
         # Unoptimized Model
         model_name.append('forage_random_baseline')
@@ -90,7 +163,7 @@ def run_foraging_function(dimension, type):
         return switch_names, switch_vecs
 
 
-    def run_model(data, model_type, switch_type):
+    def run_model(data):
         # Get Lexical Data needed for executing methods
         norms, similarity_matrix, phon_matrix, frequency_list, labels = get_lexical_data()
         forager_results = []
@@ -275,7 +348,7 @@ def run_foraging_function(dimension, type):
     print("Obtaining Switch Designations ...")
     switch_results = run_switches(data)
     print("Running Forager Models...")
-    forager_results = run_model(data, model, switch_method)
+    forager_results = run_model(data)
 
     ind_stats = indiv_desc_stats(lexical_results, switch_results)
     agg_stats = agg_desc_stats(switch_results, forager_results)
@@ -322,30 +395,30 @@ def run_foraging_function(dimension, type):
 dimensions = ['50', '100', '200', '300']
 type = [
     'only_s2v', 
-    'only_w2v'
-    # 'alpha_0_s2v', 
-    # 'alpha_0_w2v', 
-    # 'alpha_0.1_s2v', 
-    # 'alpha_0.1_w2v', 
-    # 'alpha_0.2_s2v', 
-    # 'alpha_0.2_w2v', 
-    # 'alpha_0.3_s2v', 
-    # 'alpha_0.3_w2v', 
-    # 'alpha_0.4_s2v', 
-    # 'alpha_0.4_w2v', 
-    # 'alpha_0.5_s2v', 
-    # 'alpha_0.5_w2v', 
-    # 'alpha_0.6_s2v', 
-    # 'alpha_0.6_w2v',
-    # 'alpha_0.7_s2v', 
-    # 'alpha_0.7_w2v', 
-    # 'alpha_0.8_s2v', 
-    # 'alpha_0.8_w2v', 
-    # 'alpha_0.9_s2v', 
-    # 'alpha_0.9_w2v', 
-    # 'alpha_1.0_s2v', 
-    # 'alpha_1.0_w2v',
-    # 'average'
+    'only_w2v',
+    'alpha_0_s2v', 
+    'alpha_0_w2v', 
+    'alpha_0.1_s2v', 
+    'alpha_0.1_w2v', 
+    'alpha_0.2_s2v', 
+    'alpha_0.2_w2v', 
+    'alpha_0.3_s2v', 
+    'alpha_0.3_w2v', 
+    'alpha_0.4_s2v', 
+    'alpha_0.4_w2v', 
+    'alpha_0.5_s2v', 
+    'alpha_0.5_w2v', 
+    'alpha_0.6_s2v', 
+    'alpha_0.6_w2v',
+    'alpha_0.7_s2v', 
+    'alpha_0.7_w2v', 
+    'alpha_0.8_s2v', 
+    'alpha_0.8_w2v', 
+    'alpha_0.9_s2v', 
+    'alpha_0.9_w2v', 
+    'alpha_1.0_s2v', 
+    'alpha_1.0_w2v',
+    'average'
 ]
 
 #test

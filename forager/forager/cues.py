@@ -108,7 +108,7 @@ def create_semantic_matrix(path_to_embeddings, path_for_lexical_data=None):
     semantic_matrix = semantic_matrix.reshape((N,N))
     # convert to dataframe without header or index
     semantic_matrix_df = pd.DataFrame(semantic_matrix)
-    semantic_matrix_df.to_csv(path_for_lexical_data + '/USE_semantic_matrix.csv', header=False, index=False)
+    semantic_matrix_df.to_csv(path_for_lexical_data + '/semantic_matrix.csv', header=False, index=False)
     
     '''
     #changed
@@ -190,7 +190,7 @@ class phonology_funcs:
         # phon_matrix_df.to_csv('data processing/Lexical Data/word2vec/phon_matrix.csv', header = False, index = False)
         '''
         
-        phon_matrix_df.to_csv(path_for_lexical_data + '/USE_phonological_matrix.csv', header=False, index=False)
+        phon_matrix_df.to_csv(path_for_lexical_data + '/phonological_matrix.csv', header=False, index=False)
         return sim
     
 

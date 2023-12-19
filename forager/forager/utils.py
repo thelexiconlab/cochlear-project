@@ -48,7 +48,7 @@ def prepareData(path):
     # labels = pd.read_csv("../data processing/50_dim_results/Lexical Data/word2vec/frequencies.csv", names=['word', 'logct', 'ct']) 
     '''
     
-    labels = pd.read_csv("/Users/mingikang/Desktop/cochlear-project/forager/data/lexical_data/50_dim_lexical_data/alpha_0_s2v/frequencies.csv", names=['word', 'logct', 'ct']) 
+    labels = pd.read_csv("forager/data/lexical_data/50_dim_lexical_data/alpha_0.0_s2v/frequencies.csv", names=['word', 'logct', 'ct']) 
 
     # set all replacements to actual word for all words in labels as the default
     replacements = {word: word for word in labels['word'].values}

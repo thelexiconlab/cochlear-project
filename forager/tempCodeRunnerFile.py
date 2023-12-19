@@ -1,1 +1,1 @@
-python run_foraging.py --data new_data.txt --pipeline models --switch simdrop --model all
+forager

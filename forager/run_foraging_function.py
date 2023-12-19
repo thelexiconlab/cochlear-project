@@ -1,5 +1,6 @@
 import argparse
 from scipy.optimize import fmin
+import os, sys
 from forager.foraging import forage
 from forager.switch import switch_delta, switch_multimodal, switch_simdrop, switch_norms_associative, switch_norms_categorical
 from forager.cues import create_history_variables
@@ -7,7 +8,6 @@ from forager.utils import prepareData
 import pandas as pd
 import numpy as np
 from scipy.optimize import fmin, minimize
-import os, sys
 from tqdm import tqdm
 import warnings 
 import zipfile
@@ -17,13 +17,13 @@ def run_foraging_function(dimension, type):
     normspath =  'forager/data/norms/animals_snafu_scheme_vocab.csv'
     similaritypath =  'forager/data/lexical_data/' + dimension + '_dim_lexical_data/' + type + '/semantic_matrix.csv'
     frequencypath =  'forager/data/lexical_data/' + dimension + '_dim_lexical_data/' + type + '/frequencies.csv'
-    phonpath = 'forager/data/lexical_data/' + dimension + '_dim_lexical_data/' + type + '/phon_matrix.csv'
+    phonpath = 'forager/data/lexical_data/' + dimension + '_dim_lexical_data/' + type + '/phonological_matrix.csv'
     vocabpath = 'forager/data/lexical_data/vocab.csv'
 
 
     models = ['static','dynamic','pstatic','pdynamic','all']
     switch_methods = ['simdrop','multimodal','norms_associative', 'norms_categorical', 'delta','all']
-    data = '/Users/mingikang/Desktop/cochlear-project/data/participant_data/new_data.txt'
+    data = 'forager/data/fluency_lists/participant_data/transformed-data.txt'
 
 
     #Methods
@@ -402,47 +402,30 @@ def run_foraging_function(dimension, type):
         print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
         print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
 
+run_foraging_function('100', 'only_s2v')
 
-
-
-
-
-dimensions = ['100', '200', '300']
-# dimensions = ['50']
+dimensions = ['200', '300']
 type = [
-    'only_s2v', 
-    'only_w2v',
-    'alpha_0_s2v', 
-    'alpha_0_w2v', 
-    'alpha_0.1_s2v', 
-    'alpha_0.1_w2v', 
-    'alpha_0.2_s2v', 
-    'alpha_0.2_w2v', 
-    'alpha_0.3_s2v', 
-    'alpha_0.3_w2v', 
-    'alpha_0.4_s2v', 
-    'alpha_0.4_w2v', 
-    'alpha_0.5_s2v', 
-    'alpha_0.5_w2v', 
-    'alpha_0.6_s2v', 
-    'alpha_0.6_w2v',
-    'alpha_0.7_s2v', 
-    'alpha_0.7_w2v', 
-    'alpha_0.8_s2v', 
-    'alpha_0.8_w2v', 
-    'alpha_0.9_s2v', 
-    'alpha_0.9_w2v', 
-    'alpha_1.0_s2v', 
-    'alpha_1.0_w2v',
-    'average'
+    'alpha_0.0_s2v', # = alpha_1_w2v
+    'alpha_0.0_w2v', # = alpha_1_s2v 
+    'alpha_0.1_s2v', # = alpha_0.9_w2v
+    'alpha_0.1_w2v', # = alpha_0.9_s2v
+    'alpha_0.2_s2v', # = alpha_0.8_w2v
+    'alpha_0.2_w2v', # = alpha_0.8_s2v
+    'alpha_0.3_s2v', # = alpha_0.7_w2v
+    'alpha_0.3_w2v', # = alpha_0.7_s2v 
+    'alpha_0.4_s2v', # = alpha_0.6_w2v
+    'alpha_0.4_w2v', # = alpha_0.6_s2v
+    'alpha_0.5_s2v', # = alpha_0.5_w2v
+    'average',
+    'only_w2v', 
+    'only_s2v'
 ]
-
-#test
-# run_foraging_function('50', 'only_s2v')
 
 count = 0 
 for dim in dimensions: 
     for t in type: 
+        print(t)
         run_foraging_function(dim, t)
         count += 1
 

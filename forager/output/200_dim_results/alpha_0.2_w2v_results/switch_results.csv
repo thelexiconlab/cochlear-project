@@ -11638,8 +11638,8 @@ CBL-698,elephant,0,simdrop
 CBL-698,tiger,0,simdrop
 CBL-698,zebra,0,simdrop
 CBL-698,lice,0,simdrop
-CBL-698,insects,1,simdrop
-CBL-698,insects,0,simdrop
+CBL-698,insect,1,simdrop
+CBL-698,insect,0,simdrop
 CBL-698,beetle,2,simdrop
 CBL-698,canine,2,multimodal_alpha=0.0
 CBL-698,terrier,0,multimodal_alpha=0.0
@@ -11658,8 +11658,8 @@ CBL-698,elephant,0,multimodal_alpha=0.0
 CBL-698,tiger,0,multimodal_alpha=0.0
 CBL-698,zebra,0,multimodal_alpha=0.0
 CBL-698,lice,0,multimodal_alpha=0.0
-CBL-698,insects,0,multimodal_alpha=0.0
-CBL-698,insects,0,multimodal_alpha=0.0
+CBL-698,insect,0,multimodal_alpha=0.0
+CBL-698,insect,0,multimodal_alpha=0.0
 CBL-698,beetle,2,multimodal_alpha=0.0
 CBL-698,canine,2,multimodal_alpha=0.1
 CBL-698,terrier,0,multimodal_alpha=0.1
@@ -11678,8 +11678,8 @@ CBL-698,elephant,0,multimodal_alpha=0.1
 CBL-698,tiger,1,multimodal_alpha=0.1
 CBL-698,zebra,0,multimodal_alpha=0.1
 CBL-698,lice,0,multimodal_alpha=0.1
-CBL-698,insects,0,multimodal_alpha=0.1
-CBL-698,insects,0,multimodal_alpha=0.1
+CBL-698,insect,0,multimodal_alpha=0.1
+CBL-698,insect,0,multimodal_alpha=0.1
 CBL-698,beetle,2,multimodal_alpha=0.1
 CBL-698,canine,2,multimodal_alpha=0.2
 CBL-698,terrier,0,multimodal_alpha=0.2
@@ -11698,8 +11698,8 @@ CBL-698,elephant,0,multimodal_alpha=0.2
 CBL-698,tiger,1,multimodal_alpha=0.2
 CBL-698,zebra,0,multimodal_alpha=0.2
 CBL-698,lice,0,multimodal_alpha=0.2
-CBL-698,insects,0,multimodal_alpha=0.2
-CBL-698,insects,0,multimodal_alpha=0.2
+CBL-698,insect,0,multimodal_alpha=0.2
+CBL-698,insect,0,multimodal_alpha=0.2
 CBL-698,beetle,2,multimodal_alpha=0.2
 CBL-698,canine,2,multimodal_alpha=0.30000000000000004
 CBL-698,terrier,0,multimodal_alpha=0.30000000000000004
@@ -11718,8 +11718,8 @@ CBL-698,elephant,0,multimodal_alpha=0.30000000000000004
 CBL-698,tiger,1,multimodal_alpha=0.30000000000000004
 CBL-698,zebra,0,multimodal_alpha=0.30000000000000004
 CBL-698,lice,0,multimodal_alpha=0.30000000000000004
-CBL-698,insects,0,multimodal_alpha=0.30000000000000004
-CBL-698,insects,0,multimodal_alpha=0.30000000000000004
+CBL-698,insect,0,multimodal_alpha=0.30000000000000004
+CBL-698,insect,0,multimodal_alpha=0.30000000000000004
 CBL-698,beetle,2,multimodal_alpha=0.30000000000000004
 CBL-698,canine,2,multimodal_alpha=0.4
 CBL-698,terrier,0,multimodal_alpha=0.4
@@ -11738,8 +11738,8 @@ CBL-698,elephant,0,multimodal_alpha=0.4
 CBL-698,tiger,1,multimodal_alpha=0.4
 CBL-698,zebra,0,multimodal_alpha=0.4
 CBL-698,lice,0,multimodal_alpha=0.4
-CBL-698,insects,0,multimodal_alpha=0.4
-CBL-698,insects,0,multimodal_alpha=0.4
+CBL-698,insect,0,multimodal_alpha=0.4
+CBL-698,insect,0,multimodal_alpha=0.4
 CBL-698,beetle,2,multimodal_alpha=0.4
 CBL-698,canine,2,multimodal_alpha=0.5
 CBL-698,terrier,0,multimodal_alpha=0.5
@@ -11758,8 +11758,8 @@ CBL-698,elephant,0,multimodal_alpha=0.5
 CBL-698,tiger,1,multimodal_alpha=0.5
 CBL-698,zebra,0,multimodal_alpha=0.5
 CBL-698,lice,0,multimodal_alpha=0.5
-CBL-698,insects,1,multimodal_alpha=0.5
-CBL-698,insects,0,multimodal_alpha=0.5
+CBL-698,insect,1,multimodal_alpha=0.5
+CBL-698,insect,0,multimodal_alpha=0.5
 CBL-698,beetle,2,multimodal_alpha=0.5
 CBL-698,canine,2,multimodal_alpha=0.6000000000000001
 CBL-698,terrier,0,multimodal_alpha=0.6000000000000001
@@ -11778,8 +11778,8 @@ CBL-698,elephant,0,multimodal_alpha=0.6000000000000001
 CBL-698,tiger,1,multimodal_alpha=0.6000000000000001
 CBL-698,zebra,0,multimodal_alpha=0.6000000000000001
 CBL-698,lice,0,multimodal_alpha=0.6000000000000001
-CBL-698,insects,1,multimodal_alpha=0.6000000000000001
-CBL-698,insects,0,multimodal_alpha=0.6000000000000001
+CBL-698,insect,1,multimodal_alpha=0.6000000000000001
+CBL-698,insect,0,multimodal_alpha=0.6000000000000001
 CBL-698,beetle,2,multimodal_alpha=0.6000000000000001
 CBL-698,canine,2,multimodal_alpha=0.7000000000000001
 CBL-698,terrier,0,multimodal_alpha=0.7000000000000001
@@ -11798,8 +11798,8 @@ CBL-698,elephant,0,multimodal_alpha=0.7000000000000001
 CBL-698,tiger,1,multimodal_alpha=0.7000000000000001
 CBL-698,zebra,0,multimodal_alpha=0.7000000000000001
 CBL-698,lice,0,multimodal_alpha=0.7000000000000001
-CBL-698,insects,1,multimodal_alpha=0.7000000000000001
-CBL-698,insects,0,multimodal_alpha=0.7000000000000001
+CBL-698,insect,1,multimodal_alpha=0.7000000000000001
+CBL-698,insect,0,multimodal_alpha=0.7000000000000001
 CBL-698,beetle,2,multimodal_alpha=0.7000000000000001
 CBL-698,canine,2,multimodal_alpha=0.8
 CBL-698,terrier,0,multimodal_alpha=0.8
@@ -11818,8 +11818,8 @@ CBL-698,elephant,0,multimodal_alpha=0.8
 CBL-698,tiger,1,multimodal_alpha=0.8
 CBL-698,zebra,0,multimodal_alpha=0.8
 CBL-698,lice,0,multimodal_alpha=0.8
-CBL-698,insects,1,multimodal_alpha=0.8
-CBL-698,insects,0,multimodal_alpha=0.8
+CBL-698,insect,1,multimodal_alpha=0.8
+CBL-698,insect,0,multimodal_alpha=0.8
 CBL-698,beetle,2,multimodal_alpha=0.8
 CBL-698,canine,2,multimodal_alpha=0.9
 CBL-698,terrier,0,multimodal_alpha=0.9
@@ -11838,8 +11838,8 @@ CBL-698,elephant,0,multimodal_alpha=0.9
 CBL-698,tiger,0,multimodal_alpha=0.9
 CBL-698,zebra,0,multimodal_alpha=0.9
 CBL-698,lice,0,multimodal_alpha=0.9
-CBL-698,insects,1,multimodal_alpha=0.9
-CBL-698,insects,0,multimodal_alpha=0.9
+CBL-698,insect,1,multimodal_alpha=0.9
+CBL-698,insect,0,multimodal_alpha=0.9
 CBL-698,beetle,2,multimodal_alpha=0.9
 CBL-698,canine,2,multimodal_alpha=1.0
 CBL-698,terrier,0,multimodal_alpha=1.0
@@ -11858,8 +11858,8 @@ CBL-698,elephant,0,multimodal_alpha=1.0
 CBL-698,tiger,0,multimodal_alpha=1.0
 CBL-698,zebra,0,multimodal_alpha=1.0
 CBL-698,lice,0,multimodal_alpha=1.0
-CBL-698,insects,1,multimodal_alpha=1.0
-CBL-698,insects,0,multimodal_alpha=1.0
+CBL-698,insect,1,multimodal_alpha=1.0
+CBL-698,insect,0,multimodal_alpha=1.0
 CBL-698,beetle,2,multimodal_alpha=1.0
 CBL-698,canine,2,norms_associative
 CBL-698,terrier,0,norms_associative
@@ -11878,8 +11878,8 @@ CBL-698,elephant,0,norms_associative
 CBL-698,tiger,0,norms_associative
 CBL-698,zebra,0,norms_associative
 CBL-698,lice,1,norms_associative
-CBL-698,insects,1,norms_associative
-CBL-698,insects,0,norms_associative
+CBL-698,insect,1,norms_associative
+CBL-698,insect,0,norms_associative
 CBL-698,beetle,0,norms_associative
 CBL-698,canine,2,norms_categorical
 CBL-698,terrier,0,norms_categorical
@@ -11898,8 +11898,8 @@ CBL-698,elephant,0,norms_categorical
 CBL-698,tiger,0,norms_categorical
 CBL-698,zebra,0,norms_categorical
 CBL-698,lice,1,norms_categorical
-CBL-698,insects,1,norms_categorical
-CBL-698,insects,1,norms_categorical
+CBL-698,insect,0,norms_categorical
+CBL-698,insect,0,norms_categorical
 CBL-698,beetle,0,norms_categorical
 CBL-698,canine,2,delta_rise=0.0_fall=0.0
 CBL-698,terrier,0,delta_rise=0.0_fall=0.0
@@ -11918,8 +11918,8 @@ CBL-698,elephant,0,delta_rise=0.0_fall=0.0
 CBL-698,tiger,0,delta_rise=0.0_fall=0.0
 CBL-698,zebra,0,delta_rise=0.0_fall=0.0
 CBL-698,lice,0,delta_rise=0.0_fall=0.0
-CBL-698,insects,1,delta_rise=0.0_fall=0.0
-CBL-698,insects,0,delta_rise=0.0_fall=0.0
+CBL-698,insect,1,delta_rise=0.0_fall=0.0
+CBL-698,insect,0,delta_rise=0.0_fall=0.0
 CBL-698,beetle,1,delta_rise=0.0_fall=0.0
 CBL-698,canine,2,delta_rise=0.0_fall=0.25
 CBL-698,terrier,0,delta_rise=0.0_fall=0.25
@@ -11938,8 +11938,8 @@ CBL-698,elephant,0,delta_rise=0.0_fall=0.25
 CBL-698,tiger,0,delta_rise=0.0_fall=0.25
 CBL-698,zebra,0,delta_rise=0.0_fall=0.25
 CBL-698,lice,0,delta_rise=0.0_fall=0.25
-CBL-698,insects,1,delta_rise=0.0_fall=0.25
-CBL-698,insects,0,delta_rise=0.0_fall=0.25
+CBL-698,insect,1,delta_rise=0.0_fall=0.25
+CBL-698,insect,0,delta_rise=0.0_fall=0.25
 CBL-698,beetle,1,delta_rise=0.0_fall=0.25
 CBL-698,canine,2,delta_rise=0.0_fall=0.5
 CBL-698,terrier,0,delta_rise=0.0_fall=0.5
@@ -11958,8 +11958,8 @@ CBL-698,elephant,0,delta_rise=0.0_fall=0.5
 CBL-698,tiger,0,delta_rise=0.0_fall=0.5
 CBL-698,zebra,0,delta_rise=0.0_fall=0.5
 CBL-698,lice,0,delta_rise=0.0_fall=0.5
-CBL-698,insects,1,delta_rise=0.0_fall=0.5
-CBL-698,insects,0,delta_rise=0.0_fall=0.5
+CBL-698,insect,1,delta_rise=0.0_fall=0.5
+CBL-698,insect,0,delta_rise=0.0_fall=0.5
 CBL-698,beetle,1,delta_rise=0.0_fall=0.5
 CBL-698,canine,2,delta_rise=0.0_fall=0.75
 CBL-698,terrier,0,delta_rise=0.0_fall=0.75
@@ -11978,8 +11978,8 @@ CBL-698,elephant,0,delta_rise=0.0_fall=0.75
 CBL-698,tiger,0,delta_rise=0.0_fall=0.75
 CBL-698,zebra,0,delta_rise=0.0_fall=0.75
 CBL-698,lice,0,delta_rise=0.0_fall=0.75
-CBL-698,insects,1,delta_rise=0.0_fall=0.75
-CBL-698,insects,0,delta_rise=0.0_fall=0.75
+CBL-698,insect,1,delta_rise=0.0_fall=0.75
+CBL-698,insect,0,delta_rise=0.0_fall=0.75
 CBL-698,beetle,1,delta_rise=0.0_fall=0.75
 CBL-698,canine,2,delta_rise=0.0_fall=1.0
 CBL-698,terrier,0,delta_rise=0.0_fall=1.0
@@ -11998,8 +11998,8 @@ CBL-698,elephant,0,delta_rise=0.0_fall=1.0
 CBL-698,tiger,0,delta_rise=0.0_fall=1.0
 CBL-698,zebra,0,delta_rise=0.0_fall=1.0
 CBL-698,lice,0,delta_rise=0.0_fall=1.0
-CBL-698,insects,0,delta_rise=0.0_fall=1.0
-CBL-698,insects,0,delta_rise=0.0_fall=1.0
+CBL-698,insect,1,delta_rise=0.0_fall=1.0
+CBL-698,insect,0,delta_rise=0.0_fall=1.0
 CBL-698,beetle,1,delta_rise=0.0_fall=1.0
 CBL-698,canine,2,delta_rise=0.25_fall=0.0
 CBL-698,terrier,0,delta_rise=0.25_fall=0.0
@@ -12018,8 +12018,8 @@ CBL-698,elephant,0,delta_rise=0.25_fall=0.0
 CBL-698,tiger,0,delta_rise=0.25_fall=0.0
 CBL-698,zebra,0,delta_rise=0.25_fall=0.0
 CBL-698,lice,0,delta_rise=0.25_fall=0.0
-CBL-698,insects,1,delta_rise=0.25_fall=0.0
-CBL-698,insects,0,delta_rise=0.25_fall=0.0
+CBL-698,insect,1,delta_rise=0.25_fall=0.0
+CBL-698,insect,0,delta_rise=0.25_fall=0.0
 CBL-698,beetle,1,delta_rise=0.25_fall=0.0
 CBL-698,canine,2,delta_rise=0.25_fall=0.25
 CBL-698,terrier,0,delta_rise=0.25_fall=0.25
@@ -12038,8 +12038,8 @@ CBL-698,elephant,0,delta_rise=0.25_fall=0.25
 CBL-698,tiger,0,delta_rise=0.25_fall=0.25
 CBL-698,zebra,0,delta_rise=0.25_fall=0.25
 CBL-698,lice,0,delta_rise=0.25_fall=0.25
-CBL-698,insects,1,delta_rise=0.25_fall=0.25
-CBL-698,insects,0,delta_rise=0.25_fall=0.25
+CBL-698,insect,1,delta_rise=0.25_fall=0.25
+CBL-698,insect,0,delta_rise=0.25_fall=0.25
 CBL-698,beetle,1,delta_rise=0.25_fall=0.25
 CBL-698,canine,2,delta_rise=0.25_fall=0.5
 CBL-698,terrier,0,delta_rise=0.25_fall=0.5
@@ -12058,8 +12058,8 @@ CBL-698,elephant,0,delta_rise=0.25_fall=0.5
 CBL-698,tiger,0,delta_rise=0.25_fall=0.5
 CBL-698,zebra,0,delta_rise=0.25_fall=0.5
 CBL-698,lice,0,delta_rise=0.25_fall=0.5
-CBL-698,insects,1,delta_rise=0.25_fall=0.5
-CBL-698,insects,0,delta_rise=0.25_fall=0.5
+CBL-698,insect,1,delta_rise=0.25_fall=0.5
+CBL-698,insect,0,delta_rise=0.25_fall=0.5
 CBL-698,beetle,1,delta_rise=0.25_fall=0.5
 CBL-698,canine,2,delta_rise=0.25_fall=0.75
 CBL-698,terrier,0,delta_rise=0.25_fall=0.75
@@ -12078,8 +12078,8 @@ CBL-698,elephant,0,delta_rise=0.25_fall=0.75
 CBL-698,tiger,0,delta_rise=0.25_fall=0.75
 CBL-698,zebra,0,delta_rise=0.25_fall=0.75
 CBL-698,lice,0,delta_rise=0.25_fall=0.75
-CBL-698,insects,1,delta_rise=0.25_fall=0.75
-CBL-698,insects,0,delta_rise=0.25_fall=0.75
+CBL-698,insect,1,delta_rise=0.25_fall=0.75
+CBL-698,insect,0,delta_rise=0.25_fall=0.75
 CBL-698,beetle,1,delta_rise=0.25_fall=0.75
 CBL-698,canine,2,delta_rise=0.25_fall=1.0
 CBL-698,terrier,0,delta_rise=0.25_fall=1.0
@@ -12098,8 +12098,8 @@ CBL-698,elephant,0,delta_rise=0.25_fall=1.0
 CBL-698,tiger,0,delta_rise=0.25_fall=1.0
 CBL-698,zebra,0,delta_rise=0.25_fall=1.0
 CBL-698,lice,0,delta_rise=0.25_fall=1.0
-CBL-698,insects,0,delta_rise=0.25_fall=1.0
-CBL-698,insects,0,delta_rise=0.25_fall=1.0
+CBL-698,insect,1,delta_rise=0.25_fall=1.0
+CBL-698,insect,0,delta_rise=0.25_fall=1.0
 CBL-698,beetle,1,delta_rise=0.25_fall=1.0
 CBL-698,canine,2,delta_rise=0.5_fall=0.0
 CBL-698,terrier,0,delta_rise=0.5_fall=0.0
@@ -12118,8 +12118,8 @@ CBL-698,elephant,0,delta_rise=0.5_fall=0.0
 CBL-698,tiger,0,delta_rise=0.5_fall=0.0
 CBL-698,zebra,0,delta_rise=0.5_fall=0.0
 CBL-698,lice,0,delta_rise=0.5_fall=0.0
-CBL-698,insects,1,delta_rise=0.5_fall=0.0
-CBL-698,insects,0,delta_rise=0.5_fall=0.0
+CBL-698,insect,1,delta_rise=0.5_fall=0.0
+CBL-698,insect,0,delta_rise=0.5_fall=0.0
 CBL-698,beetle,1,delta_rise=0.5_fall=0.0
 CBL-698,canine,2,delta_rise=0.5_fall=0.25
 CBL-698,terrier,0,delta_rise=0.5_fall=0.25
@@ -12138,8 +12138,8 @@ CBL-698,elephant,0,delta_rise=0.5_fall=0.25
 CBL-698,tiger,0,delta_rise=0.5_fall=0.25
 CBL-698,zebra,0,delta_rise=0.5_fall=0.25
 CBL-698,lice,0,delta_rise=0.5_fall=0.25
-CBL-698,insects,1,delta_rise=0.5_fall=0.25
-CBL-698,insects,0,delta_rise=0.5_fall=0.25
+CBL-698,insect,1,delta_rise=0.5_fall=0.25
+CBL-698,insect,0,delta_rise=0.5_fall=0.25
 CBL-698,beetle,1,delta_rise=0.5_fall=0.25
 CBL-698,canine,2,delta_rise=0.5_fall=0.5
 CBL-698,terrier,0,delta_rise=0.5_fall=0.5
@@ -12158,8 +12158,8 @@ CBL-698,elephant,0,delta_rise=0.5_fall=0.5
 CBL-698,tiger,0,delta_rise=0.5_fall=0.5
 CBL-698,zebra,0,delta_rise=0.5_fall=0.5
 CBL-698,lice,0,delta_rise=0.5_fall=0.5
-CBL-698,insects,1,delta_rise=0.5_fall=0.5
-CBL-698,insects,0,delta_rise=0.5_fall=0.5
+CBL-698,insect,1,delta_rise=0.5_fall=0.5
+CBL-698,insect,0,delta_rise=0.5_fall=0.5
 CBL-698,beetle,1,delta_rise=0.5_fall=0.5
 CBL-698,canine,2,delta_rise=0.5_fall=0.75
 CBL-698,terrier,0,delta_rise=0.5_fall=0.75
@@ -12178,8 +12178,8 @@ CBL-698,elephant,0,delta_rise=0.5_fall=0.75
 CBL-698,tiger,0,delta_rise=0.5_fall=0.75
 CBL-698,zebra,0,delta_rise=0.5_fall=0.75
 CBL-698,lice,0,delta_rise=0.5_fall=0.75
-CBL-698,insects,1,delta_rise=0.5_fall=0.75
-CBL-698,insects,0,delta_rise=0.5_fall=0.75
+CBL-698,insect,1,delta_rise=0.5_fall=0.75
+CBL-698,insect,0,delta_rise=0.5_fall=0.75
 CBL-698,beetle,1,delta_rise=0.5_fall=0.75
 CBL-698,canine,2,delta_rise=0.5_fall=1.0
 CBL-698,terrier,0,delta_rise=0.5_fall=1.0
@@ -12198,8 +12198,8 @@ CBL-698,elephant,0,delta_rise=0.5_fall=1.0
 CBL-698,tiger,0,delta_rise=0.5_fall=1.0
 CBL-698,zebra,0,delta_rise=0.5_fall=1.0
 CBL-698,lice,0,delta_rise=0.5_fall=1.0
-CBL-698,insects,0,delta_rise=0.5_fall=1.0
-CBL-698,insects,0,delta_rise=0.5_fall=1.0
+CBL-698,insect,1,delta_rise=0.5_fall=1.0
+CBL-698,insect,0,delta_rise=0.5_fall=1.0
 CBL-698,beetle,1,delta_rise=0.5_fall=1.0
 CBL-698,canine,2,delta_rise=0.75_fall=0.0
 CBL-698,terrier,0,delta_rise=0.75_fall=0.0
@@ -12218,8 +12218,8 @@ CBL-698,elephant,0,delta_rise=0.75_fall=0.0
 CBL-698,tiger,0,delta_rise=0.75_fall=0.0
 CBL-698,zebra,0,delta_rise=0.75_fall=0.0
 CBL-698,lice,0,delta_rise=0.75_fall=0.0
-CBL-698,insects,1,delta_rise=0.75_fall=0.0
-CBL-698,insects,0,delta_rise=0.75_fall=0.0
+CBL-698,insect,1,delta_rise=0.75_fall=0.0
+CBL-698,insect,0,delta_rise=0.75_fall=0.0
 CBL-698,beetle,1,delta_rise=0.75_fall=0.0
 CBL-698,canine,2,delta_rise=0.75_fall=0.25
 CBL-698,terrier,0,delta_rise=0.75_fall=0.25
@@ -12238,8 +12238,8 @@ CBL-698,elephant,0,delta_rise=0.75_fall=0.25
 CBL-698,tiger,0,delta_rise=0.75_fall=0.25
 CBL-698,zebra,0,delta_rise=0.75_fall=0.25
 CBL-698,lice,0,delta_rise=0.75_fall=0.25
-CBL-698,insects,1,delta_rise=0.75_fall=0.25
-CBL-698,insects,0,delta_rise=0.75_fall=0.25
+CBL-698,insect,1,delta_rise=0.75_fall=0.25
+CBL-698,insect,0,delta_rise=0.75_fall=0.25
 CBL-698,beetle,1,delta_rise=0.75_fall=0.25
 CBL-698,canine,2,delta_rise=0.75_fall=0.5
 CBL-698,terrier,0,delta_rise=0.75_fall=0.5
@@ -12258,8 +12258,8 @@ CBL-698,elephant,0,delta_rise=0.75_fall=0.5
 CBL-698,tiger,0,delta_rise=0.75_fall=0.5
 CBL-698,zebra,0,delta_rise=0.75_fall=0.5
 CBL-698,lice,0,delta_rise=0.75_fall=0.5
-CBL-698,insects,1,delta_rise=0.75_fall=0.5
-CBL-698,insects,0,delta_rise=0.75_fall=0.5
+CBL-698,insect,1,delta_rise=0.75_fall=0.5
+CBL-698,insect,0,delta_rise=0.75_fall=0.5
 CBL-698,beetle,1,delta_rise=0.75_fall=0.5
 CBL-698,canine,2,delta_rise=0.75_fall=0.75
 CBL-698,terrier,0,delta_rise=0.75_fall=0.75
@@ -12278,8 +12278,8 @@ CBL-698,elephant,0,delta_rise=0.75_fall=0.75
 CBL-698,tiger,0,delta_rise=0.75_fall=0.75
 CBL-698,zebra,0,delta_rise=0.75_fall=0.75
 CBL-698,lice,0,delta_rise=0.75_fall=0.75
-CBL-698,insects,1,delta_rise=0.75_fall=0.75
-CBL-698,insects,0,delta_rise=0.75_fall=0.75
+CBL-698,insect,1,delta_rise=0.75_fall=0.75
+CBL-698,insect,0,delta_rise=0.75_fall=0.75
 CBL-698,beetle,1,delta_rise=0.75_fall=0.75
 CBL-698,canine,2,delta_rise=0.75_fall=1.0
 CBL-698,terrier,0,delta_rise=0.75_fall=1.0
@@ -12298,8 +12298,8 @@ CBL-698,elephant,0,delta_rise=0.75_fall=1.0
 CBL-698,tiger,0,delta_rise=0.75_fall=1.0
 CBL-698,zebra,0,delta_rise=0.75_fall=1.0
 CBL-698,lice,0,delta_rise=0.75_fall=1.0
-CBL-698,insects,0,delta_rise=0.75_fall=1.0
-CBL-698,insects,0,delta_rise=0.75_fall=1.0
+CBL-698,insect,1,delta_rise=0.75_fall=1.0
+CBL-698,insect,0,delta_rise=0.75_fall=1.0
 CBL-698,beetle,1,delta_rise=0.75_fall=1.0
 CBL-698,canine,2,delta_rise=1.0_fall=0.0
 CBL-698,terrier,0,delta_rise=1.0_fall=0.0
@@ -12318,8 +12318,8 @@ CBL-698,elephant,1,delta_rise=1.0_fall=0.0
 CBL-698,tiger,1,delta_rise=1.0_fall=0.0
 CBL-698,zebra,1,delta_rise=1.0_fall=0.0
 CBL-698,lice,1,delta_rise=1.0_fall=0.0
-CBL-698,insects,1,delta_rise=1.0_fall=0.0
-CBL-698,insects,0,delta_rise=1.0_fall=0.0
+CBL-698,insect,1,delta_rise=1.0_fall=0.0
+CBL-698,insect,0,delta_rise=1.0_fall=0.0
 CBL-698,beetle,1,delta_rise=1.0_fall=0.0
 CBL-698,canine,2,delta_rise=1.0_fall=0.25
 CBL-698,terrier,0,delta_rise=1.0_fall=0.25
@@ -12338,8 +12338,8 @@ CBL-698,elephant,1,delta_rise=1.0_fall=0.25
 CBL-698,tiger,1,delta_rise=1.0_fall=0.25
 CBL-698,zebra,1,delta_rise=1.0_fall=0.25
 CBL-698,lice,1,delta_rise=1.0_fall=0.25
-CBL-698,insects,1,delta_rise=1.0_fall=0.25
-CBL-698,insects,0,delta_rise=1.0_fall=0.25
+CBL-698,insect,1,delta_rise=1.0_fall=0.25
+CBL-698,insect,0,delta_rise=1.0_fall=0.25
 CBL-698,beetle,1,delta_rise=1.0_fall=0.25
 CBL-698,canine,2,delta_rise=1.0_fall=0.5
 CBL-698,terrier,0,delta_rise=1.0_fall=0.5
@@ -12358,8 +12358,8 @@ CBL-698,elephant,1,delta_rise=1.0_fall=0.5
 CBL-698,tiger,1,delta_rise=1.0_fall=0.5
 CBL-698,zebra,1,delta_rise=1.0_fall=0.5
 CBL-698,lice,1,delta_rise=1.0_fall=0.5
-CBL-698,insects,1,delta_rise=1.0_fall=0.5
-CBL-698,insects,0,delta_rise=1.0_fall=0.5
+CBL-698,insect,1,delta_rise=1.0_fall=0.5
+CBL-698,insect,0,delta_rise=1.0_fall=0.5
 CBL-698,beetle,1,delta_rise=1.0_fall=0.5
 CBL-698,canine,2,delta_rise=1.0_fall=0.75
 CBL-698,terrier,0,delta_rise=1.0_fall=0.75
@@ -12378,8 +12378,8 @@ CBL-698,elephant,1,delta_rise=1.0_fall=0.75
 CBL-698,tiger,1,delta_rise=1.0_fall=0.75
 CBL-698,zebra,1,delta_rise=1.0_fall=0.75
 CBL-698,lice,1,delta_rise=1.0_fall=0.75
-CBL-698,insects,1,delta_rise=1.0_fall=0.75
-CBL-698,insects,0,delta_rise=1.0_fall=0.75
+CBL-698,insect,1,delta_rise=1.0_fall=0.75
+CBL-698,insect,0,delta_rise=1.0_fall=0.75
 CBL-698,beetle,1,delta_rise=1.0_fall=0.75
 CBL-698,canine,2,delta_rise=1.0_fall=1.0
 CBL-698,terrier,0,delta_rise=1.0_fall=1.0
@@ -12398,8 +12398,8 @@ CBL-698,elephant,1,delta_rise=1.0_fall=1.0
 CBL-698,tiger,1,delta_rise=1.0_fall=1.0
 CBL-698,zebra,1,delta_rise=1.0_fall=1.0
 CBL-698,lice,1,delta_rise=1.0_fall=1.0
-CBL-698,insects,1,delta_rise=1.0_fall=1.0
-CBL-698,insects,0,delta_rise=1.0_fall=1.0
+CBL-698,insect,1,delta_rise=1.0_fall=1.0
+CBL-698,insect,0,delta_rise=1.0_fall=1.0
 CBL-698,beetle,1,delta_rise=1.0_fall=1.0
 CBM-702,tiger,2,simdrop
 CBM-702,dolphin,0,simdrop
@@ -13471,8 +13471,8 @@ CBP-707,dolphin,0,simdrop
 CBP-707,whale,0,simdrop
 CBP-707,ant,1,simdrop
 CBP-707,centipede,0,simdrop
-CBP-707,insects,1,simdrop
-CBP-707,lizard,0,simdrop
+CBP-707,insect,0,simdrop
+CBP-707,lizard,1,simdrop
 CBP-707,reptile,0,simdrop
 CBP-707,snake,0,simdrop
 CBP-707,mouse,1,simdrop
@@ -13499,7 +13499,7 @@ CBP-707,dolphin,0,multimodal_alpha=0.0
 CBP-707,whale,0,multimodal_alpha=0.0
 CBP-707,ant,1,multimodal_alpha=0.0
 CBP-707,centipede,0,multimodal_alpha=0.0
-CBP-707,insects,0,multimodal_alpha=0.0
+CBP-707,insect,0,multimodal_alpha=0.0
 CBP-707,lizard,0,multimodal_alpha=0.0
 CBP-707,reptile,0,multimodal_alpha=0.0
 CBP-707,snake,0,multimodal_alpha=0.0
@@ -13527,7 +13527,7 @@ CBP-707,dolphin,0,multimodal_alpha=0.1
 CBP-707,whale,0,multimodal_alpha=0.1
 CBP-707,ant,1,multimodal_alpha=0.1
 CBP-707,centipede,0,multimodal_alpha=0.1
-CBP-707,insects,0,multimodal_alpha=0.1
+CBP-707,insect,0,multimodal_alpha=0.1
 CBP-707,lizard,1,multimodal_alpha=0.1
 CBP-707,reptile,0,multimodal_alpha=0.1
 CBP-707,snake,0,multimodal_alpha=0.1
@@ -13555,7 +13555,7 @@ CBP-707,dolphin,0,multimodal_alpha=0.2
 CBP-707,whale,0,multimodal_alpha=0.2
 CBP-707,ant,1,multimodal_alpha=0.2
 CBP-707,centipede,0,multimodal_alpha=0.2
-CBP-707,insects,0,multimodal_alpha=0.2
+CBP-707,insect,0,multimodal_alpha=0.2
 CBP-707,lizard,1,multimodal_alpha=0.2
 CBP-707,reptile,0,multimodal_alpha=0.2
 CBP-707,snake,0,multimodal_alpha=0.2
@@ -13583,7 +13583,7 @@ CBP-707,dolphin,0,multimodal_alpha=0.30000000000000004
 CBP-707,whale,0,multimodal_alpha=0.30000000000000004
 CBP-707,ant,1,multimodal_alpha=0.30000000000000004
 CBP-707,centipede,0,multimodal_alpha=0.30000000000000004
-CBP-707,insects,0,multimodal_alpha=0.30000000000000004
+CBP-707,insect,0,multimodal_alpha=0.30000000000000004
 CBP-707,lizard,1,multimodal_alpha=0.30000000000000004
 CBP-707,reptile,0,multimodal_alpha=0.30000000000000004
 CBP-707,snake,0,multimodal_alpha=0.30000000000000004
@@ -13611,7 +13611,7 @@ CBP-707,dolphin,0,multimodal_alpha=0.4
 CBP-707,whale,0,multimodal_alpha=0.4
 CBP-707,ant,1,multimodal_alpha=0.4
 CBP-707,centipede,0,multimodal_alpha=0.4
-CBP-707,insects,0,multimodal_alpha=0.4
+CBP-707,insect,0,multimodal_alpha=0.4
 CBP-707,lizard,1,multimodal_alpha=0.4
 CBP-707,reptile,0,multimodal_alpha=0.4
 CBP-707,snake,0,multimodal_alpha=0.4
@@ -13639,7 +13639,7 @@ CBP-707,dolphin,0,multimodal_alpha=0.5
 CBP-707,whale,0,multimodal_alpha=0.5
 CBP-707,ant,1,multimodal_alpha=0.5
 CBP-707,centipede,0,multimodal_alpha=0.5
-CBP-707,insects,0,multimodal_alpha=0.5
+CBP-707,insect,0,multimodal_alpha=0.5
 CBP-707,lizard,1,multimodal_alpha=0.5
 CBP-707,reptile,0,multimodal_alpha=0.5
 CBP-707,snake,0,multimodal_alpha=0.5
@@ -13667,7 +13667,7 @@ CBP-707,dolphin,0,multimodal_alpha=0.6000000000000001
 CBP-707,whale,0,multimodal_alpha=0.6000000000000001
 CBP-707,ant,1,multimodal_alpha=0.6000000000000001
 CBP-707,centipede,0,multimodal_alpha=0.6000000000000001
-CBP-707,insects,0,multimodal_alpha=0.6000000000000001
+CBP-707,insect,0,multimodal_alpha=0.6000000000000001
 CBP-707,lizard,1,multimodal_alpha=0.6000000000000001
 CBP-707,reptile,0,multimodal_alpha=0.6000000000000001
 CBP-707,snake,0,multimodal_alpha=0.6000000000000001
@@ -13695,7 +13695,7 @@ CBP-707,dolphin,0,multimodal_alpha=0.7000000000000001
 CBP-707,whale,0,multimodal_alpha=0.7000000000000001
 CBP-707,ant,1,multimodal_alpha=0.7000000000000001
 CBP-707,centipede,0,multimodal_alpha=0.7000000000000001
-CBP-707,insects,0,multimodal_alpha=0.7000000000000001
+CBP-707,insect,0,multimodal_alpha=0.7000000000000001
 CBP-707,lizard,1,multimodal_alpha=0.7000000000000001
 CBP-707,reptile,0,multimodal_alpha=0.7000000000000001
 CBP-707,snake,0,multimodal_alpha=0.7000000000000001
@@ -13723,8 +13723,8 @@ CBP-707,dolphin,0,multimodal_alpha=0.8
 CBP-707,whale,0,multimodal_alpha=0.8
 CBP-707,ant,1,multimodal_alpha=0.8
 CBP-707,centipede,0,multimodal_alpha=0.8
-CBP-707,insects,1,multimodal_alpha=0.8
-CBP-707,lizard,0,multimodal_alpha=0.8
+CBP-707,insect,0,multimodal_alpha=0.8
+CBP-707,lizard,1,multimodal_alpha=0.8
 CBP-707,reptile,0,multimodal_alpha=0.8
 CBP-707,snake,0,multimodal_alpha=0.8
 CBP-707,mouse,1,multimodal_alpha=0.8
@@ -13751,8 +13751,8 @@ CBP-707,dolphin,0,multimodal_alpha=0.9
 CBP-707,whale,0,multimodal_alpha=0.9
 CBP-707,ant,1,multimodal_alpha=0.9
 CBP-707,centipede,0,multimodal_alpha=0.9
-CBP-707,insects,1,multimodal_alpha=0.9
-CBP-707,lizard,0,multimodal_alpha=0.9
+CBP-707,insect,0,multimodal_alpha=0.9
+CBP-707,lizard,1,multimodal_alpha=0.9
 CBP-707,reptile,0,multimodal_alpha=0.9
 CBP-707,snake,0,multimodal_alpha=0.9
 CBP-707,mouse,1,multimodal_alpha=0.9
@@ -13779,8 +13779,8 @@ CBP-707,dolphin,0,multimodal_alpha=1.0
 CBP-707,whale,0,multimodal_alpha=1.0
 CBP-707,ant,1,multimodal_alpha=1.0
 CBP-707,centipede,0,multimodal_alpha=1.0
-CBP-707,insects,1,multimodal_alpha=1.0
-CBP-707,lizard,0,multimodal_alpha=1.0
+CBP-707,insect,0,multimodal_alpha=1.0
+CBP-707,lizard,1,multimodal_alpha=1.0
 CBP-707,reptile,0,multimodal_alpha=1.0
 CBP-707,snake,0,multimodal_alpha=1.0
 CBP-707,mouse,1,multimodal_alpha=1.0
@@ -13807,7 +13807,7 @@ CBP-707,dolphin,0,norms_associative
 CBP-707,whale,0,norms_associative
 CBP-707,ant,1,norms_associative
 CBP-707,centipede,0,norms_associative
-CBP-707,insects,0,norms_associative
+CBP-707,insect,0,norms_associative
 CBP-707,lizard,1,norms_associative
 CBP-707,reptile,0,norms_associative
 CBP-707,snake,0,norms_associative
@@ -13835,7 +13835,7 @@ CBP-707,dolphin,0,norms_categorical
 CBP-707,whale,0,norms_categorical
 CBP-707,ant,1,norms_categorical
 CBP-707,centipede,0,norms_categorical
-CBP-707,insects,0,norms_categorical
+CBP-707,insect,0,norms_categorical
 CBP-707,lizard,1,norms_categorical
 CBP-707,reptile,0,norms_categorical
 CBP-707,snake,0,norms_categorical
@@ -13863,8 +13863,8 @@ CBP-707,dolphin,1,delta_rise=0.0_fall=0.0
 CBP-707,whale,1,delta_rise=0.0_fall=0.0
 CBP-707,ant,1,delta_rise=0.0_fall=0.0
 CBP-707,centipede,0,delta_rise=0.0_fall=0.0
-CBP-707,insects,1,delta_rise=0.0_fall=0.0
-CBP-707,lizard,0,delta_rise=0.0_fall=0.0
+CBP-707,insect,0,delta_rise=0.0_fall=0.0
+CBP-707,lizard,1,delta_rise=0.0_fall=0.0
 CBP-707,reptile,0,delta_rise=0.0_fall=0.0
 CBP-707,snake,0,delta_rise=0.0_fall=0.0
 CBP-707,mouse,1,delta_rise=0.0_fall=0.0
@@ -13891,8 +13891,8 @@ CBP-707,dolphin,0,delta_rise=0.0_fall=0.25
 CBP-707,whale,1,delta_rise=0.0_fall=0.25
 CBP-707,ant,1,delta_rise=0.0_fall=0.25
 CBP-707,centipede,0,delta_rise=0.0_fall=0.25
-CBP-707,insects,1,delta_rise=0.0_fall=0.25
-CBP-707,lizard,0,delta_rise=0.0_fall=0.25
+CBP-707,insect,0,delta_rise=0.0_fall=0.25
+CBP-707,lizard,1,delta_rise=0.0_fall=0.25
 CBP-707,reptile,0,delta_rise=0.0_fall=0.25
 CBP-707,snake,0,delta_rise=0.0_fall=0.25
 CBP-707,mouse,1,delta_rise=0.0_fall=0.25
@@ -13919,8 +13919,8 @@ CBP-707,dolphin,0,delta_rise=0.0_fall=0.5
 CBP-707,whale,1,delta_rise=0.0_fall=0.5
 CBP-707,ant,1,delta_rise=0.0_fall=0.5
 CBP-707,centipede,0,delta_rise=0.0_fall=0.5
-CBP-707,insects,1,delta_rise=0.0_fall=0.5
-CBP-707,lizard,0,delta_rise=0.0_fall=0.5
+CBP-707,insect,0,delta_rise=0.0_fall=0.5
+CBP-707,lizard,1,delta_rise=0.0_fall=0.5
 CBP-707,reptile,0,delta_rise=0.0_fall=0.5
 CBP-707,snake,0,delta_rise=0.0_fall=0.5
 CBP-707,mouse,1,delta_rise=0.0_fall=0.5
@@ -13947,8 +13947,8 @@ CBP-707,dolphin,0,delta_rise=0.0_fall=0.75
 CBP-707,whale,1,delta_rise=0.0_fall=0.75
 CBP-707,ant,1,delta_rise=0.0_fall=0.75
 CBP-707,centipede,0,delta_rise=0.0_fall=0.75
-CBP-707,insects,1,delta_rise=0.0_fall=0.75
-CBP-707,lizard,0,delta_rise=0.0_fall=0.75
+CBP-707,insect,0,delta_rise=0.0_fall=0.75
+CBP-707,lizard,1,delta_rise=0.0_fall=0.75
 CBP-707,reptile,0,delta_rise=0.0_fall=0.75
 CBP-707,snake,0,delta_rise=0.0_fall=0.75
 CBP-707,mouse,1,delta_rise=0.0_fall=0.75
@@ -13975,7 +13975,7 @@ CBP-707,dolphin,0,delta_rise=0.0_fall=1.0
 CBP-707,whale,1,delta_rise=0.0_fall=1.0
 CBP-707,ant,1,delta_rise=0.0_fall=1.0
 CBP-707,centipede,0,delta_rise=0.0_fall=1.0
-CBP-707,insects,1,delta_rise=0.0_fall=1.0
+CBP-707,insect,0,delta_rise=0.0_fall=1.0
 CBP-707,lizard,0,delta_rise=0.0_fall=1.0
 CBP-707,reptile,0,delta_rise=0.0_fall=1.0
 CBP-707,snake,0,delta_rise=0.0_fall=1.0
@@ -14003,8 +14003,8 @@ CBP-707,dolphin,1,delta_rise=0.25_fall=0.0
 CBP-707,whale,1,delta_rise=0.25_fall=0.0
 CBP-707,ant,1,delta_rise=0.25_fall=0.0
 CBP-707,centipede,0,delta_rise=0.25_fall=0.0
-CBP-707,insects,1,delta_rise=0.25_fall=0.0
-CBP-707,lizard,0,delta_rise=0.25_fall=0.0
+CBP-707,insect,0,delta_rise=0.25_fall=0.0
+CBP-707,lizard,1,delta_rise=0.25_fall=0.0
 CBP-707,reptile,0,delta_rise=0.25_fall=0.0
 CBP-707,snake,0,delta_rise=0.25_fall=0.0
 CBP-707,mouse,1,delta_rise=0.25_fall=0.0
@@ -14031,8 +14031,8 @@ CBP-707,dolphin,0,delta_rise=0.25_fall=0.25
 CBP-707,whale,1,delta_rise=0.25_fall=0.25
 CBP-707,ant,1,delta_rise=0.25_fall=0.25
 CBP-707,centipede,0,delta_rise=0.25_fall=0.25
-CBP-707,insects,1,delta_rise=0.25_fall=0.25
-CBP-707,lizard,0,delta_rise=0.25_fall=0.25
+CBP-707,insect,0,delta_rise=0.25_fall=0.25
+CBP-707,lizard,1,delta_rise=0.25_fall=0.25
 CBP-707,reptile,0,delta_rise=0.25_fall=0.25
 CBP-707,snake,0,delta_rise=0.25_fall=0.25
 CBP-707,mouse,1,delta_rise=0.25_fall=0.25
@@ -14059,8 +14059,8 @@ CBP-707,dolphin,0,delta_rise=0.25_fall=0.5
 CBP-707,whale,1,delta_rise=0.25_fall=0.5
 CBP-707,ant,1,delta_rise=0.25_fall=0.5
 CBP-707,centipede,0,delta_rise=0.25_fall=0.5
-CBP-707,insects,1,delta_rise=0.25_fall=0.5
-CBP-707,lizard,0,delta_rise=0.25_fall=0.5
+CBP-707,insect,0,delta_rise=0.25_fall=0.5
+CBP-707,lizard,1,delta_rise=0.25_fall=0.5
 CBP-707,reptile,0,delta_rise=0.25_fall=0.5
 CBP-707,snake,0,delta_rise=0.25_fall=0.5
 CBP-707,mouse,1,delta_rise=0.25_fall=0.5
@@ -14087,8 +14087,8 @@ CBP-707,dolphin,0,delta_rise=0.25_fall=0.75
 CBP-707,whale,1,delta_rise=0.25_fall=0.75
 CBP-707,ant,1,delta_rise=0.25_fall=0.75
 CBP-707,centipede,0,delta_rise=0.25_fall=0.75
-CBP-707,insects,1,delta_rise=0.25_fall=0.75
-CBP-707,lizard,0,delta_rise=0.25_fall=0.75
+CBP-707,insect,0,delta_rise=0.25_fall=0.75
+CBP-707,lizard,1,delta_rise=0.25_fall=0.75
 CBP-707,reptile,0,delta_rise=0.25_fall=0.75
 CBP-707,snake,0,delta_rise=0.25_fall=0.75
 CBP-707,mouse,1,delta_rise=0.25_fall=0.75
@@ -14115,7 +14115,7 @@ CBP-707,dolphin,0,delta_rise=0.25_fall=1.0
 CBP-707,whale,1,delta_rise=0.25_fall=1.0
 CBP-707,ant,1,delta_rise=0.25_fall=1.0
 CBP-707,centipede,0,delta_rise=0.25_fall=1.0
-CBP-707,insects,1,delta_rise=0.25_fall=1.0
+CBP-707,insect,0,delta_rise=0.25_fall=1.0
 CBP-707,lizard,0,delta_rise=0.25_fall=1.0
 CBP-707,reptile,0,delta_rise=0.25_fall=1.0
 CBP-707,snake,0,delta_rise=0.25_fall=1.0
@@ -14143,8 +14143,8 @@ CBP-707,dolphin,1,delta_rise=0.5_fall=0.0
 CBP-707,whale,1,delta_rise=0.5_fall=0.0
 CBP-707,ant,1,delta_rise=0.5_fall=0.0
 CBP-707,centipede,0,delta_rise=0.5_fall=0.0
-CBP-707,insects,1,delta_rise=0.5_fall=0.0
-CBP-707,lizard,0,delta_rise=0.5_fall=0.0
+CBP-707,insect,0,delta_rise=0.5_fall=0.0
+CBP-707,lizard,1,delta_rise=0.5_fall=0.0
 CBP-707,reptile,0,delta_rise=0.5_fall=0.0
 CBP-707,snake,0,delta_rise=0.5_fall=0.0
 CBP-707,mouse,1,delta_rise=0.5_fall=0.0
@@ -14171,8 +14171,8 @@ CBP-707,dolphin,0,delta_rise=0.5_fall=0.25
 CBP-707,whale,1,delta_rise=0.5_fall=0.25
 CBP-707,ant,1,delta_rise=0.5_fall=0.25
 CBP-707,centipede,0,delta_rise=0.5_fall=0.25
-CBP-707,insects,1,delta_rise=0.5_fall=0.25
-CBP-707,lizard,0,delta_rise=0.5_fall=0.25
+CBP-707,insect,0,delta_rise=0.5_fall=0.25
+CBP-707,lizard,1,delta_rise=0.5_fall=0.25
 CBP-707,reptile,0,delta_rise=0.5_fall=0.25
 CBP-707,snake,0,delta_rise=0.5_fall=0.25
 CBP-707,mouse,1,delta_rise=0.5_fall=0.25
@@ -14199,8 +14199,8 @@ CBP-707,dolphin,0,delta_rise=0.5_fall=0.5
 CBP-707,whale,1,delta_rise=0.5_fall=0.5
 CBP-707,ant,1,delta_rise=0.5_fall=0.5
 CBP-707,centipede,0,delta_rise=0.5_fall=0.5
-CBP-707,insects,1,delta_rise=0.5_fall=0.5
-CBP-707,lizard,0,delta_rise=0.5_fall=0.5
+CBP-707,insect,0,delta_rise=0.5_fall=0.5
+CBP-707,lizard,1,delta_rise=0.5_fall=0.5
 CBP-707,reptile,0,delta_rise=0.5_fall=0.5
 CBP-707,snake,0,delta_rise=0.5_fall=0.5
 CBP-707,mouse,1,delta_rise=0.5_fall=0.5
@@ -14227,8 +14227,8 @@ CBP-707,dolphin,0,delta_rise=0.5_fall=0.75
 CBP-707,whale,1,delta_rise=0.5_fall=0.75
 CBP-707,ant,1,delta_rise=0.5_fall=0.75
 CBP-707,centipede,0,delta_rise=0.5_fall=0.75
-CBP-707,insects,1,delta_rise=0.5_fall=0.75
-CBP-707,lizard,0,delta_rise=0.5_fall=0.75
+CBP-707,insect,0,delta_rise=0.5_fall=0.75
+CBP-707,lizard,1,delta_rise=0.5_fall=0.75
 CBP-707,reptile,0,delta_rise=0.5_fall=0.75
 CBP-707,snake,0,delta_rise=0.5_fall=0.75
 CBP-707,mouse,1,delta_rise=0.5_fall=0.75
@@ -14255,7 +14255,7 @@ CBP-707,dolphin,0,delta_rise=0.5_fall=1.0
 CBP-707,whale,1,delta_rise=0.5_fall=1.0
 CBP-707,ant,1,delta_rise=0.5_fall=1.0
 CBP-707,centipede,0,delta_rise=0.5_fall=1.0
-CBP-707,insects,1,delta_rise=0.5_fall=1.0
+CBP-707,insect,0,delta_rise=0.5_fall=1.0
 CBP-707,lizard,0,delta_rise=0.5_fall=1.0
 CBP-707,reptile,0,delta_rise=0.5_fall=1.0
 CBP-707,snake,0,delta_rise=0.5_fall=1.0
@@ -14283,7 +14283,7 @@ CBP-707,dolphin,1,delta_rise=0.75_fall=0.0
 CBP-707,whale,1,delta_rise=0.75_fall=0.0
 CBP-707,ant,1,delta_rise=0.75_fall=0.0
 CBP-707,centipede,1,delta_rise=0.75_fall=0.0
-CBP-707,insects,1,delta_rise=0.75_fall=0.0
+CBP-707,insect,1,delta_rise=0.75_fall=0.0
 CBP-707,lizard,1,delta_rise=0.75_fall=0.0
 CBP-707,reptile,0,delta_rise=0.75_fall=0.0
 CBP-707,snake,0,delta_rise=0.75_fall=0.0
@@ -14311,7 +14311,7 @@ CBP-707,dolphin,0,delta_rise=0.75_fall=0.25
 CBP-707,whale,1,delta_rise=0.75_fall=0.25
 CBP-707,ant,1,delta_rise=0.75_fall=0.25
 CBP-707,centipede,1,delta_rise=0.75_fall=0.25
-CBP-707,insects,1,delta_rise=0.75_fall=0.25
+CBP-707,insect,1,delta_rise=0.75_fall=0.25
 CBP-707,lizard,1,delta_rise=0.75_fall=0.25
 CBP-707,reptile,0,delta_rise=0.75_fall=0.25
 CBP-707,snake,0,delta_rise=0.75_fall=0.25
@@ -14339,7 +14339,7 @@ CBP-707,dolphin,0,delta_rise=0.75_fall=0.5
 CBP-707,whale,1,delta_rise=0.75_fall=0.5
 CBP-707,ant,1,delta_rise=0.75_fall=0.5
 CBP-707,centipede,1,delta_rise=0.75_fall=0.5
-CBP-707,insects,1,delta_rise=0.75_fall=0.5
+CBP-707,insect,1,delta_rise=0.75_fall=0.5
 CBP-707,lizard,1,delta_rise=0.75_fall=0.5
 CBP-707,reptile,0,delta_rise=0.75_fall=0.5
 CBP-707,snake,0,delta_rise=0.75_fall=0.5
@@ -14367,7 +14367,7 @@ CBP-707,dolphin,0,delta_rise=0.75_fall=0.75
 CBP-707,whale,1,delta_rise=0.75_fall=0.75
 CBP-707,ant,1,delta_rise=0.75_fall=0.75
 CBP-707,centipede,1,delta_rise=0.75_fall=0.75
-CBP-707,insects,1,delta_rise=0.75_fall=0.75
+CBP-707,insect,1,delta_rise=0.75_fall=0.75
 CBP-707,lizard,1,delta_rise=0.75_fall=0.75
 CBP-707,reptile,0,delta_rise=0.75_fall=0.75
 CBP-707,snake,0,delta_rise=0.75_fall=0.75
@@ -14395,7 +14395,7 @@ CBP-707,dolphin,0,delta_rise=0.75_fall=1.0
 CBP-707,whale,1,delta_rise=0.75_fall=1.0
 CBP-707,ant,1,delta_rise=0.75_fall=1.0
 CBP-707,centipede,1,delta_rise=0.75_fall=1.0
-CBP-707,insects,1,delta_rise=0.75_fall=1.0
+CBP-707,insect,1,delta_rise=0.75_fall=1.0
 CBP-707,lizard,1,delta_rise=0.75_fall=1.0
 CBP-707,reptile,0,delta_rise=0.75_fall=1.0
 CBP-707,snake,0,delta_rise=0.75_fall=1.0
@@ -14423,7 +14423,7 @@ CBP-707,dolphin,1,delta_rise=1.0_fall=0.0
 CBP-707,whale,1,delta_rise=1.0_fall=0.0
 CBP-707,ant,1,delta_rise=1.0_fall=0.0
 CBP-707,centipede,1,delta_rise=1.0_fall=0.0
-CBP-707,insects,1,delta_rise=1.0_fall=0.0
+CBP-707,insect,1,delta_rise=1.0_fall=0.0
 CBP-707,lizard,1,delta_rise=1.0_fall=0.0
 CBP-707,reptile,0,delta_rise=1.0_fall=0.0
 CBP-707,snake,0,delta_rise=1.0_fall=0.0
@@ -14451,7 +14451,7 @@ CBP-707,dolphin,0,delta_rise=1.0_fall=0.25
 CBP-707,whale,1,delta_rise=1.0_fall=0.25
 CBP-707,ant,1,delta_rise=1.0_fall=0.25
 CBP-707,centipede,1,delta_rise=1.0_fall=0.25
-CBP-707,insects,1,delta_rise=1.0_fall=0.25
+CBP-707,insect,1,delta_rise=1.0_fall=0.25
 CBP-707,lizard,1,delta_rise=1.0_fall=0.25
 CBP-707,reptile,0,delta_rise=1.0_fall=0.25
 CBP-707,snake,0,delta_rise=1.0_fall=0.25
@@ -14479,7 +14479,7 @@ CBP-707,dolphin,0,delta_rise=1.0_fall=0.5
 CBP-707,whale,1,delta_rise=1.0_fall=0.5
 CBP-707,ant,1,delta_rise=1.0_fall=0.5
 CBP-707,centipede,1,delta_rise=1.0_fall=0.5
-CBP-707,insects,1,delta_rise=1.0_fall=0.5
+CBP-707,insect,1,delta_rise=1.0_fall=0.5
 CBP-707,lizard,1,delta_rise=1.0_fall=0.5
 CBP-707,reptile,0,delta_rise=1.0_fall=0.5
 CBP-707,snake,0,delta_rise=1.0_fall=0.5
@@ -14507,7 +14507,7 @@ CBP-707,dolphin,0,delta_rise=1.0_fall=0.75
 CBP-707,whale,1,delta_rise=1.0_fall=0.75
 CBP-707,ant,1,delta_rise=1.0_fall=0.75
 CBP-707,centipede,1,delta_rise=1.0_fall=0.75
-CBP-707,insects,1,delta_rise=1.0_fall=0.75
+CBP-707,insect,1,delta_rise=1.0_fall=0.75
 CBP-707,lizard,1,delta_rise=1.0_fall=0.75
 CBP-707,reptile,0,delta_rise=1.0_fall=0.75
 CBP-707,snake,0,delta_rise=1.0_fall=0.75
@@ -14535,7 +14535,7 @@ CBP-707,dolphin,0,delta_rise=1.0_fall=1.0
 CBP-707,whale,1,delta_rise=1.0_fall=1.0
 CBP-707,ant,1,delta_rise=1.0_fall=1.0
 CBP-707,centipede,1,delta_rise=1.0_fall=1.0
-CBP-707,insects,1,delta_rise=1.0_fall=1.0
+CBP-707,insect,1,delta_rise=1.0_fall=1.0
 CBP-707,lizard,1,delta_rise=1.0_fall=1.0
 CBP-707,reptile,0,delta_rise=1.0_fall=1.0
 CBP-707,snake,0,delta_rise=1.0_fall=1.0
@@ -17335,7 +17335,7 @@ CCD-722,dolphin,0,simdrop
 CCD-722,penguin,0,simdrop
 CCD-722,lizard,1,simdrop
 CCD-722,snake,0,simdrop
-CCD-722,insects,1,simdrop
+CCD-722,insect,0,simdrop
 CCD-722,shark,0,simdrop
 CCD-722,primate,1,simdrop
 CCD-722,sloth,0,simdrop
@@ -17364,7 +17364,7 @@ CCD-722,dolphin,0,multimodal_alpha=0.0
 CCD-722,penguin,0,multimodal_alpha=0.0
 CCD-722,lizard,0,multimodal_alpha=0.0
 CCD-722,snake,0,multimodal_alpha=0.0
-CCD-722,insects,0,multimodal_alpha=0.0
+CCD-722,insect,0,multimodal_alpha=0.0
 CCD-722,shark,0,multimodal_alpha=0.0
 CCD-722,primate,0,multimodal_alpha=0.0
 CCD-722,sloth,0,multimodal_alpha=0.0
@@ -17393,7 +17393,7 @@ CCD-722,dolphin,0,multimodal_alpha=0.1
 CCD-722,penguin,0,multimodal_alpha=0.1
 CCD-722,lizard,1,multimodal_alpha=0.1
 CCD-722,snake,0,multimodal_alpha=0.1
-CCD-722,insects,0,multimodal_alpha=0.1
+CCD-722,insect,0,multimodal_alpha=0.1
 CCD-722,shark,0,multimodal_alpha=0.1
 CCD-722,primate,1,multimodal_alpha=0.1
 CCD-722,sloth,0,multimodal_alpha=0.1
@@ -17422,7 +17422,7 @@ CCD-722,dolphin,0,multimodal_alpha=0.2
 CCD-722,penguin,0,multimodal_alpha=0.2
 CCD-722,lizard,1,multimodal_alpha=0.2
 CCD-722,snake,0,multimodal_alpha=0.2
-CCD-722,insects,0,multimodal_alpha=0.2
+CCD-722,insect,0,multimodal_alpha=0.2
 CCD-722,shark,0,multimodal_alpha=0.2
 CCD-722,primate,1,multimodal_alpha=0.2
 CCD-722,sloth,0,multimodal_alpha=0.2
@@ -17451,7 +17451,7 @@ CCD-722,dolphin,0,multimodal_alpha=0.30000000000000004
 CCD-722,penguin,0,multimodal_alpha=0.30000000000000004
 CCD-722,lizard,1,multimodal_alpha=0.30000000000000004
 CCD-722,snake,0,multimodal_alpha=0.30000000000000004
-CCD-722,insects,0,multimodal_alpha=0.30000000000000004
+CCD-722,insect,0,multimodal_alpha=0.30000000000000004
 CCD-722,shark,0,multimodal_alpha=0.30000000000000004
 CCD-722,primate,1,multimodal_alpha=0.30000000000000004
 CCD-722,sloth,0,multimodal_alpha=0.30000000000000004
@@ -17480,7 +17480,7 @@ CCD-722,dolphin,0,multimodal_alpha=0.4
 CCD-722,penguin,0,multimodal_alpha=0.4
 CCD-722,lizard,1,multimodal_alpha=0.4
 CCD-722,snake,0,multimodal_alpha=0.4
-CCD-722,insects,0,multimodal_alpha=0.4
+CCD-722,insect,0,multimodal_alpha=0.4
 CCD-722,shark,0,multimodal_alpha=0.4
 CCD-722,primate,1,multimodal_alpha=0.4
 CCD-722,sloth,0,multimodal_alpha=0.4
@@ -17509,7 +17509,7 @@ CCD-722,dolphin,0,multimodal_alpha=0.5
 CCD-722,penguin,0,multimodal_alpha=0.5
 CCD-722,lizard,1,multimodal_alpha=0.5
 CCD-722,snake,0,multimodal_alpha=0.5
-CCD-722,insects,0,multimodal_alpha=0.5
+CCD-722,insect,0,multimodal_alpha=0.5
 CCD-722,shark,0,multimodal_alpha=0.5
 CCD-722,primate,1,multimodal_alpha=0.5
 CCD-722,sloth,0,multimodal_alpha=0.5
@@ -17538,7 +17538,7 @@ CCD-722,dolphin,0,multimodal_alpha=0.6000000000000001
 CCD-722,penguin,0,multimodal_alpha=0.6000000000000001
 CCD-722,lizard,1,multimodal_alpha=0.6000000000000001
 CCD-722,snake,0,multimodal_alpha=0.6000000000000001
-CCD-722,insects,0,multimodal_alpha=0.6000000000000001
+CCD-722,insect,0,multimodal_alpha=0.6000000000000001
 CCD-722,shark,0,multimodal_alpha=0.6000000000000001
 CCD-722,primate,1,multimodal_alpha=0.6000000000000001
 CCD-722,sloth,0,multimodal_alpha=0.6000000000000001
@@ -17567,7 +17567,7 @@ CCD-722,dolphin,0,multimodal_alpha=0.7000000000000001
 CCD-722,penguin,0,multimodal_alpha=0.7000000000000001
 CCD-722,lizard,1,multimodal_alpha=0.7000000000000001
 CCD-722,snake,0,multimodal_alpha=0.7000000000000001
-CCD-722,insects,0,multimodal_alpha=0.7000000000000001
+CCD-722,insect,0,multimodal_alpha=0.7000000000000001
 CCD-722,shark,0,multimodal_alpha=0.7000000000000001
 CCD-722,primate,1,multimodal_alpha=0.7000000000000001
 CCD-722,sloth,0,multimodal_alpha=0.7000000000000001
@@ -17596,7 +17596,7 @@ CCD-722,dolphin,0,multimodal_alpha=0.8
 CCD-722,penguin,0,multimodal_alpha=0.8
 CCD-722,lizard,1,multimodal_alpha=0.8
 CCD-722,snake,0,multimodal_alpha=0.8
-CCD-722,insects,0,multimodal_alpha=0.8
+CCD-722,insect,0,multimodal_alpha=0.8
 CCD-722,shark,0,multimodal_alpha=0.8
 CCD-722,primate,1,multimodal_alpha=0.8
 CCD-722,sloth,0,multimodal_alpha=0.8
@@ -17625,7 +17625,7 @@ CCD-722,dolphin,0,multimodal_alpha=0.9
 CCD-722,penguin,0,multimodal_alpha=0.9
 CCD-722,lizard,1,multimodal_alpha=0.9
 CCD-722,snake,0,multimodal_alpha=0.9
-CCD-722,insects,1,multimodal_alpha=0.9
+CCD-722,insect,0,multimodal_alpha=0.9
 CCD-722,shark,0,multimodal_alpha=0.9
 CCD-722,primate,1,multimodal_alpha=0.9
 CCD-722,sloth,0,multimodal_alpha=0.9
@@ -17654,7 +17654,7 @@ CCD-722,dolphin,0,multimodal_alpha=1.0
 CCD-722,penguin,0,multimodal_alpha=1.0
 CCD-722,lizard,1,multimodal_alpha=1.0
 CCD-722,snake,0,multimodal_alpha=1.0
-CCD-722,insects,1,multimodal_alpha=1.0
+CCD-722,insect,0,multimodal_alpha=1.0
 CCD-722,shark,0,multimodal_alpha=1.0
 CCD-722,primate,1,multimodal_alpha=1.0
 CCD-722,sloth,0,multimodal_alpha=1.0
@@ -17683,7 +17683,7 @@ CCD-722,dolphin,1,norms_associative
 CCD-722,penguin,0,norms_associative
 CCD-722,lizard,1,norms_associative
 CCD-722,snake,0,norms_associative
-CCD-722,insects,1,norms_associative
+CCD-722,insect,1,norms_associative
 CCD-722,shark,1,norms_associative
 CCD-722,primate,1,norms_associative
 CCD-722,sloth,1,norms_associative
@@ -17712,8 +17712,8 @@ CCD-722,dolphin,0,norms_categorical
 CCD-722,penguin,0,norms_categorical
 CCD-722,lizard,1,norms_categorical
 CCD-722,snake,0,norms_categorical
-CCD-722,insects,1,norms_categorical
-CCD-722,shark,0,norms_categorical
+CCD-722,insect,1,norms_categorical
+CCD-722,shark,1,norms_categorical
 CCD-722,primate,1,norms_categorical
 CCD-722,sloth,1,norms_categorical
 CCD-722,zebra,1,norms_categorical
@@ -17741,8 +17741,8 @@ CCD-722,dolphin,0,delta_rise=0.0_fall=0.0
 CCD-722,penguin,0,delta_rise=0.0_fall=0.0
 CCD-722,lizard,1,delta_rise=0.0_fall=0.0
 CCD-722,snake,0,delta_rise=0.0_fall=0.0
-CCD-722,insects,1,delta_rise=0.0_fall=0.0
-CCD-722,shark,0,delta_rise=0.0_fall=0.0
+CCD-722,insect,1,delta_rise=0.0_fall=0.0
+CCD-722,shark,1,delta_rise=0.0_fall=0.0
 CCD-722,primate,1,delta_rise=0.0_fall=0.0
 CCD-722,sloth,0,delta_rise=0.0_fall=0.0
 CCD-722,zebra,0,delta_rise=0.0_fall=0.0
@@ -17770,8 +17770,8 @@ CCD-722,dolphin,0,delta_rise=0.0_fall=0.25
 CCD-722,penguin,0,delta_rise=0.0_fall=0.25
 CCD-722,lizard,1,delta_rise=0.0_fall=0.25
 CCD-722,snake,0,delta_rise=0.0_fall=0.25
-CCD-722,insects,1,delta_rise=0.0_fall=0.25
-CCD-722,shark,0,delta_rise=0.0_fall=0.25
+CCD-722,insect,1,delta_rise=0.0_fall=0.25
+CCD-722,shark,1,delta_rise=0.0_fall=0.25
 CCD-722,primate,1,delta_rise=0.0_fall=0.25
 CCD-722,sloth,0,delta_rise=0.0_fall=0.25
 CCD-722,zebra,0,delta_rise=0.0_fall=0.25
@@ -17799,8 +17799,8 @@ CCD-722,dolphin,0,delta_rise=0.0_fall=0.5
 CCD-722,penguin,0,delta_rise=0.0_fall=0.5
 CCD-722,lizard,1,delta_rise=0.0_fall=0.5
 CCD-722,snake,0,delta_rise=0.0_fall=0.5
-CCD-722,insects,1,delta_rise=0.0_fall=0.5
-CCD-722,shark,0,delta_rise=0.0_fall=0.5
+CCD-722,insect,1,delta_rise=0.0_fall=0.5
+CCD-722,shark,1,delta_rise=0.0_fall=0.5
 CCD-722,primate,1,delta_rise=0.0_fall=0.5
 CCD-722,sloth,0,delta_rise=0.0_fall=0.5
 CCD-722,zebra,0,delta_rise=0.0_fall=0.5
@@ -17828,8 +17828,8 @@ CCD-722,dolphin,0,delta_rise=0.0_fall=0.75
 CCD-722,penguin,0,delta_rise=0.0_fall=0.75
 CCD-722,lizard,1,delta_rise=0.0_fall=0.75
 CCD-722,snake,0,delta_rise=0.0_fall=0.75
-CCD-722,insects,1,delta_rise=0.0_fall=0.75
-CCD-722,shark,0,delta_rise=0.0_fall=0.75
+CCD-722,insect,1,delta_rise=0.0_fall=0.75
+CCD-722,shark,1,delta_rise=0.0_fall=0.75
 CCD-722,primate,1,delta_rise=0.0_fall=0.75
 CCD-722,sloth,0,delta_rise=0.0_fall=0.75
 CCD-722,zebra,0,delta_rise=0.0_fall=0.75
@@ -17857,7 +17857,7 @@ CCD-722,dolphin,0,delta_rise=0.0_fall=1.0
 CCD-722,penguin,0,delta_rise=0.0_fall=1.0
 CCD-722,lizard,1,delta_rise=0.0_fall=1.0
 CCD-722,snake,0,delta_rise=0.0_fall=1.0
-CCD-722,insects,1,delta_rise=0.0_fall=1.0
+CCD-722,insect,0,delta_rise=0.0_fall=1.0
 CCD-722,shark,0,delta_rise=0.0_fall=1.0
 CCD-722,primate,1,delta_rise=0.0_fall=1.0
 CCD-722,sloth,0,delta_rise=0.0_fall=1.0
@@ -17886,7 +17886,7 @@ CCD-722,dolphin,0,delta_rise=0.25_fall=0.0
 CCD-722,penguin,0,delta_rise=0.25_fall=0.0
 CCD-722,lizard,1,delta_rise=0.25_fall=0.0
 CCD-722,snake,0,delta_rise=0.25_fall=0.0
-CCD-722,insects,1,delta_rise=0.25_fall=0.0
+CCD-722,insect,1,delta_rise=0.25_fall=0.0
 CCD-722,shark,1,delta_rise=0.25_fall=0.0
 CCD-722,primate,1,delta_rise=0.25_fall=0.0
 CCD-722,sloth,0,delta_rise=0.25_fall=0.0
@@ -17915,7 +17915,7 @@ CCD-722,dolphin,0,delta_rise=0.25_fall=0.25
 CCD-722,penguin,0,delta_rise=0.25_fall=0.25
 CCD-722,lizard,1,delta_rise=0.25_fall=0.25
 CCD-722,snake,0,delta_rise=0.25_fall=0.25
-CCD-722,insects,1,delta_rise=0.25_fall=0.25
+CCD-722,insect,1,delta_rise=0.25_fall=0.25
 CCD-722,shark,1,delta_rise=0.25_fall=0.25
 CCD-722,primate,1,delta_rise=0.25_fall=0.25
 CCD-722,sloth,0,delta_rise=0.25_fall=0.25
@@ -17944,7 +17944,7 @@ CCD-722,dolphin,0,delta_rise=0.25_fall=0.5
 CCD-722,penguin,0,delta_rise=0.25_fall=0.5
 CCD-722,lizard,1,delta_rise=0.25_fall=0.5
 CCD-722,snake,0,delta_rise=0.25_fall=0.5
-CCD-722,insects,1,delta_rise=0.25_fall=0.5
+CCD-722,insect,1,delta_rise=0.25_fall=0.5
 CCD-722,shark,1,delta_rise=0.25_fall=0.5
 CCD-722,primate,1,delta_rise=0.25_fall=0.5
 CCD-722,sloth,0,delta_rise=0.25_fall=0.5
@@ -17973,7 +17973,7 @@ CCD-722,dolphin,0,delta_rise=0.25_fall=0.75
 CCD-722,penguin,0,delta_rise=0.25_fall=0.75
 CCD-722,lizard,1,delta_rise=0.25_fall=0.75
 CCD-722,snake,0,delta_rise=0.25_fall=0.75
-CCD-722,insects,1,delta_rise=0.25_fall=0.75
+CCD-722,insect,1,delta_rise=0.25_fall=0.75
 CCD-722,shark,1,delta_rise=0.25_fall=0.75
 CCD-722,primate,1,delta_rise=0.25_fall=0.75
 CCD-722,sloth,0,delta_rise=0.25_fall=0.75
@@ -18002,8 +18002,8 @@ CCD-722,dolphin,0,delta_rise=0.25_fall=1.0
 CCD-722,penguin,0,delta_rise=0.25_fall=1.0
 CCD-722,lizard,1,delta_rise=0.25_fall=1.0
 CCD-722,snake,0,delta_rise=0.25_fall=1.0
-CCD-722,insects,1,delta_rise=0.25_fall=1.0
-CCD-722,shark,1,delta_rise=0.25_fall=1.0
+CCD-722,insect,0,delta_rise=0.25_fall=1.0
+CCD-722,shark,0,delta_rise=0.25_fall=1.0
 CCD-722,primate,1,delta_rise=0.25_fall=1.0
 CCD-722,sloth,0,delta_rise=0.25_fall=1.0
 CCD-722,zebra,0,delta_rise=0.25_fall=1.0
@@ -18031,7 +18031,7 @@ CCD-722,dolphin,0,delta_rise=0.5_fall=0.0
 CCD-722,penguin,0,delta_rise=0.5_fall=0.0
 CCD-722,lizard,1,delta_rise=0.5_fall=0.0
 CCD-722,snake,0,delta_rise=0.5_fall=0.0
-CCD-722,insects,1,delta_rise=0.5_fall=0.0
+CCD-722,insect,1,delta_rise=0.5_fall=0.0
 CCD-722,shark,1,delta_rise=0.5_fall=0.0
 CCD-722,primate,1,delta_rise=0.5_fall=0.0
 CCD-722,sloth,0,delta_rise=0.5_fall=0.0
@@ -18060,7 +18060,7 @@ CCD-722,dolphin,0,delta_rise=0.5_fall=0.25
 CCD-722,penguin,0,delta_rise=0.5_fall=0.25
 CCD-722,lizard,1,delta_rise=0.5_fall=0.25
 CCD-722,snake,0,delta_rise=0.5_fall=0.25
-CCD-722,insects,1,delta_rise=0.5_fall=0.25
+CCD-722,insect,1,delta_rise=0.5_fall=0.25
 CCD-722,shark,1,delta_rise=0.5_fall=0.25
 CCD-722,primate,1,delta_rise=0.5_fall=0.25
 CCD-722,sloth,0,delta_rise=0.5_fall=0.25
@@ -18089,7 +18089,7 @@ CCD-722,dolphin,0,delta_rise=0.5_fall=0.5
 CCD-722,penguin,0,delta_rise=0.5_fall=0.5
 CCD-722,lizard,1,delta_rise=0.5_fall=0.5
 CCD-722,snake,0,delta_rise=0.5_fall=0.5
-CCD-722,insects,1,delta_rise=0.5_fall=0.5
+CCD-722,insect,1,delta_rise=0.5_fall=0.5
 CCD-722,shark,1,delta_rise=0.5_fall=0.5
 CCD-722,primate,1,delta_rise=0.5_fall=0.5
 CCD-722,sloth,0,delta_rise=0.5_fall=0.5
@@ -18118,7 +18118,7 @@ CCD-722,dolphin,0,delta_rise=0.5_fall=0.75
 CCD-722,penguin,0,delta_rise=0.5_fall=0.75
 CCD-722,lizard,1,delta_rise=0.5_fall=0.75
 CCD-722,snake,0,delta_rise=0.5_fall=0.75
-CCD-722,insects,1,delta_rise=0.5_fall=0.75
+CCD-722,insect,1,delta_rise=0.5_fall=0.75
 CCD-722,shark,1,delta_rise=0.5_fall=0.75
 CCD-722,primate,1,delta_rise=0.5_fall=0.75
 CCD-722,sloth,0,delta_rise=0.5_fall=0.75
@@ -18147,8 +18147,8 @@ CCD-722,dolphin,0,delta_rise=0.5_fall=1.0
 CCD-722,penguin,0,delta_rise=0.5_fall=1.0
 CCD-722,lizard,1,delta_rise=0.5_fall=1.0
 CCD-722,snake,0,delta_rise=0.5_fall=1.0
-CCD-722,insects,1,delta_rise=0.5_fall=1.0
-CCD-722,shark,1,delta_rise=0.5_fall=1.0
+CCD-722,insect,0,delta_rise=0.5_fall=1.0
+CCD-722,shark,0,delta_rise=0.5_fall=1.0
 CCD-722,primate,1,delta_rise=0.5_fall=1.0
 CCD-722,sloth,0,delta_rise=0.5_fall=1.0
 CCD-722,zebra,0,delta_rise=0.5_fall=1.0
@@ -18176,7 +18176,7 @@ CCD-722,dolphin,0,delta_rise=0.75_fall=0.0
 CCD-722,penguin,0,delta_rise=0.75_fall=0.0
 CCD-722,lizard,1,delta_rise=0.75_fall=0.0
 CCD-722,snake,0,delta_rise=0.75_fall=0.0
-CCD-722,insects,1,delta_rise=0.75_fall=0.0
+CCD-722,insect,1,delta_rise=0.75_fall=0.0
 CCD-722,shark,1,delta_rise=0.75_fall=0.0
 CCD-722,primate,1,delta_rise=0.75_fall=0.0
 CCD-722,sloth,0,delta_rise=0.75_fall=0.0
@@ -18205,7 +18205,7 @@ CCD-722,dolphin,0,delta_rise=0.75_fall=0.25
 CCD-722,penguin,0,delta_rise=0.75_fall=0.25
 CCD-722,lizard,1,delta_rise=0.75_fall=0.25
 CCD-722,snake,0,delta_rise=0.75_fall=0.25
-CCD-722,insects,1,delta_rise=0.75_fall=0.25
+CCD-722,insect,1,delta_rise=0.75_fall=0.25
 CCD-722,shark,1,delta_rise=0.75_fall=0.25
 CCD-722,primate,1,delta_rise=0.75_fall=0.25
 CCD-722,sloth,0,delta_rise=0.75_fall=0.25
@@ -18234,7 +18234,7 @@ CCD-722,dolphin,0,delta_rise=0.75_fall=0.5
 CCD-722,penguin,0,delta_rise=0.75_fall=0.5
 CCD-722,lizard,1,delta_rise=0.75_fall=0.5
 CCD-722,snake,0,delta_rise=0.75_fall=0.5
-CCD-722,insects,1,delta_rise=0.75_fall=0.5
+CCD-722,insect,1,delta_rise=0.75_fall=0.5
 CCD-722,shark,1,delta_rise=0.75_fall=0.5
 CCD-722,primate,1,delta_rise=0.75_fall=0.5
 CCD-722,sloth,0,delta_rise=0.75_fall=0.5
@@ -18263,7 +18263,7 @@ CCD-722,dolphin,0,delta_rise=0.75_fall=0.75
 CCD-722,penguin,0,delta_rise=0.75_fall=0.75
 CCD-722,lizard,1,delta_rise=0.75_fall=0.75
 CCD-722,snake,0,delta_rise=0.75_fall=0.75
-CCD-722,insects,1,delta_rise=0.75_fall=0.75
+CCD-722,insect,1,delta_rise=0.75_fall=0.75
 CCD-722,shark,1,delta_rise=0.75_fall=0.75
 CCD-722,primate,1,delta_rise=0.75_fall=0.75
 CCD-722,sloth,0,delta_rise=0.75_fall=0.75
@@ -18292,8 +18292,8 @@ CCD-722,dolphin,0,delta_rise=0.75_fall=1.0
 CCD-722,penguin,0,delta_rise=0.75_fall=1.0
 CCD-722,lizard,1,delta_rise=0.75_fall=1.0
 CCD-722,snake,0,delta_rise=0.75_fall=1.0
-CCD-722,insects,1,delta_rise=0.75_fall=1.0
-CCD-722,shark,1,delta_rise=0.75_fall=1.0
+CCD-722,insect,0,delta_rise=0.75_fall=1.0
+CCD-722,shark,0,delta_rise=0.75_fall=1.0
 CCD-722,primate,1,delta_rise=0.75_fall=1.0
 CCD-722,sloth,0,delta_rise=0.75_fall=1.0
 CCD-722,zebra,0,delta_rise=0.75_fall=1.0
@@ -18321,7 +18321,7 @@ CCD-722,dolphin,0,delta_rise=1.0_fall=0.0
 CCD-722,penguin,0,delta_rise=1.0_fall=0.0
 CCD-722,lizard,1,delta_rise=1.0_fall=0.0
 CCD-722,snake,0,delta_rise=1.0_fall=0.0
-CCD-722,insects,1,delta_rise=1.0_fall=0.0
+CCD-722,insect,1,delta_rise=1.0_fall=0.0
 CCD-722,shark,1,delta_rise=1.0_fall=0.0
 CCD-722,primate,1,delta_rise=1.0_fall=0.0
 CCD-722,sloth,0,delta_rise=1.0_fall=0.0
@@ -18350,7 +18350,7 @@ CCD-722,dolphin,0,delta_rise=1.0_fall=0.25
 CCD-722,penguin,0,delta_rise=1.0_fall=0.25
 CCD-722,lizard,1,delta_rise=1.0_fall=0.25
 CCD-722,snake,0,delta_rise=1.0_fall=0.25
-CCD-722,insects,1,delta_rise=1.0_fall=0.25
+CCD-722,insect,1,delta_rise=1.0_fall=0.25
 CCD-722,shark,1,delta_rise=1.0_fall=0.25
 CCD-722,primate,1,delta_rise=1.0_fall=0.25
 CCD-722,sloth,0,delta_rise=1.0_fall=0.25
@@ -18379,7 +18379,7 @@ CCD-722,dolphin,0,delta_rise=1.0_fall=0.5
 CCD-722,penguin,0,delta_rise=1.0_fall=0.5
 CCD-722,lizard,1,delta_rise=1.0_fall=0.5
 CCD-722,snake,0,delta_rise=1.0_fall=0.5
-CCD-722,insects,1,delta_rise=1.0_fall=0.5
+CCD-722,insect,1,delta_rise=1.0_fall=0.5
 CCD-722,shark,1,delta_rise=1.0_fall=0.5
 CCD-722,primate,1,delta_rise=1.0_fall=0.5
 CCD-722,sloth,0,delta_rise=1.0_fall=0.5
@@ -18408,7 +18408,7 @@ CCD-722,dolphin,0,delta_rise=1.0_fall=0.75
 CCD-722,penguin,0,delta_rise=1.0_fall=0.75
 CCD-722,lizard,1,delta_rise=1.0_fall=0.75
 CCD-722,snake,0,delta_rise=1.0_fall=0.75
-CCD-722,insects,1,delta_rise=1.0_fall=0.75
+CCD-722,insect,1,delta_rise=1.0_fall=0.75
 CCD-722,shark,1,delta_rise=1.0_fall=0.75
 CCD-722,primate,1,delta_rise=1.0_fall=0.75
 CCD-722,sloth,0,delta_rise=1.0_fall=0.75
@@ -18437,8 +18437,8 @@ CCD-722,dolphin,0,delta_rise=1.0_fall=1.0
 CCD-722,penguin,0,delta_rise=1.0_fall=1.0
 CCD-722,lizard,1,delta_rise=1.0_fall=1.0
 CCD-722,snake,0,delta_rise=1.0_fall=1.0
-CCD-722,insects,1,delta_rise=1.0_fall=1.0
-CCD-722,shark,1,delta_rise=1.0_fall=1.0
+CCD-722,insect,0,delta_rise=1.0_fall=1.0
+CCD-722,shark,0,delta_rise=1.0_fall=1.0
 CCD-722,primate,1,delta_rise=1.0_fall=1.0
 CCD-722,sloth,0,delta_rise=1.0_fall=1.0
 CCD-722,zebra,0,delta_rise=1.0_fall=1.0
@@ -19155,7 +19155,7 @@ CCH-726,donkey,1,simdrop
 CCH-726,horse,0,simdrop
 CCH-726,dog,1,simdrop
 CCH-726,cat,0,simdrop
-CCH-726,insects,1,simdrop
+CCH-726,insect,1,simdrop
 CCH-726,fish,0,simdrop
 CCH-726,american,0,simdrop
 CCH-726,deer,1,simdrop
@@ -19178,7 +19178,7 @@ CCH-726,donkey,0,multimodal_alpha=0.0
 CCH-726,horse,0,multimodal_alpha=0.0
 CCH-726,dog,0,multimodal_alpha=0.0
 CCH-726,cat,1,multimodal_alpha=0.0
-CCH-726,insects,0,multimodal_alpha=0.0
+CCH-726,insect,0,multimodal_alpha=0.0
 CCH-726,fish,0,multimodal_alpha=0.0
 CCH-726,american,0,multimodal_alpha=0.0
 CCH-726,deer,0,multimodal_alpha=0.0
@@ -19201,7 +19201,7 @@ CCH-726,donkey,1,multimodal_alpha=0.1
 CCH-726,horse,0,multimodal_alpha=0.1
 CCH-726,dog,0,multimodal_alpha=0.1
 CCH-726,cat,1,multimodal_alpha=0.1
-CCH-726,insects,0,multimodal_alpha=0.1
+CCH-726,insect,0,multimodal_alpha=0.1
 CCH-726,fish,0,multimodal_alpha=0.1
 CCH-726,american,1,multimodal_alpha=0.1
 CCH-726,deer,0,multimodal_alpha=0.1
@@ -19224,7 +19224,7 @@ CCH-726,donkey,1,multimodal_alpha=0.2
 CCH-726,horse,0,multimodal_alpha=0.2
 CCH-726,dog,0,multimodal_alpha=0.2
 CCH-726,cat,1,multimodal_alpha=0.2
-CCH-726,insects,0,multimodal_alpha=0.2
+CCH-726,insect,0,multimodal_alpha=0.2
 CCH-726,fish,0,multimodal_alpha=0.2
 CCH-726,american,1,multimodal_alpha=0.2
 CCH-726,deer,0,multimodal_alpha=0.2
@@ -19247,7 +19247,7 @@ CCH-726,donkey,1,multimodal_alpha=0.30000000000000004
 CCH-726,horse,0,multimodal_alpha=0.30000000000000004
 CCH-726,dog,0,multimodal_alpha=0.30000000000000004
 CCH-726,cat,1,multimodal_alpha=0.30000000000000004
-CCH-726,insects,0,multimodal_alpha=0.30000000000000004
+CCH-726,insect,0,multimodal_alpha=0.30000000000000004
 CCH-726,fish,0,multimodal_alpha=0.30000000000000004
 CCH-726,american,1,multimodal_alpha=0.30000000000000004
 CCH-726,deer,0,multimodal_alpha=0.30000000000000004
@@ -19269,8 +19269,8 @@ CCH-726,elephant,0,multimodal_alpha=0.4
 CCH-726,donkey,1,multimodal_alpha=0.4
 CCH-726,horse,0,multimodal_alpha=0.4
 CCH-726,dog,0,multimodal_alpha=0.4
-CCH-726,cat,0,multimodal_alpha=0.4
-CCH-726,insects,0,multimodal_alpha=0.4
+CCH-726,cat,1,multimodal_alpha=0.4
+CCH-726,insect,0,multimodal_alpha=0.4
 CCH-726,fish,0,multimodal_alpha=0.4
 CCH-726,american,1,multimodal_alpha=0.4
 CCH-726,deer,0,multimodal_alpha=0.4
@@ -19293,7 +19293,7 @@ CCH-726,donkey,1,multimodal_alpha=0.5
 CCH-726,horse,0,multimodal_alpha=0.5
 CCH-726,dog,0,multimodal_alpha=0.5
 CCH-726,cat,0,multimodal_alpha=0.5
-CCH-726,insects,0,multimodal_alpha=0.5
+CCH-726,insect,0,multimodal_alpha=0.5
 CCH-726,fish,0,multimodal_alpha=0.5
 CCH-726,american,1,multimodal_alpha=0.5
 CCH-726,deer,0,multimodal_alpha=0.5
@@ -19316,7 +19316,7 @@ CCH-726,donkey,1,multimodal_alpha=0.6000000000000001
 CCH-726,horse,0,multimodal_alpha=0.6000000000000001
 CCH-726,dog,0,multimodal_alpha=0.6000000000000001
 CCH-726,cat,0,multimodal_alpha=0.6000000000000001
-CCH-726,insects,1,multimodal_alpha=0.6000000000000001
+CCH-726,insect,0,multimodal_alpha=0.6000000000000001
 CCH-726,fish,0,multimodal_alpha=0.6000000000000001
 CCH-726,american,1,multimodal_alpha=0.6000000000000001
 CCH-726,deer,0,multimodal_alpha=0.6000000000000001
@@ -19339,7 +19339,7 @@ CCH-726,donkey,1,multimodal_alpha=0.7000000000000001
 CCH-726,horse,0,multimodal_alpha=0.7000000000000001
 CCH-726,dog,1,multimodal_alpha=0.7000000000000001
 CCH-726,cat,0,multimodal_alpha=0.7000000000000001
-CCH-726,insects,1,multimodal_alpha=0.7000000000000001
+CCH-726,insect,0,multimodal_alpha=0.7000000000000001
 CCH-726,fish,0,multimodal_alpha=0.7000000000000001
 CCH-726,american,1,multimodal_alpha=0.7000000000000001
 CCH-726,deer,0,multimodal_alpha=0.7000000000000001
@@ -19362,7 +19362,7 @@ CCH-726,donkey,1,multimodal_alpha=0.8
 CCH-726,horse,0,multimodal_alpha=0.8
 CCH-726,dog,1,multimodal_alpha=0.8
 CCH-726,cat,0,multimodal_alpha=0.8
-CCH-726,insects,1,multimodal_alpha=0.8
+CCH-726,insect,0,multimodal_alpha=0.8
 CCH-726,fish,0,multimodal_alpha=0.8
 CCH-726,american,1,multimodal_alpha=0.8
 CCH-726,deer,0,multimodal_alpha=0.8
@@ -19385,7 +19385,7 @@ CCH-726,donkey,1,multimodal_alpha=0.9
 CCH-726,horse,0,multimodal_alpha=0.9
 CCH-726,dog,1,multimodal_alpha=0.9
 CCH-726,cat,0,multimodal_alpha=0.9
-CCH-726,insects,1,multimodal_alpha=0.9
+CCH-726,insect,0,multimodal_alpha=0.9
 CCH-726,fish,0,multimodal_alpha=0.9
 CCH-726,american,1,multimodal_alpha=0.9
 CCH-726,deer,0,multimodal_alpha=0.9
@@ -19408,7 +19408,7 @@ CCH-726,donkey,1,multimodal_alpha=1.0
 CCH-726,horse,0,multimodal_alpha=1.0
 CCH-726,dog,1,multimodal_alpha=1.0
 CCH-726,cat,0,multimodal_alpha=1.0
-CCH-726,insects,1,multimodal_alpha=1.0
+CCH-726,insect,1,multimodal_alpha=1.0
 CCH-726,fish,0,multimodal_alpha=1.0
 CCH-726,american,0,multimodal_alpha=1.0
 CCH-726,deer,1,multimodal_alpha=1.0
@@ -19431,7 +19431,7 @@ CCH-726,donkey,1,norms_associative
 CCH-726,horse,0,norms_associative
 CCH-726,dog,1,norms_associative
 CCH-726,cat,0,norms_associative
-CCH-726,insects,1,norms_associative
+CCH-726,insect,1,norms_associative
 CCH-726,fish,1,norms_associative
 CCH-726,american,1,norms_associative
 CCH-726,deer,1,norms_associative
@@ -19454,8 +19454,8 @@ CCH-726,donkey,1,norms_categorical
 CCH-726,horse,0,norms_categorical
 CCH-726,dog,1,norms_categorical
 CCH-726,cat,0,norms_categorical
-CCH-726,insects,1,norms_categorical
-CCH-726,fish,0,norms_categorical
+CCH-726,insect,1,norms_categorical
+CCH-726,fish,1,norms_categorical
 CCH-726,american,1,norms_categorical
 CCH-726,deer,0,norms_categorical
 CCH-726,frog,1,norms_categorical
@@ -19477,7 +19477,7 @@ CCH-726,donkey,1,delta_rise=0.0_fall=0.0
 CCH-726,horse,0,delta_rise=0.0_fall=0.0
 CCH-726,dog,1,delta_rise=0.0_fall=0.0
 CCH-726,cat,0,delta_rise=0.0_fall=0.0
-CCH-726,insects,1,delta_rise=0.0_fall=0.0
+CCH-726,insect,1,delta_rise=0.0_fall=0.0
 CCH-726,fish,0,delta_rise=0.0_fall=0.0
 CCH-726,american,1,delta_rise=0.0_fall=0.0
 CCH-726,deer,1,delta_rise=0.0_fall=0.0
@@ -19500,7 +19500,7 @@ CCH-726,donkey,1,delta_rise=0.0_fall=0.25
 CCH-726,horse,0,delta_rise=0.0_fall=0.25
 CCH-726,dog,1,delta_rise=0.0_fall=0.25
 CCH-726,cat,0,delta_rise=0.0_fall=0.25
-CCH-726,insects,1,delta_rise=0.0_fall=0.25
+CCH-726,insect,1,delta_rise=0.0_fall=0.25
 CCH-726,fish,0,delta_rise=0.0_fall=0.25
 CCH-726,american,1,delta_rise=0.0_fall=0.25
 CCH-726,deer,1,delta_rise=0.0_fall=0.25
@@ -19523,7 +19523,7 @@ CCH-726,donkey,1,delta_rise=0.0_fall=0.5
 CCH-726,horse,0,delta_rise=0.0_fall=0.5
 CCH-726,dog,1,delta_rise=0.0_fall=0.5
 CCH-726,cat,0,delta_rise=0.0_fall=0.5
-CCH-726,insects,1,delta_rise=0.0_fall=0.5
+CCH-726,insect,1,delta_rise=0.0_fall=0.5
 CCH-726,fish,0,delta_rise=0.0_fall=0.5
 CCH-726,american,1,delta_rise=0.0_fall=0.5
 CCH-726,deer,1,delta_rise=0.0_fall=0.5
@@ -19546,7 +19546,7 @@ CCH-726,donkey,0,delta_rise=0.0_fall=0.75
 CCH-726,horse,0,delta_rise=0.0_fall=0.75
 CCH-726,dog,1,delta_rise=0.0_fall=0.75
 CCH-726,cat,0,delta_rise=0.0_fall=0.75
-CCH-726,insects,1,delta_rise=0.0_fall=0.75
+CCH-726,insect,1,delta_rise=0.0_fall=0.75
 CCH-726,fish,0,delta_rise=0.0_fall=0.75
 CCH-726,american,1,delta_rise=0.0_fall=0.75
 CCH-726,deer,1,delta_rise=0.0_fall=0.75
@@ -19569,7 +19569,7 @@ CCH-726,donkey,0,delta_rise=0.0_fall=1.0
 CCH-726,horse,0,delta_rise=0.0_fall=1.0
 CCH-726,dog,0,delta_rise=0.0_fall=1.0
 CCH-726,cat,0,delta_rise=0.0_fall=1.0
-CCH-726,insects,1,delta_rise=0.0_fall=1.0
+CCH-726,insect,1,delta_rise=0.0_fall=1.0
 CCH-726,fish,0,delta_rise=0.0_fall=1.0
 CCH-726,american,1,delta_rise=0.0_fall=1.0
 CCH-726,deer,1,delta_rise=0.0_fall=1.0
@@ -19592,8 +19592,8 @@ CCH-726,donkey,1,delta_rise=0.25_fall=0.0
 CCH-726,horse,0,delta_rise=0.25_fall=0.0
 CCH-726,dog,1,delta_rise=0.25_fall=0.0
 CCH-726,cat,0,delta_rise=0.25_fall=0.0
-CCH-726,insects,1,delta_rise=0.25_fall=0.0
-CCH-726,fish,0,delta_rise=0.25_fall=0.0
+CCH-726,insect,1,delta_rise=0.25_fall=0.0
+CCH-726,fish,1,delta_rise=0.25_fall=0.0
 CCH-726,american,1,delta_rise=0.25_fall=0.0
 CCH-726,deer,1,delta_rise=0.25_fall=0.0
 CCH-726,frog,0,delta_rise=0.25_fall=0.0
@@ -19615,8 +19615,8 @@ CCH-726,donkey,1,delta_rise=0.25_fall=0.25
 CCH-726,horse,0,delta_rise=0.25_fall=0.25
 CCH-726,dog,1,delta_rise=0.25_fall=0.25
 CCH-726,cat,0,delta_rise=0.25_fall=0.25
-CCH-726,insects,1,delta_rise=0.25_fall=0.25
-CCH-726,fish,0,delta_rise=0.25_fall=0.25
+CCH-726,insect,1,delta_rise=0.25_fall=0.25
+CCH-726,fish,1,delta_rise=0.25_fall=0.25
 CCH-726,american,1,delta_rise=0.25_fall=0.25
 CCH-726,deer,1,delta_rise=0.25_fall=0.25
 CCH-726,frog,0,delta_rise=0.25_fall=0.25
@@ -19638,8 +19638,8 @@ CCH-726,donkey,1,delta_rise=0.25_fall=0.5
 CCH-726,horse,0,delta_rise=0.25_fall=0.5
 CCH-726,dog,1,delta_rise=0.25_fall=0.5
 CCH-726,cat,0,delta_rise=0.25_fall=0.5
-CCH-726,insects,1,delta_rise=0.25_fall=0.5
-CCH-726,fish,0,delta_rise=0.25_fall=0.5
+CCH-726,insect,1,delta_rise=0.25_fall=0.5
+CCH-726,fish,1,delta_rise=0.25_fall=0.5
 CCH-726,american,1,delta_rise=0.25_fall=0.5
 CCH-726,deer,1,delta_rise=0.25_fall=0.5
 CCH-726,frog,0,delta_rise=0.25_fall=0.5
@@ -19661,8 +19661,8 @@ CCH-726,donkey,0,delta_rise=0.25_fall=0.75
 CCH-726,horse,0,delta_rise=0.25_fall=0.75
 CCH-726,dog,1,delta_rise=0.25_fall=0.75
 CCH-726,cat,0,delta_rise=0.25_fall=0.75
-CCH-726,insects,1,delta_rise=0.25_fall=0.75
-CCH-726,fish,0,delta_rise=0.25_fall=0.75
+CCH-726,insect,1,delta_rise=0.25_fall=0.75
+CCH-726,fish,1,delta_rise=0.25_fall=0.75
 CCH-726,american,1,delta_rise=0.25_fall=0.75
 CCH-726,deer,1,delta_rise=0.25_fall=0.75
 CCH-726,frog,0,delta_rise=0.25_fall=0.75
@@ -19684,8 +19684,8 @@ CCH-726,donkey,0,delta_rise=0.25_fall=1.0
 CCH-726,horse,0,delta_rise=0.25_fall=1.0
 CCH-726,dog,0,delta_rise=0.25_fall=1.0
 CCH-726,cat,0,delta_rise=0.25_fall=1.0
-CCH-726,insects,1,delta_rise=0.25_fall=1.0
-CCH-726,fish,0,delta_rise=0.25_fall=1.0
+CCH-726,insect,1,delta_rise=0.25_fall=1.0
+CCH-726,fish,1,delta_rise=0.25_fall=1.0
 CCH-726,american,1,delta_rise=0.25_fall=1.0
 CCH-726,deer,1,delta_rise=0.25_fall=1.0
 CCH-726,frog,0,delta_rise=0.25_fall=1.0
@@ -19707,8 +19707,8 @@ CCH-726,donkey,1,delta_rise=0.5_fall=0.0
 CCH-726,horse,0,delta_rise=0.5_fall=0.0
 CCH-726,dog,1,delta_rise=0.5_fall=0.0
 CCH-726,cat,0,delta_rise=0.5_fall=0.0
-CCH-726,insects,1,delta_rise=0.5_fall=0.0
-CCH-726,fish,0,delta_rise=0.5_fall=0.0
+CCH-726,insect,1,delta_rise=0.5_fall=0.0
+CCH-726,fish,1,delta_rise=0.5_fall=0.0
 CCH-726,american,1,delta_rise=0.5_fall=0.0
 CCH-726,deer,1,delta_rise=0.5_fall=0.0
 CCH-726,frog,0,delta_rise=0.5_fall=0.0
@@ -19730,8 +19730,8 @@ CCH-726,donkey,1,delta_rise=0.5_fall=0.25
 CCH-726,horse,0,delta_rise=0.5_fall=0.25
 CCH-726,dog,1,delta_rise=0.5_fall=0.25
 CCH-726,cat,0,delta_rise=0.5_fall=0.25
-CCH-726,insects,1,delta_rise=0.5_fall=0.25
-CCH-726,fish,0,delta_rise=0.5_fall=0.25
+CCH-726,insect,1,delta_rise=0.5_fall=0.25
+CCH-726,fish,1,delta_rise=0.5_fall=0.25
 CCH-726,american,1,delta_rise=0.5_fall=0.25
 CCH-726,deer,1,delta_rise=0.5_fall=0.25
 CCH-726,frog,0,delta_rise=0.5_fall=0.25
@@ -19753,8 +19753,8 @@ CCH-726,donkey,1,delta_rise=0.5_fall=0.5
 CCH-726,horse,0,delta_rise=0.5_fall=0.5
 CCH-726,dog,1,delta_rise=0.5_fall=0.5
 CCH-726,cat,0,delta_rise=0.5_fall=0.5
-CCH-726,insects,1,delta_rise=0.5_fall=0.5
-CCH-726,fish,0,delta_rise=0.5_fall=0.5
+CCH-726,insect,1,delta_rise=0.5_fall=0.5
+CCH-726,fish,1,delta_rise=0.5_fall=0.5
 CCH-726,american,1,delta_rise=0.5_fall=0.5
 CCH-726,deer,1,delta_rise=0.5_fall=0.5
 CCH-726,frog,0,delta_rise=0.5_fall=0.5
@@ -19776,8 +19776,8 @@ CCH-726,donkey,0,delta_rise=0.5_fall=0.75
 CCH-726,horse,0,delta_rise=0.5_fall=0.75
 CCH-726,dog,1,delta_rise=0.5_fall=0.75
 CCH-726,cat,0,delta_rise=0.5_fall=0.75
-CCH-726,insects,1,delta_rise=0.5_fall=0.75
-CCH-726,fish,0,delta_rise=0.5_fall=0.75
+CCH-726,insect,1,delta_rise=0.5_fall=0.75
+CCH-726,fish,1,delta_rise=0.5_fall=0.75
 CCH-726,american,1,delta_rise=0.5_fall=0.75
 CCH-726,deer,1,delta_rise=0.5_fall=0.75
 CCH-726,frog,0,delta_rise=0.5_fall=0.75
@@ -19799,8 +19799,8 @@ CCH-726,donkey,0,delta_rise=0.5_fall=1.0
 CCH-726,horse,0,delta_rise=0.5_fall=1.0
 CCH-726,dog,0,delta_rise=0.5_fall=1.0
 CCH-726,cat,0,delta_rise=0.5_fall=1.0
-CCH-726,insects,1,delta_rise=0.5_fall=1.0
-CCH-726,fish,0,delta_rise=0.5_fall=1.0
+CCH-726,insect,1,delta_rise=0.5_fall=1.0
+CCH-726,fish,1,delta_rise=0.5_fall=1.0
 CCH-726,american,1,delta_rise=0.5_fall=1.0
 CCH-726,deer,1,delta_rise=0.5_fall=1.0
 CCH-726,frog,0,delta_rise=0.5_fall=1.0
@@ -19822,8 +19822,8 @@ CCH-726,donkey,1,delta_rise=0.75_fall=0.0
 CCH-726,horse,1,delta_rise=0.75_fall=0.0
 CCH-726,dog,1,delta_rise=0.75_fall=0.0
 CCH-726,cat,0,delta_rise=0.75_fall=0.0
-CCH-726,insects,1,delta_rise=0.75_fall=0.0
-CCH-726,fish,0,delta_rise=0.75_fall=0.0
+CCH-726,insect,1,delta_rise=0.75_fall=0.0
+CCH-726,fish,1,delta_rise=0.75_fall=0.0
 CCH-726,american,1,delta_rise=0.75_fall=0.0
 CCH-726,deer,1,delta_rise=0.75_fall=0.0
 CCH-726,frog,0,delta_rise=0.75_fall=0.0
@@ -19833,7 +19833,7 @@ CCH-726,bird,0,delta_rise=0.75_fall=0.0
 CCH-726,zebra,1,delta_rise=0.75_fall=0.0
 CCH-726,bird,1,delta_rise=0.75_fall=0.0
 CCH-726,duck,1,delta_rise=0.75_fall=0.0
-CCH-726,turtle,1,delta_rise=0.75_fall=0.0
+CCH-726,turtle,0,delta_rise=0.75_fall=0.0
 CCH-726,feline,1,delta_rise=0.75_fall=0.0
 CCH-726,jaguar,0,delta_rise=0.75_fall=0.0
 CCH-726,panther,0,delta_rise=0.75_fall=0.0
@@ -19845,8 +19845,8 @@ CCH-726,donkey,1,delta_rise=0.75_fall=0.25
 CCH-726,horse,1,delta_rise=0.75_fall=0.25
 CCH-726,dog,1,delta_rise=0.75_fall=0.25
 CCH-726,cat,0,delta_rise=0.75_fall=0.25
-CCH-726,insects,1,delta_rise=0.75_fall=0.25
-CCH-726,fish,0,delta_rise=0.75_fall=0.25
+CCH-726,insect,1,delta_rise=0.75_fall=0.25
+CCH-726,fish,1,delta_rise=0.75_fall=0.25
 CCH-726,american,1,delta_rise=0.75_fall=0.25
 CCH-726,deer,1,delta_rise=0.75_fall=0.25
 CCH-726,frog,0,delta_rise=0.75_fall=0.25
@@ -19856,7 +19856,7 @@ CCH-726,bird,0,delta_rise=0.75_fall=0.25
 CCH-726,zebra,1,delta_rise=0.75_fall=0.25
 CCH-726,bird,1,delta_rise=0.75_fall=0.25
 CCH-726,duck,1,delta_rise=0.75_fall=0.25
-CCH-726,turtle,1,delta_rise=0.75_fall=0.25
+CCH-726,turtle,0,delta_rise=0.75_fall=0.25
 CCH-726,feline,1,delta_rise=0.75_fall=0.25
 CCH-726,jaguar,0,delta_rise=0.75_fall=0.25
 CCH-726,panther,0,delta_rise=0.75_fall=0.25
@@ -19868,8 +19868,8 @@ CCH-726,donkey,1,delta_rise=0.75_fall=0.5
 CCH-726,horse,1,delta_rise=0.75_fall=0.5
 CCH-726,dog,1,delta_rise=0.75_fall=0.5
 CCH-726,cat,0,delta_rise=0.75_fall=0.5
-CCH-726,insects,1,delta_rise=0.75_fall=0.5
-CCH-726,fish,0,delta_rise=0.75_fall=0.5
+CCH-726,insect,1,delta_rise=0.75_fall=0.5
+CCH-726,fish,1,delta_rise=0.75_fall=0.5
 CCH-726,american,1,delta_rise=0.75_fall=0.5
 CCH-726,deer,1,delta_rise=0.75_fall=0.5
 CCH-726,frog,0,delta_rise=0.75_fall=0.5
@@ -19879,7 +19879,7 @@ CCH-726,bird,0,delta_rise=0.75_fall=0.5
 CCH-726,zebra,1,delta_rise=0.75_fall=0.5
 CCH-726,bird,1,delta_rise=0.75_fall=0.5
 CCH-726,duck,1,delta_rise=0.75_fall=0.5
-CCH-726,turtle,1,delta_rise=0.75_fall=0.5
+CCH-726,turtle,0,delta_rise=0.75_fall=0.5
 CCH-726,feline,1,delta_rise=0.75_fall=0.5
 CCH-726,jaguar,0,delta_rise=0.75_fall=0.5
 CCH-726,panther,0,delta_rise=0.75_fall=0.5
@@ -19891,8 +19891,8 @@ CCH-726,donkey,0,delta_rise=0.75_fall=0.75
 CCH-726,horse,0,delta_rise=0.75_fall=0.75
 CCH-726,dog,1,delta_rise=0.75_fall=0.75
 CCH-726,cat,0,delta_rise=0.75_fall=0.75
-CCH-726,insects,1,delta_rise=0.75_fall=0.75
-CCH-726,fish,0,delta_rise=0.75_fall=0.75
+CCH-726,insect,1,delta_rise=0.75_fall=0.75
+CCH-726,fish,1,delta_rise=0.75_fall=0.75
 CCH-726,american,1,delta_rise=0.75_fall=0.75
 CCH-726,deer,1,delta_rise=0.75_fall=0.75
 CCH-726,frog,0,delta_rise=0.75_fall=0.75
@@ -19902,7 +19902,7 @@ CCH-726,bird,0,delta_rise=0.75_fall=0.75
 CCH-726,zebra,1,delta_rise=0.75_fall=0.75
 CCH-726,bird,1,delta_rise=0.75_fall=0.75
 CCH-726,duck,1,delta_rise=0.75_fall=0.75
-CCH-726,turtle,1,delta_rise=0.75_fall=0.75
+CCH-726,turtle,0,delta_rise=0.75_fall=0.75
 CCH-726,feline,1,delta_rise=0.75_fall=0.75
 CCH-726,jaguar,0,delta_rise=0.75_fall=0.75
 CCH-726,panther,0,delta_rise=0.75_fall=0.75
@@ -19914,8 +19914,8 @@ CCH-726,donkey,0,delta_rise=0.75_fall=1.0
 CCH-726,horse,0,delta_rise=0.75_fall=1.0
 CCH-726,dog,0,delta_rise=0.75_fall=1.0
 CCH-726,cat,0,delta_rise=0.75_fall=1.0
-CCH-726,insects,1,delta_rise=0.75_fall=1.0
-CCH-726,fish,0,delta_rise=0.75_fall=1.0
+CCH-726,insect,1,delta_rise=0.75_fall=1.0
+CCH-726,fish,1,delta_rise=0.75_fall=1.0
 CCH-726,american,1,delta_rise=0.75_fall=1.0
 CCH-726,deer,1,delta_rise=0.75_fall=1.0
 CCH-726,frog,0,delta_rise=0.75_fall=1.0
@@ -19925,7 +19925,7 @@ CCH-726,bird,0,delta_rise=0.75_fall=1.0
 CCH-726,zebra,1,delta_rise=0.75_fall=1.0
 CCH-726,bird,1,delta_rise=0.75_fall=1.0
 CCH-726,duck,1,delta_rise=0.75_fall=1.0
-CCH-726,turtle,1,delta_rise=0.75_fall=1.0
+CCH-726,turtle,0,delta_rise=0.75_fall=1.0
 CCH-726,feline,1,delta_rise=0.75_fall=1.0
 CCH-726,jaguar,0,delta_rise=0.75_fall=1.0
 CCH-726,panther,0,delta_rise=0.75_fall=1.0
@@ -19937,8 +19937,8 @@ CCH-726,donkey,1,delta_rise=1.0_fall=0.0
 CCH-726,horse,1,delta_rise=1.0_fall=0.0
 CCH-726,dog,1,delta_rise=1.0_fall=0.0
 CCH-726,cat,0,delta_rise=1.0_fall=0.0
-CCH-726,insects,1,delta_rise=1.0_fall=0.0
-CCH-726,fish,0,delta_rise=1.0_fall=0.0
+CCH-726,insect,1,delta_rise=1.0_fall=0.0
+CCH-726,fish,1,delta_rise=1.0_fall=0.0
 CCH-726,american,1,delta_rise=1.0_fall=0.0
 CCH-726,deer,1,delta_rise=1.0_fall=0.0
 CCH-726,frog,0,delta_rise=1.0_fall=0.0
@@ -19960,8 +19960,8 @@ CCH-726,donkey,1,delta_rise=1.0_fall=0.25
 CCH-726,horse,1,delta_rise=1.0_fall=0.25
 CCH-726,dog,1,delta_rise=1.0_fall=0.25
 CCH-726,cat,0,delta_rise=1.0_fall=0.25
-CCH-726,insects,1,delta_rise=1.0_fall=0.25
-CCH-726,fish,0,delta_rise=1.0_fall=0.25
+CCH-726,insect,1,delta_rise=1.0_fall=0.25
+CCH-726,fish,1,delta_rise=1.0_fall=0.25
 CCH-726,american,1,delta_rise=1.0_fall=0.25
 CCH-726,deer,1,delta_rise=1.0_fall=0.25
 CCH-726,frog,0,delta_rise=1.0_fall=0.25
@@ -19983,8 +19983,8 @@ CCH-726,donkey,1,delta_rise=1.0_fall=0.5
 CCH-726,horse,1,delta_rise=1.0_fall=0.5
 CCH-726,dog,1,delta_rise=1.0_fall=0.5
 CCH-726,cat,0,delta_rise=1.0_fall=0.5
-CCH-726,insects,1,delta_rise=1.0_fall=0.5
-CCH-726,fish,0,delta_rise=1.0_fall=0.5
+CCH-726,insect,1,delta_rise=1.0_fall=0.5
+CCH-726,fish,1,delta_rise=1.0_fall=0.5
 CCH-726,american,1,delta_rise=1.0_fall=0.5
 CCH-726,deer,1,delta_rise=1.0_fall=0.5
 CCH-726,frog,0,delta_rise=1.0_fall=0.5
@@ -20006,8 +20006,8 @@ CCH-726,donkey,0,delta_rise=1.0_fall=0.75
 CCH-726,horse,0,delta_rise=1.0_fall=0.75
 CCH-726,dog,1,delta_rise=1.0_fall=0.75
 CCH-726,cat,0,delta_rise=1.0_fall=0.75
-CCH-726,insects,1,delta_rise=1.0_fall=0.75
-CCH-726,fish,0,delta_rise=1.0_fall=0.75
+CCH-726,insect,1,delta_rise=1.0_fall=0.75
+CCH-726,fish,1,delta_rise=1.0_fall=0.75
 CCH-726,american,1,delta_rise=1.0_fall=0.75
 CCH-726,deer,1,delta_rise=1.0_fall=0.75
 CCH-726,frog,0,delta_rise=1.0_fall=0.75
@@ -20029,8 +20029,8 @@ CCH-726,donkey,0,delta_rise=1.0_fall=1.0
 CCH-726,horse,0,delta_rise=1.0_fall=1.0
 CCH-726,dog,0,delta_rise=1.0_fall=1.0
 CCH-726,cat,0,delta_rise=1.0_fall=1.0
-CCH-726,insects,1,delta_rise=1.0_fall=1.0
-CCH-726,fish,0,delta_rise=1.0_fall=1.0
+CCH-726,insect,1,delta_rise=1.0_fall=1.0
+CCH-726,fish,1,delta_rise=1.0_fall=1.0
 CCH-726,american,1,delta_rise=1.0_fall=1.0
 CCH-726,deer,1,delta_rise=1.0_fall=1.0
 CCH-726,frog,0,delta_rise=1.0_fall=1.0
@@ -26769,7 +26769,7 @@ SIU-211,chipmunk,0,simdrop
 SIU-211,skunk,0,simdrop
 SIU-211,fish,0,simdrop
 SIU-211,dog,0,simdrop
-SIU-211,insect,1,simdrop
+SIU-211,insects,1,simdrop
 SIU-211,spider,0,simdrop
 SIU-211,fly,1,simdrop
 SIU-211,ant,0,simdrop
@@ -26793,7 +26793,7 @@ SIU-211,chipmunk,0,multimodal_alpha=0.0
 SIU-211,skunk,0,multimodal_alpha=0.0
 SIU-211,fish,0,multimodal_alpha=0.0
 SIU-211,dog,0,multimodal_alpha=0.0
-SIU-211,insect,0,multimodal_alpha=0.0
+SIU-211,insects,0,multimodal_alpha=0.0
 SIU-211,spider,0,multimodal_alpha=0.0
 SIU-211,fly,0,multimodal_alpha=0.0
 SIU-211,ant,1,multimodal_alpha=0.0
@@ -26817,7 +26817,7 @@ SIU-211,chipmunk,0,multimodal_alpha=0.1
 SIU-211,skunk,0,multimodal_alpha=0.1
 SIU-211,fish,0,multimodal_alpha=0.1
 SIU-211,dog,0,multimodal_alpha=0.1
-SIU-211,insect,1,multimodal_alpha=0.1
+SIU-211,insects,1,multimodal_alpha=0.1
 SIU-211,spider,0,multimodal_alpha=0.1
 SIU-211,fly,0,multimodal_alpha=0.1
 SIU-211,ant,1,multimodal_alpha=0.1
@@ -26841,7 +26841,7 @@ SIU-211,chipmunk,0,multimodal_alpha=0.2
 SIU-211,skunk,0,multimodal_alpha=0.2
 SIU-211,fish,0,multimodal_alpha=0.2
 SIU-211,dog,0,multimodal_alpha=0.2
-SIU-211,insect,1,multimodal_alpha=0.2
+SIU-211,insects,1,multimodal_alpha=0.2
 SIU-211,spider,0,multimodal_alpha=0.2
 SIU-211,fly,0,multimodal_alpha=0.2
 SIU-211,ant,1,multimodal_alpha=0.2
@@ -26865,7 +26865,7 @@ SIU-211,chipmunk,0,multimodal_alpha=0.30000000000000004
 SIU-211,skunk,0,multimodal_alpha=0.30000000000000004
 SIU-211,fish,0,multimodal_alpha=0.30000000000000004
 SIU-211,dog,0,multimodal_alpha=0.30000000000000004
-SIU-211,insect,1,multimodal_alpha=0.30000000000000004
+SIU-211,insects,1,multimodal_alpha=0.30000000000000004
 SIU-211,spider,0,multimodal_alpha=0.30000000000000004
 SIU-211,fly,0,multimodal_alpha=0.30000000000000004
 SIU-211,ant,1,multimodal_alpha=0.30000000000000004
@@ -26889,7 +26889,7 @@ SIU-211,chipmunk,0,multimodal_alpha=0.4
 SIU-211,skunk,0,multimodal_alpha=0.4
 SIU-211,fish,0,multimodal_alpha=0.4
 SIU-211,dog,0,multimodal_alpha=0.4
-SIU-211,insect,1,multimodal_alpha=0.4
+SIU-211,insects,1,multimodal_alpha=0.4
 SIU-211,spider,0,multimodal_alpha=0.4
 SIU-211,fly,0,multimodal_alpha=0.4
 SIU-211,ant,1,multimodal_alpha=0.4
@@ -26913,7 +26913,7 @@ SIU-211,chipmunk,0,multimodal_alpha=0.5
 SIU-211,skunk,0,multimodal_alpha=0.5
 SIU-211,fish,0,multimodal_alpha=0.5
 SIU-211,dog,0,multimodal_alpha=0.5
-SIU-211,insect,1,multimodal_alpha=0.5
+SIU-211,insects,1,multimodal_alpha=0.5
 SIU-211,spider,0,multimodal_alpha=0.5
 SIU-211,fly,0,multimodal_alpha=0.5
 SIU-211,ant,1,multimodal_alpha=0.5
@@ -26937,7 +26937,7 @@ SIU-211,chipmunk,0,multimodal_alpha=0.6000000000000001
 SIU-211,skunk,0,multimodal_alpha=0.6000000000000001
 SIU-211,fish,0,multimodal_alpha=0.6000000000000001
 SIU-211,dog,0,multimodal_alpha=0.6000000000000001
-SIU-211,insect,1,multimodal_alpha=0.6000000000000001
+SIU-211,insects,1,multimodal_alpha=0.6000000000000001
 SIU-211,spider,0,multimodal_alpha=0.6000000000000001
 SIU-211,fly,0,multimodal_alpha=0.6000000000000001
 SIU-211,ant,0,multimodal_alpha=0.6000000000000001
@@ -26961,7 +26961,7 @@ SIU-211,chipmunk,0,multimodal_alpha=0.7000000000000001
 SIU-211,skunk,0,multimodal_alpha=0.7000000000000001
 SIU-211,fish,0,multimodal_alpha=0.7000000000000001
 SIU-211,dog,0,multimodal_alpha=0.7000000000000001
-SIU-211,insect,1,multimodal_alpha=0.7000000000000001
+SIU-211,insects,1,multimodal_alpha=0.7000000000000001
 SIU-211,spider,0,multimodal_alpha=0.7000000000000001
 SIU-211,fly,0,multimodal_alpha=0.7000000000000001
 SIU-211,ant,0,multimodal_alpha=0.7000000000000001
@@ -26985,7 +26985,7 @@ SIU-211,chipmunk,0,multimodal_alpha=0.8
 SIU-211,skunk,0,multimodal_alpha=0.8
 SIU-211,fish,0,multimodal_alpha=0.8
 SIU-211,dog,0,multimodal_alpha=0.8
-SIU-211,insect,1,multimodal_alpha=0.8
+SIU-211,insects,1,multimodal_alpha=0.8
 SIU-211,spider,0,multimodal_alpha=0.8
 SIU-211,fly,0,multimodal_alpha=0.8
 SIU-211,ant,0,multimodal_alpha=0.8
@@ -27009,7 +27009,7 @@ SIU-211,chipmunk,0,multimodal_alpha=0.9
 SIU-211,skunk,0,multimodal_alpha=0.9
 SIU-211,fish,0,multimodal_alpha=0.9
 SIU-211,dog,0,multimodal_alpha=0.9
-SIU-211,insect,1,multimodal_alpha=0.9
+SIU-211,insects,1,multimodal_alpha=0.9
 SIU-211,spider,0,multimodal_alpha=0.9
 SIU-211,fly,1,multimodal_alpha=0.9
 SIU-211,ant,0,multimodal_alpha=0.9
@@ -27033,7 +27033,7 @@ SIU-211,chipmunk,0,multimodal_alpha=1.0
 SIU-211,skunk,0,multimodal_alpha=1.0
 SIU-211,fish,0,multimodal_alpha=1.0
 SIU-211,dog,0,multimodal_alpha=1.0
-SIU-211,insect,1,multimodal_alpha=1.0
+SIU-211,insects,1,multimodal_alpha=1.0
 SIU-211,spider,0,multimodal_alpha=1.0
 SIU-211,fly,1,multimodal_alpha=1.0
 SIU-211,ant,0,multimodal_alpha=1.0
@@ -27057,7 +27057,7 @@ SIU-211,chipmunk,0,norms_associative
 SIU-211,skunk,0,norms_associative
 SIU-211,fish,1,norms_associative
 SIU-211,dog,1,norms_associative
-SIU-211,insect,1,norms_associative
+SIU-211,insects,1,norms_associative
 SIU-211,spider,1,norms_associative
 SIU-211,fly,1,norms_associative
 SIU-211,ant,0,norms_associative
@@ -27081,8 +27081,8 @@ SIU-211,chipmunk,0,norms_categorical
 SIU-211,skunk,0,norms_categorical
 SIU-211,fish,1,norms_categorical
 SIU-211,dog,1,norms_categorical
-SIU-211,insect,1,norms_categorical
-SIU-211,spider,1,norms_categorical
+SIU-211,insects,1,norms_categorical
+SIU-211,spider,0,norms_categorical
 SIU-211,fly,1,norms_categorical
 SIU-211,ant,0,norms_categorical
 SIU-211,african,1,norms_categorical
@@ -27105,7 +27105,7 @@ SIU-211,chipmunk,0,delta_rise=0.0_fall=0.0
 SIU-211,skunk,0,delta_rise=0.0_fall=0.0
 SIU-211,fish,1,delta_rise=0.0_fall=0.0
 SIU-211,dog,1,delta_rise=0.0_fall=0.0
-SIU-211,insect,1,delta_rise=0.0_fall=0.0
+SIU-211,insects,1,delta_rise=0.0_fall=0.0
 SIU-211,spider,0,delta_rise=0.0_fall=0.0
 SIU-211,fly,1,delta_rise=0.0_fall=0.0
 SIU-211,ant,0,delta_rise=0.0_fall=0.0
@@ -27129,7 +27129,7 @@ SIU-211,chipmunk,0,delta_rise=0.0_fall=0.25
 SIU-211,skunk,0,delta_rise=0.0_fall=0.25
 SIU-211,fish,1,delta_rise=0.0_fall=0.25
 SIU-211,dog,1,delta_rise=0.0_fall=0.25
-SIU-211,insect,1,delta_rise=0.0_fall=0.25
+SIU-211,insects,1,delta_rise=0.0_fall=0.25
 SIU-211,spider,0,delta_rise=0.0_fall=0.25
 SIU-211,fly,1,delta_rise=0.0_fall=0.25
 SIU-211,ant,0,delta_rise=0.0_fall=0.25
@@ -27153,9 +27153,9 @@ SIU-211,chipmunk,0,delta_rise=0.0_fall=0.5
 SIU-211,skunk,0,delta_rise=0.0_fall=0.5
 SIU-211,fish,1,delta_rise=0.0_fall=0.5
 SIU-211,dog,1,delta_rise=0.0_fall=0.5
-SIU-211,insect,1,delta_rise=0.0_fall=0.5
+SIU-211,insects,1,delta_rise=0.0_fall=0.5
 SIU-211,spider,0,delta_rise=0.0_fall=0.5
-SIU-211,fly,1,delta_rise=0.0_fall=0.5
+SIU-211,fly,0,delta_rise=0.0_fall=0.5
 SIU-211,ant,0,delta_rise=0.0_fall=0.5
 SIU-211,african,1,delta_rise=0.0_fall=0.5
 SIU-211,elephant,0,delta_rise=0.0_fall=0.5
@@ -27177,9 +27177,9 @@ SIU-211,chipmunk,0,delta_rise=0.0_fall=0.75
 SIU-211,skunk,0,delta_rise=0.0_fall=0.75
 SIU-211,fish,1,delta_rise=0.0_fall=0.75
 SIU-211,dog,1,delta_rise=0.0_fall=0.75
-SIU-211,insect,1,delta_rise=0.0_fall=0.75
+SIU-211,insects,1,delta_rise=0.0_fall=0.75
 SIU-211,spider,0,delta_rise=0.0_fall=0.75
-SIU-211,fly,1,delta_rise=0.0_fall=0.75
+SIU-211,fly,0,delta_rise=0.0_fall=0.75
 SIU-211,ant,0,delta_rise=0.0_fall=0.75
 SIU-211,african,0,delta_rise=0.0_fall=0.75
 SIU-211,elephant,0,delta_rise=0.0_fall=0.75
@@ -27191,7 +27191,7 @@ SIU-211,snake,0,delta_rise=0.0_fall=1.0
 SIU-211,lion,0,delta_rise=0.0_fall=1.0
 SIU-211,tiger,0,delta_rise=0.0_fall=1.0
 SIU-211,monkey,0,delta_rise=0.0_fall=1.0
-SIU-211,bird,1,delta_rise=0.0_fall=1.0
+SIU-211,bird,0,delta_rise=0.0_fall=1.0
 SIU-211,lizard,0,delta_rise=0.0_fall=1.0
 SIU-211,lizard,0,delta_rise=0.0_fall=1.0
 SIU-211,deer,1,delta_rise=0.0_fall=1.0
@@ -27201,7 +27201,7 @@ SIU-211,chipmunk,0,delta_rise=0.0_fall=1.0
 SIU-211,skunk,0,delta_rise=0.0_fall=1.0
 SIU-211,fish,1,delta_rise=0.0_fall=1.0
 SIU-211,dog,1,delta_rise=0.0_fall=1.0
-SIU-211,insect,1,delta_rise=0.0_fall=1.0
+SIU-211,insects,1,delta_rise=0.0_fall=1.0
 SIU-211,spider,0,delta_rise=0.0_fall=1.0
 SIU-211,fly,0,delta_rise=0.0_fall=1.0
 SIU-211,ant,0,delta_rise=0.0_fall=1.0
@@ -27225,7 +27225,7 @@ SIU-211,chipmunk,0,delta_rise=0.25_fall=0.0
 SIU-211,skunk,0,delta_rise=0.25_fall=0.0
 SIU-211,fish,1,delta_rise=0.25_fall=0.0
 SIU-211,dog,1,delta_rise=0.25_fall=0.0
-SIU-211,insect,1,delta_rise=0.25_fall=0.0
+SIU-211,insects,1,delta_rise=0.25_fall=0.0
 SIU-211,spider,0,delta_rise=0.25_fall=0.0
 SIU-211,fly,1,delta_rise=0.25_fall=0.0
 SIU-211,ant,0,delta_rise=0.25_fall=0.0
@@ -27249,7 +27249,7 @@ SIU-211,chipmunk,0,delta_rise=0.25_fall=0.25
 SIU-211,skunk,0,delta_rise=0.25_fall=0.25
 SIU-211,fish,1,delta_rise=0.25_fall=0.25
 SIU-211,dog,1,delta_rise=0.25_fall=0.25
-SIU-211,insect,1,delta_rise=0.25_fall=0.25
+SIU-211,insects,1,delta_rise=0.25_fall=0.25
 SIU-211,spider,0,delta_rise=0.25_fall=0.25
 SIU-211,fly,1,delta_rise=0.25_fall=0.25
 SIU-211,ant,0,delta_rise=0.25_fall=0.25
@@ -27273,9 +27273,9 @@ SIU-211,chipmunk,0,delta_rise=0.25_fall=0.5
 SIU-211,skunk,0,delta_rise=0.25_fall=0.5
 SIU-211,fish,1,delta_rise=0.25_fall=0.5
 SIU-211,dog,1,delta_rise=0.25_fall=0.5
-SIU-211,insect,1,delta_rise=0.25_fall=0.5
+SIU-211,insects,1,delta_rise=0.25_fall=0.5
 SIU-211,spider,0,delta_rise=0.25_fall=0.5
-SIU-211,fly,1,delta_rise=0.25_fall=0.5
+SIU-211,fly,0,delta_rise=0.25_fall=0.5
 SIU-211,ant,0,delta_rise=0.25_fall=0.5
 SIU-211,african,1,delta_rise=0.25_fall=0.5
 SIU-211,elephant,0,delta_rise=0.25_fall=0.5
@@ -27297,9 +27297,9 @@ SIU-211,chipmunk,0,delta_rise=0.25_fall=0.75
 SIU-211,skunk,0,delta_rise=0.25_fall=0.75
 SIU-211,fish,1,delta_rise=0.25_fall=0.75
 SIU-211,dog,1,delta_rise=0.25_fall=0.75
-SIU-211,insect,1,delta_rise=0.25_fall=0.75
+SIU-211,insects,1,delta_rise=0.25_fall=0.75
 SIU-211,spider,0,delta_rise=0.25_fall=0.75
-SIU-211,fly,1,delta_rise=0.25_fall=0.75
+SIU-211,fly,0,delta_rise=0.25_fall=0.75
 SIU-211,ant,0,delta_rise=0.25_fall=0.75
 SIU-211,african,0,delta_rise=0.25_fall=0.75
 SIU-211,elephant,0,delta_rise=0.25_fall=0.75
@@ -27311,7 +27311,7 @@ SIU-211,snake,0,delta_rise=0.25_fall=1.0
 SIU-211,lion,0,delta_rise=0.25_fall=1.0
 SIU-211,tiger,0,delta_rise=0.25_fall=1.0
 SIU-211,monkey,0,delta_rise=0.25_fall=1.0
-SIU-211,bird,1,delta_rise=0.25_fall=1.0
+SIU-211,bird,0,delta_rise=0.25_fall=1.0
 SIU-211,lizard,0,delta_rise=0.25_fall=1.0
 SIU-211,lizard,0,delta_rise=0.25_fall=1.0
 SIU-211,deer,1,delta_rise=0.25_fall=1.0
@@ -27321,7 +27321,7 @@ SIU-211,chipmunk,0,delta_rise=0.25_fall=1.0
 SIU-211,skunk,0,delta_rise=0.25_fall=1.0
 SIU-211,fish,1,delta_rise=0.25_fall=1.0
 SIU-211,dog,1,delta_rise=0.25_fall=1.0
-SIU-211,insect,1,delta_rise=0.25_fall=1.0
+SIU-211,insects,1,delta_rise=0.25_fall=1.0
 SIU-211,spider,0,delta_rise=0.25_fall=1.0
 SIU-211,fly,0,delta_rise=0.25_fall=1.0
 SIU-211,ant,0,delta_rise=0.25_fall=1.0
@@ -27345,7 +27345,7 @@ SIU-211,chipmunk,0,delta_rise=0.5_fall=0.0
 SIU-211,skunk,0,delta_rise=0.5_fall=0.0
 SIU-211,fish,1,delta_rise=0.5_fall=0.0
 SIU-211,dog,1,delta_rise=0.5_fall=0.0
-SIU-211,insect,1,delta_rise=0.5_fall=0.0
+SIU-211,insects,1,delta_rise=0.5_fall=0.0
 SIU-211,spider,0,delta_rise=0.5_fall=0.0
 SIU-211,fly,1,delta_rise=0.5_fall=0.0
 SIU-211,ant,1,delta_rise=0.5_fall=0.0
@@ -27369,7 +27369,7 @@ SIU-211,chipmunk,0,delta_rise=0.5_fall=0.25
 SIU-211,skunk,0,delta_rise=0.5_fall=0.25
 SIU-211,fish,1,delta_rise=0.5_fall=0.25
 SIU-211,dog,1,delta_rise=0.5_fall=0.25
-SIU-211,insect,1,delta_rise=0.5_fall=0.25
+SIU-211,insects,1,delta_rise=0.5_fall=0.25
 SIU-211,spider,0,delta_rise=0.5_fall=0.25
 SIU-211,fly,1,delta_rise=0.5_fall=0.25
 SIU-211,ant,1,delta_rise=0.5_fall=0.25
@@ -27393,10 +27393,10 @@ SIU-211,chipmunk,0,delta_rise=0.5_fall=0.5
 SIU-211,skunk,0,delta_rise=0.5_fall=0.5
 SIU-211,fish,1,delta_rise=0.5_fall=0.5
 SIU-211,dog,1,delta_rise=0.5_fall=0.5
-SIU-211,insect,1,delta_rise=0.5_fall=0.5
+SIU-211,insects,1,delta_rise=0.5_fall=0.5
 SIU-211,spider,0,delta_rise=0.5_fall=0.5
-SIU-211,fly,1,delta_rise=0.5_fall=0.5
-SIU-211,ant,1,delta_rise=0.5_fall=0.5
+SIU-211,fly,0,delta_rise=0.5_fall=0.5
+SIU-211,ant,0,delta_rise=0.5_fall=0.5
 SIU-211,african,1,delta_rise=0.5_fall=0.5
 SIU-211,elephant,0,delta_rise=0.5_fall=0.5
 SIU-211,penguin,0,delta_rise=0.5_fall=0.5
@@ -27417,11 +27417,11 @@ SIU-211,chipmunk,0,delta_rise=0.5_fall=0.75
 SIU-211,skunk,0,delta_rise=0.5_fall=0.75
 SIU-211,fish,1,delta_rise=0.5_fall=0.75
 SIU-211,dog,1,delta_rise=0.5_fall=0.75
-SIU-211,insect,1,delta_rise=0.5_fall=0.75
+SIU-211,insects,1,delta_rise=0.5_fall=0.75
 SIU-211,spider,0,delta_rise=0.5_fall=0.75
-SIU-211,fly,1,delta_rise=0.5_fall=0.75
-SIU-211,ant,1,delta_rise=0.5_fall=0.75
-SIU-211,african,1,delta_rise=0.5_fall=0.75
+SIU-211,fly,0,delta_rise=0.5_fall=0.75
+SIU-211,ant,0,delta_rise=0.5_fall=0.75
+SIU-211,african,0,delta_rise=0.5_fall=0.75
 SIU-211,elephant,0,delta_rise=0.5_fall=0.75
 SIU-211,penguin,0,delta_rise=0.5_fall=0.75
 SIU-211,hippopotamus,0,delta_rise=0.5_fall=0.75
@@ -27431,7 +27431,7 @@ SIU-211,snake,0,delta_rise=0.5_fall=1.0
 SIU-211,lion,0,delta_rise=0.5_fall=1.0
 SIU-211,tiger,0,delta_rise=0.5_fall=1.0
 SIU-211,monkey,0,delta_rise=0.5_fall=1.0
-SIU-211,bird,1,delta_rise=0.5_fall=1.0
+SIU-211,bird,0,delta_rise=0.5_fall=1.0
 SIU-211,lizard,0,delta_rise=0.5_fall=1.0
 SIU-211,lizard,0,delta_rise=0.5_fall=1.0
 SIU-211,deer,1,delta_rise=0.5_fall=1.0
@@ -27441,7 +27441,7 @@ SIU-211,chipmunk,0,delta_rise=0.5_fall=1.0
 SIU-211,skunk,0,delta_rise=0.5_fall=1.0
 SIU-211,fish,1,delta_rise=0.5_fall=1.0
 SIU-211,dog,1,delta_rise=0.5_fall=1.0
-SIU-211,insect,1,delta_rise=0.5_fall=1.0
+SIU-211,insects,1,delta_rise=0.5_fall=1.0
 SIU-211,spider,0,delta_rise=0.5_fall=1.0
 SIU-211,fly,0,delta_rise=0.5_fall=1.0
 SIU-211,ant,0,delta_rise=0.5_fall=1.0
@@ -27465,7 +27465,7 @@ SIU-211,chipmunk,0,delta_rise=0.75_fall=0.0
 SIU-211,skunk,0,delta_rise=0.75_fall=0.0
 SIU-211,fish,1,delta_rise=0.75_fall=0.0
 SIU-211,dog,1,delta_rise=0.75_fall=0.0
-SIU-211,insect,1,delta_rise=0.75_fall=0.0
+SIU-211,insects,1,delta_rise=0.75_fall=0.0
 SIU-211,spider,0,delta_rise=0.75_fall=0.0
 SIU-211,fly,1,delta_rise=0.75_fall=0.0
 SIU-211,ant,1,delta_rise=0.75_fall=0.0
@@ -27489,7 +27489,7 @@ SIU-211,chipmunk,0,delta_rise=0.75_fall=0.25
 SIU-211,skunk,0,delta_rise=0.75_fall=0.25
 SIU-211,fish,1,delta_rise=0.75_fall=0.25
 SIU-211,dog,1,delta_rise=0.75_fall=0.25
-SIU-211,insect,1,delta_rise=0.75_fall=0.25
+SIU-211,insects,1,delta_rise=0.75_fall=0.25
 SIU-211,spider,0,delta_rise=0.75_fall=0.25
 SIU-211,fly,1,delta_rise=0.75_fall=0.25
 SIU-211,ant,1,delta_rise=0.75_fall=0.25
@@ -27513,10 +27513,10 @@ SIU-211,chipmunk,0,delta_rise=0.75_fall=0.5
 SIU-211,skunk,0,delta_rise=0.75_fall=0.5
 SIU-211,fish,1,delta_rise=0.75_fall=0.5
 SIU-211,dog,1,delta_rise=0.75_fall=0.5
-SIU-211,insect,1,delta_rise=0.75_fall=0.5
+SIU-211,insects,1,delta_rise=0.75_fall=0.5
 SIU-211,spider,0,delta_rise=0.75_fall=0.5
-SIU-211,fly,1,delta_rise=0.75_fall=0.5
-SIU-211,ant,1,delta_rise=0.75_fall=0.5
+SIU-211,fly,0,delta_rise=0.75_fall=0.5
+SIU-211,ant,0,delta_rise=0.75_fall=0.5
 SIU-211,african,1,delta_rise=0.75_fall=0.5
 SIU-211,elephant,0,delta_rise=0.75_fall=0.5
 SIU-211,penguin,0,delta_rise=0.75_fall=0.5
@@ -27537,11 +27537,11 @@ SIU-211,chipmunk,0,delta_rise=0.75_fall=0.75
 SIU-211,skunk,0,delta_rise=0.75_fall=0.75
 SIU-211,fish,1,delta_rise=0.75_fall=0.75
 SIU-211,dog,1,delta_rise=0.75_fall=0.75
-SIU-211,insect,1,delta_rise=0.75_fall=0.75
+SIU-211,insects,1,delta_rise=0.75_fall=0.75
 SIU-211,spider,0,delta_rise=0.75_fall=0.75
-SIU-211,fly,1,delta_rise=0.75_fall=0.75
-SIU-211,ant,1,delta_rise=0.75_fall=0.75
-SIU-211,african,1,delta_rise=0.75_fall=0.75
+SIU-211,fly,0,delta_rise=0.75_fall=0.75
+SIU-211,ant,0,delta_rise=0.75_fall=0.75
+SIU-211,african,0,delta_rise=0.75_fall=0.75
 SIU-211,elephant,0,delta_rise=0.75_fall=0.75
 SIU-211,penguin,0,delta_rise=0.75_fall=0.75
 SIU-211,hippopotamus,0,delta_rise=0.75_fall=0.75
@@ -27551,8 +27551,8 @@ SIU-211,snake,0,delta_rise=0.75_fall=1.0
 SIU-211,lion,0,delta_rise=0.75_fall=1.0
 SIU-211,tiger,0,delta_rise=0.75_fall=1.0
 SIU-211,monkey,0,delta_rise=0.75_fall=1.0
-SIU-211,bird,1,delta_rise=0.75_fall=1.0
-SIU-211,lizard,1,delta_rise=0.75_fall=1.0
+SIU-211,bird,0,delta_rise=0.75_fall=1.0
+SIU-211,lizard,0,delta_rise=0.75_fall=1.0
 SIU-211,lizard,0,delta_rise=0.75_fall=1.0
 SIU-211,deer,1,delta_rise=0.75_fall=1.0
 SIU-211,bear,1,delta_rise=0.75_fall=1.0
@@ -27561,7 +27561,7 @@ SIU-211,chipmunk,0,delta_rise=0.75_fall=1.0
 SIU-211,skunk,0,delta_rise=0.75_fall=1.0
 SIU-211,fish,1,delta_rise=0.75_fall=1.0
 SIU-211,dog,1,delta_rise=0.75_fall=1.0
-SIU-211,insect,1,delta_rise=0.75_fall=1.0
+SIU-211,insects,1,delta_rise=0.75_fall=1.0
 SIU-211,spider,0,delta_rise=0.75_fall=1.0
 SIU-211,fly,0,delta_rise=0.75_fall=1.0
 SIU-211,ant,0,delta_rise=0.75_fall=1.0
@@ -27585,7 +27585,7 @@ SIU-211,chipmunk,0,delta_rise=1.0_fall=0.0
 SIU-211,skunk,0,delta_rise=1.0_fall=0.0
 SIU-211,fish,1,delta_rise=1.0_fall=0.0
 SIU-211,dog,1,delta_rise=1.0_fall=0.0
-SIU-211,insect,1,delta_rise=1.0_fall=0.0
+SIU-211,insects,1,delta_rise=1.0_fall=0.0
 SIU-211,spider,1,delta_rise=1.0_fall=0.0
 SIU-211,fly,1,delta_rise=1.0_fall=0.0
 SIU-211,ant,1,delta_rise=1.0_fall=0.0
@@ -27609,7 +27609,7 @@ SIU-211,chipmunk,0,delta_rise=1.0_fall=0.25
 SIU-211,skunk,0,delta_rise=1.0_fall=0.25
 SIU-211,fish,1,delta_rise=1.0_fall=0.25
 SIU-211,dog,1,delta_rise=1.0_fall=0.25
-SIU-211,insect,1,delta_rise=1.0_fall=0.25
+SIU-211,insects,1,delta_rise=1.0_fall=0.25
 SIU-211,spider,1,delta_rise=1.0_fall=0.25
 SIU-211,fly,1,delta_rise=1.0_fall=0.25
 SIU-211,ant,1,delta_rise=1.0_fall=0.25
@@ -27633,7 +27633,7 @@ SIU-211,chipmunk,0,delta_rise=1.0_fall=0.5
 SIU-211,skunk,0,delta_rise=1.0_fall=0.5
 SIU-211,fish,1,delta_rise=1.0_fall=0.5
 SIU-211,dog,1,delta_rise=1.0_fall=0.5
-SIU-211,insect,1,delta_rise=1.0_fall=0.5
+SIU-211,insects,1,delta_rise=1.0_fall=0.5
 SIU-211,spider,1,delta_rise=1.0_fall=0.5
 SIU-211,fly,1,delta_rise=1.0_fall=0.5
 SIU-211,ant,1,delta_rise=1.0_fall=0.5
@@ -27657,7 +27657,7 @@ SIU-211,chipmunk,0,delta_rise=1.0_fall=0.75
 SIU-211,skunk,0,delta_rise=1.0_fall=0.75
 SIU-211,fish,1,delta_rise=1.0_fall=0.75
 SIU-211,dog,1,delta_rise=1.0_fall=0.75
-SIU-211,insect,1,delta_rise=1.0_fall=0.75
+SIU-211,insects,1,delta_rise=1.0_fall=0.75
 SIU-211,spider,1,delta_rise=1.0_fall=0.75
 SIU-211,fly,1,delta_rise=1.0_fall=0.75
 SIU-211,ant,1,delta_rise=1.0_fall=0.75
@@ -27671,8 +27671,8 @@ SIU-211,snake,0,delta_rise=1.0_fall=1.0
 SIU-211,lion,0,delta_rise=1.0_fall=1.0
 SIU-211,tiger,0,delta_rise=1.0_fall=1.0
 SIU-211,monkey,0,delta_rise=1.0_fall=1.0
-SIU-211,bird,1,delta_rise=1.0_fall=1.0
-SIU-211,lizard,1,delta_rise=1.0_fall=1.0
+SIU-211,bird,0,delta_rise=1.0_fall=1.0
+SIU-211,lizard,0,delta_rise=1.0_fall=1.0
 SIU-211,lizard,0,delta_rise=1.0_fall=1.0
 SIU-211,deer,1,delta_rise=1.0_fall=1.0
 SIU-211,bear,1,delta_rise=1.0_fall=1.0
@@ -27681,7 +27681,7 @@ SIU-211,chipmunk,0,delta_rise=1.0_fall=1.0
 SIU-211,skunk,0,delta_rise=1.0_fall=1.0
 SIU-211,fish,1,delta_rise=1.0_fall=1.0
 SIU-211,dog,1,delta_rise=1.0_fall=1.0
-SIU-211,insect,1,delta_rise=1.0_fall=1.0
+SIU-211,insects,1,delta_rise=1.0_fall=1.0
 SIU-211,spider,1,delta_rise=1.0_fall=1.0
 SIU-211,fly,1,delta_rise=1.0_fall=1.0
 SIU-211,ant,1,delta_rise=1.0_fall=1.0
@@ -34770,7 +34770,7 @@ SOQ-329,bird,1,simdrop
 SOQ-329,crane,0,simdrop
 SOQ-329,swan,1,simdrop
 SOQ-329,pigeon,0,simdrop
-SOQ-329,insects,2,simdrop
+SOQ-329,insect,2,simdrop
 SOQ-329,ant,2,multimodal_alpha=0.0
 SOQ-329,insect,0,multimodal_alpha=0.0
 SOQ-329,african,1,multimodal_alpha=0.0
@@ -34793,7 +34793,7 @@ SOQ-329,bird,0,multimodal_alpha=0.0
 SOQ-329,crane,1,multimodal_alpha=0.0
 SOQ-329,swan,0,multimodal_alpha=0.0
 SOQ-329,pigeon,0,multimodal_alpha=0.0
-SOQ-329,insects,2,multimodal_alpha=0.0
+SOQ-329,insect,2,multimodal_alpha=0.0
 SOQ-329,ant,2,multimodal_alpha=0.1
 SOQ-329,insect,0,multimodal_alpha=0.1
 SOQ-329,african,1,multimodal_alpha=0.1
@@ -34816,7 +34816,7 @@ SOQ-329,bird,0,multimodal_alpha=0.1
 SOQ-329,crane,1,multimodal_alpha=0.1
 SOQ-329,swan,0,multimodal_alpha=0.1
 SOQ-329,pigeon,0,multimodal_alpha=0.1
-SOQ-329,insects,2,multimodal_alpha=0.1
+SOQ-329,insect,2,multimodal_alpha=0.1
 SOQ-329,ant,2,multimodal_alpha=0.2
 SOQ-329,insect,0,multimodal_alpha=0.2
 SOQ-329,african,1,multimodal_alpha=0.2
@@ -34839,7 +34839,7 @@ SOQ-329,bird,0,multimodal_alpha=0.2
 SOQ-329,crane,1,multimodal_alpha=0.2
 SOQ-329,swan,0,multimodal_alpha=0.2
 SOQ-329,pigeon,0,multimodal_alpha=0.2
-SOQ-329,insects,2,multimodal_alpha=0.2
+SOQ-329,insect,2,multimodal_alpha=0.2
 SOQ-329,ant,2,multimodal_alpha=0.30000000000000004
 SOQ-329,insect,0,multimodal_alpha=0.30000000000000004
 SOQ-329,african,1,multimodal_alpha=0.30000000000000004
@@ -34862,7 +34862,7 @@ SOQ-329,bird,0,multimodal_alpha=0.30000000000000004
 SOQ-329,crane,1,multimodal_alpha=0.30000000000000004
 SOQ-329,swan,0,multimodal_alpha=0.30000000000000004
 SOQ-329,pigeon,0,multimodal_alpha=0.30000000000000004
-SOQ-329,insects,2,multimodal_alpha=0.30000000000000004
+SOQ-329,insect,2,multimodal_alpha=0.30000000000000004
 SOQ-329,ant,2,multimodal_alpha=0.4
 SOQ-329,insect,0,multimodal_alpha=0.4
 SOQ-329,african,1,multimodal_alpha=0.4
@@ -34885,7 +34885,7 @@ SOQ-329,bird,0,multimodal_alpha=0.4
 SOQ-329,crane,1,multimodal_alpha=0.4
 SOQ-329,swan,0,multimodal_alpha=0.4
 SOQ-329,pigeon,0,multimodal_alpha=0.4
-SOQ-329,insects,2,multimodal_alpha=0.4
+SOQ-329,insect,2,multimodal_alpha=0.4
 SOQ-329,ant,2,multimodal_alpha=0.5
 SOQ-329,insect,0,multimodal_alpha=0.5
 SOQ-329,african,1,multimodal_alpha=0.5
@@ -34908,7 +34908,7 @@ SOQ-329,bird,0,multimodal_alpha=0.5
 SOQ-329,crane,1,multimodal_alpha=0.5
 SOQ-329,swan,0,multimodal_alpha=0.5
 SOQ-329,pigeon,0,multimodal_alpha=0.5
-SOQ-329,insects,2,multimodal_alpha=0.5
+SOQ-329,insect,2,multimodal_alpha=0.5
 SOQ-329,ant,2,multimodal_alpha=0.6000000000000001
 SOQ-329,insect,0,multimodal_alpha=0.6000000000000001
 SOQ-329,african,1,multimodal_alpha=0.6000000000000001
@@ -34931,7 +34931,7 @@ SOQ-329,bird,0,multimodal_alpha=0.6000000000000001
 SOQ-329,crane,1,multimodal_alpha=0.6000000000000001
 SOQ-329,swan,0,multimodal_alpha=0.6000000000000001
 SOQ-329,pigeon,0,multimodal_alpha=0.6000000000000001
-SOQ-329,insects,2,multimodal_alpha=0.6000000000000001
+SOQ-329,insect,2,multimodal_alpha=0.6000000000000001
 SOQ-329,ant,2,multimodal_alpha=0.7000000000000001
 SOQ-329,insect,0,multimodal_alpha=0.7000000000000001
 SOQ-329,african,1,multimodal_alpha=0.7000000000000001
@@ -34954,7 +34954,7 @@ SOQ-329,bird,0,multimodal_alpha=0.7000000000000001
 SOQ-329,crane,0,multimodal_alpha=0.7000000000000001
 SOQ-329,swan,0,multimodal_alpha=0.7000000000000001
 SOQ-329,pigeon,0,multimodal_alpha=0.7000000000000001
-SOQ-329,insects,2,multimodal_alpha=0.7000000000000001
+SOQ-329,insect,2,multimodal_alpha=0.7000000000000001
 SOQ-329,ant,2,multimodal_alpha=0.8
 SOQ-329,insect,0,multimodal_alpha=0.8
 SOQ-329,african,1,multimodal_alpha=0.8
@@ -34977,7 +34977,7 @@ SOQ-329,bird,0,multimodal_alpha=0.8
 SOQ-329,crane,0,multimodal_alpha=0.8
 SOQ-329,swan,1,multimodal_alpha=0.8
 SOQ-329,pigeon,0,multimodal_alpha=0.8
-SOQ-329,insects,2,multimodal_alpha=0.8
+SOQ-329,insect,2,multimodal_alpha=0.8
 SOQ-329,ant,2,multimodal_alpha=0.9
 SOQ-329,insect,0,multimodal_alpha=0.9
 SOQ-329,african,1,multimodal_alpha=0.9
@@ -35000,7 +35000,7 @@ SOQ-329,bird,1,multimodal_alpha=0.9
 SOQ-329,crane,0,multimodal_alpha=0.9
 SOQ-329,swan,1,multimodal_alpha=0.9
 SOQ-329,pigeon,0,multimodal_alpha=0.9
-SOQ-329,insects,2,multimodal_alpha=0.9
+SOQ-329,insect,2,multimodal_alpha=0.9
 SOQ-329,ant,2,multimodal_alpha=1.0
 SOQ-329,insect,0,multimodal_alpha=1.0
 SOQ-329,african,1,multimodal_alpha=1.0
@@ -35023,7 +35023,7 @@ SOQ-329,bird,1,multimodal_alpha=1.0
 SOQ-329,crane,0,multimodal_alpha=1.0
 SOQ-329,swan,1,multimodal_alpha=1.0
 SOQ-329,pigeon,0,multimodal_alpha=1.0
-SOQ-329,insects,2,multimodal_alpha=1.0
+SOQ-329,insect,2,multimodal_alpha=1.0
 SOQ-329,ant,2,norms_associative
 SOQ-329,insect,0,norms_associative
 SOQ-329,african,1,norms_associative
@@ -35046,7 +35046,7 @@ SOQ-329,bird,1,norms_associative
 SOQ-329,crane,1,norms_associative
 SOQ-329,swan,1,norms_associative
 SOQ-329,pigeon,0,norms_associative
-SOQ-329,insects,1,norms_associative
+SOQ-329,insect,1,norms_associative
 SOQ-329,ant,2,norms_categorical
 SOQ-329,insect,0,norms_categorical
 SOQ-329,african,1,norms_categorical
@@ -35069,7 +35069,7 @@ SOQ-329,bird,1,norms_categorical
 SOQ-329,crane,1,norms_categorical
 SOQ-329,swan,1,norms_categorical
 SOQ-329,pigeon,0,norms_categorical
-SOQ-329,insects,1,norms_categorical
+SOQ-329,insect,1,norms_categorical
 SOQ-329,ant,2,delta_rise=0.0_fall=0.0
 SOQ-329,insect,0,delta_rise=0.0_fall=0.0
 SOQ-329,african,1,delta_rise=0.0_fall=0.0
@@ -35092,7 +35092,7 @@ SOQ-329,bird,1,delta_rise=0.0_fall=0.0
 SOQ-329,crane,0,delta_rise=0.0_fall=0.0
 SOQ-329,swan,1,delta_rise=0.0_fall=0.0
 SOQ-329,pigeon,0,delta_rise=0.0_fall=0.0
-SOQ-329,insects,1,delta_rise=0.0_fall=0.0
+SOQ-329,insect,1,delta_rise=0.0_fall=0.0
 SOQ-329,ant,2,delta_rise=0.0_fall=0.25
 SOQ-329,insect,0,delta_rise=0.0_fall=0.25
 SOQ-329,african,1,delta_rise=0.0_fall=0.25
@@ -35115,7 +35115,7 @@ SOQ-329,bird,1,delta_rise=0.0_fall=0.25
 SOQ-329,crane,0,delta_rise=0.0_fall=0.25
 SOQ-329,swan,1,delta_rise=0.0_fall=0.25
 SOQ-329,pigeon,0,delta_rise=0.0_fall=0.25
-SOQ-329,insects,1,delta_rise=0.0_fall=0.25
+SOQ-329,insect,1,delta_rise=0.0_fall=0.25
 SOQ-329,ant,2,delta_rise=0.0_fall=0.5
 SOQ-329,insect,0,delta_rise=0.0_fall=0.5
 SOQ-329,african,1,delta_rise=0.0_fall=0.5
@@ -35138,7 +35138,7 @@ SOQ-329,bird,0,delta_rise=0.0_fall=0.5
 SOQ-329,crane,0,delta_rise=0.0_fall=0.5
 SOQ-329,swan,1,delta_rise=0.0_fall=0.5
 SOQ-329,pigeon,0,delta_rise=0.0_fall=0.5
-SOQ-329,insects,1,delta_rise=0.0_fall=0.5
+SOQ-329,insect,0,delta_rise=0.0_fall=0.5
 SOQ-329,ant,2,delta_rise=0.0_fall=0.75
 SOQ-329,insect,0,delta_rise=0.0_fall=0.75
 SOQ-329,african,1,delta_rise=0.0_fall=0.75
@@ -35161,7 +35161,7 @@ SOQ-329,bird,0,delta_rise=0.0_fall=0.75
 SOQ-329,crane,0,delta_rise=0.0_fall=0.75
 SOQ-329,swan,0,delta_rise=0.0_fall=0.75
 SOQ-329,pigeon,0,delta_rise=0.0_fall=0.75
-SOQ-329,insects,0,delta_rise=0.0_fall=0.75
+SOQ-329,insect,0,delta_rise=0.0_fall=0.75
 SOQ-329,ant,2,delta_rise=0.0_fall=1.0
 SOQ-329,insect,0,delta_rise=0.0_fall=1.0
 SOQ-329,african,1,delta_rise=0.0_fall=1.0
@@ -35184,7 +35184,7 @@ SOQ-329,bird,0,delta_rise=0.0_fall=1.0
 SOQ-329,crane,0,delta_rise=0.0_fall=1.0
 SOQ-329,swan,0,delta_rise=0.0_fall=1.0
 SOQ-329,pigeon,0,delta_rise=0.0_fall=1.0
-SOQ-329,insects,0,delta_rise=0.0_fall=1.0
+SOQ-329,insect,0,delta_rise=0.0_fall=1.0
 SOQ-329,ant,2,delta_rise=0.25_fall=0.0
 SOQ-329,insect,0,delta_rise=0.25_fall=0.0
 SOQ-329,african,1,delta_rise=0.25_fall=0.0
@@ -35207,7 +35207,7 @@ SOQ-329,bird,1,delta_rise=0.25_fall=0.0
 SOQ-329,crane,0,delta_rise=0.25_fall=0.0
 SOQ-329,swan,1,delta_rise=0.25_fall=0.0
 SOQ-329,pigeon,0,delta_rise=0.25_fall=0.0
-SOQ-329,insects,1,delta_rise=0.25_fall=0.0
+SOQ-329,insect,1,delta_rise=0.25_fall=0.0
 SOQ-329,ant,2,delta_rise=0.25_fall=0.25
 SOQ-329,insect,0,delta_rise=0.25_fall=0.25
 SOQ-329,african,1,delta_rise=0.25_fall=0.25
@@ -35230,7 +35230,7 @@ SOQ-329,bird,1,delta_rise=0.25_fall=0.25
 SOQ-329,crane,0,delta_rise=0.25_fall=0.25
 SOQ-329,swan,1,delta_rise=0.25_fall=0.25
 SOQ-329,pigeon,0,delta_rise=0.25_fall=0.25
-SOQ-329,insects,1,delta_rise=0.25_fall=0.25
+SOQ-329,insect,1,delta_rise=0.25_fall=0.25
 SOQ-329,ant,2,delta_rise=0.25_fall=0.5
 SOQ-329,insect,0,delta_rise=0.25_fall=0.5
 SOQ-329,african,1,delta_rise=0.25_fall=0.5
@@ -35253,7 +35253,7 @@ SOQ-329,bird,1,delta_rise=0.25_fall=0.5
 SOQ-329,crane,0,delta_rise=0.25_fall=0.5
 SOQ-329,swan,1,delta_rise=0.25_fall=0.5
 SOQ-329,pigeon,0,delta_rise=0.25_fall=0.5
-SOQ-329,insects,1,delta_rise=0.25_fall=0.5
+SOQ-329,insect,0,delta_rise=0.25_fall=0.5
 SOQ-329,ant,2,delta_rise=0.25_fall=0.75
 SOQ-329,insect,0,delta_rise=0.25_fall=0.75
 SOQ-329,african,1,delta_rise=0.25_fall=0.75
@@ -35276,7 +35276,7 @@ SOQ-329,bird,1,delta_rise=0.25_fall=0.75
 SOQ-329,crane,0,delta_rise=0.25_fall=0.75
 SOQ-329,swan,0,delta_rise=0.25_fall=0.75
 SOQ-329,pigeon,0,delta_rise=0.25_fall=0.75
-SOQ-329,insects,0,delta_rise=0.25_fall=0.75
+SOQ-329,insect,0,delta_rise=0.25_fall=0.75
 SOQ-329,ant,2,delta_rise=0.25_fall=1.0
 SOQ-329,insect,0,delta_rise=0.25_fall=1.0
 SOQ-329,african,1,delta_rise=0.25_fall=1.0
@@ -35299,7 +35299,7 @@ SOQ-329,bird,1,delta_rise=0.25_fall=1.0
 SOQ-329,crane,0,delta_rise=0.25_fall=1.0
 SOQ-329,swan,0,delta_rise=0.25_fall=1.0
 SOQ-329,pigeon,0,delta_rise=0.25_fall=1.0
-SOQ-329,insects,0,delta_rise=0.25_fall=1.0
+SOQ-329,insect,0,delta_rise=0.25_fall=1.0
 SOQ-329,ant,2,delta_rise=0.5_fall=0.0
 SOQ-329,insect,0,delta_rise=0.5_fall=0.0
 SOQ-329,african,1,delta_rise=0.5_fall=0.0
@@ -35322,7 +35322,7 @@ SOQ-329,bird,1,delta_rise=0.5_fall=0.0
 SOQ-329,crane,0,delta_rise=0.5_fall=0.0
 SOQ-329,swan,1,delta_rise=0.5_fall=0.0
 SOQ-329,pigeon,0,delta_rise=0.5_fall=0.0
-SOQ-329,insects,1,delta_rise=0.5_fall=0.0
+SOQ-329,insect,1,delta_rise=0.5_fall=0.0
 SOQ-329,ant,2,delta_rise=0.5_fall=0.25
 SOQ-329,insect,0,delta_rise=0.5_fall=0.25
 SOQ-329,african,1,delta_rise=0.5_fall=0.25
@@ -35345,7 +35345,7 @@ SOQ-329,bird,1,delta_rise=0.5_fall=0.25
 SOQ-329,crane,0,delta_rise=0.5_fall=0.25
 SOQ-329,swan,1,delta_rise=0.5_fall=0.25
 SOQ-329,pigeon,0,delta_rise=0.5_fall=0.25
-SOQ-329,insects,1,delta_rise=0.5_fall=0.25
+SOQ-329,insect,1,delta_rise=0.5_fall=0.25
 SOQ-329,ant,2,delta_rise=0.5_fall=0.5
 SOQ-329,insect,0,delta_rise=0.5_fall=0.5
 SOQ-329,african,1,delta_rise=0.5_fall=0.5
@@ -35368,7 +35368,7 @@ SOQ-329,bird,1,delta_rise=0.5_fall=0.5
 SOQ-329,crane,0,delta_rise=0.5_fall=0.5
 SOQ-329,swan,1,delta_rise=0.5_fall=0.5
 SOQ-329,pigeon,0,delta_rise=0.5_fall=0.5
-SOQ-329,insects,1,delta_rise=0.5_fall=0.5
+SOQ-329,insect,0,delta_rise=0.5_fall=0.5
 SOQ-329,ant,2,delta_rise=0.5_fall=0.75
 SOQ-329,insect,0,delta_rise=0.5_fall=0.75
 SOQ-329,african,1,delta_rise=0.5_fall=0.75
@@ -35391,7 +35391,7 @@ SOQ-329,bird,1,delta_rise=0.5_fall=0.75
 SOQ-329,crane,0,delta_rise=0.5_fall=0.75
 SOQ-329,swan,0,delta_rise=0.5_fall=0.75
 SOQ-329,pigeon,0,delta_rise=0.5_fall=0.75
-SOQ-329,insects,0,delta_rise=0.5_fall=0.75
+SOQ-329,insect,0,delta_rise=0.5_fall=0.75
 SOQ-329,ant,2,delta_rise=0.5_fall=1.0
 SOQ-329,insect,0,delta_rise=0.5_fall=1.0
 SOQ-329,african,1,delta_rise=0.5_fall=1.0
@@ -35414,7 +35414,7 @@ SOQ-329,bird,1,delta_rise=0.5_fall=1.0
 SOQ-329,crane,0,delta_rise=0.5_fall=1.0
 SOQ-329,swan,0,delta_rise=0.5_fall=1.0
 SOQ-329,pigeon,0,delta_rise=0.5_fall=1.0
-SOQ-329,insects,0,delta_rise=0.5_fall=1.0
+SOQ-329,insect,0,delta_rise=0.5_fall=1.0
 SOQ-329,ant,2,delta_rise=0.75_fall=0.0
 SOQ-329,insect,0,delta_rise=0.75_fall=0.0
 SOQ-329,african,1,delta_rise=0.75_fall=0.0
@@ -35437,7 +35437,7 @@ SOQ-329,bird,1,delta_rise=0.75_fall=0.0
 SOQ-329,crane,0,delta_rise=0.75_fall=0.0
 SOQ-329,swan,1,delta_rise=0.75_fall=0.0
 SOQ-329,pigeon,0,delta_rise=0.75_fall=0.0
-SOQ-329,insects,1,delta_rise=0.75_fall=0.0
+SOQ-329,insect,1,delta_rise=0.75_fall=0.0
 SOQ-329,ant,2,delta_rise=0.75_fall=0.25
 SOQ-329,insect,0,delta_rise=0.75_fall=0.25
 SOQ-329,african,1,delta_rise=0.75_fall=0.25
@@ -35460,7 +35460,7 @@ SOQ-329,bird,1,delta_rise=0.75_fall=0.25
 SOQ-329,crane,0,delta_rise=0.75_fall=0.25
 SOQ-329,swan,1,delta_rise=0.75_fall=0.25
 SOQ-329,pigeon,0,delta_rise=0.75_fall=0.25
-SOQ-329,insects,1,delta_rise=0.75_fall=0.25
+SOQ-329,insect,1,delta_rise=0.75_fall=0.25
 SOQ-329,ant,2,delta_rise=0.75_fall=0.5
 SOQ-329,insect,0,delta_rise=0.75_fall=0.5
 SOQ-329,african,1,delta_rise=0.75_fall=0.5
@@ -35483,7 +35483,7 @@ SOQ-329,bird,1,delta_rise=0.75_fall=0.5
 SOQ-329,crane,0,delta_rise=0.75_fall=0.5
 SOQ-329,swan,1,delta_rise=0.75_fall=0.5
 SOQ-329,pigeon,0,delta_rise=0.75_fall=0.5
-SOQ-329,insects,1,delta_rise=0.75_fall=0.5
+SOQ-329,insect,0,delta_rise=0.75_fall=0.5
 SOQ-329,ant,2,delta_rise=0.75_fall=0.75
 SOQ-329,insect,0,delta_rise=0.75_fall=0.75
 SOQ-329,african,1,delta_rise=0.75_fall=0.75
@@ -35506,7 +35506,7 @@ SOQ-329,bird,1,delta_rise=0.75_fall=0.75
 SOQ-329,crane,0,delta_rise=0.75_fall=0.75
 SOQ-329,swan,0,delta_rise=0.75_fall=0.75
 SOQ-329,pigeon,0,delta_rise=0.75_fall=0.75
-SOQ-329,insects,0,delta_rise=0.75_fall=0.75
+SOQ-329,insect,0,delta_rise=0.75_fall=0.75
 SOQ-329,ant,2,delta_rise=0.75_fall=1.0
 SOQ-329,insect,0,delta_rise=0.75_fall=1.0
 SOQ-329,african,1,delta_rise=0.75_fall=1.0
@@ -35529,7 +35529,7 @@ SOQ-329,bird,1,delta_rise=0.75_fall=1.0
 SOQ-329,crane,0,delta_rise=0.75_fall=1.0
 SOQ-329,swan,0,delta_rise=0.75_fall=1.0
 SOQ-329,pigeon,0,delta_rise=0.75_fall=1.0
-SOQ-329,insects,0,delta_rise=0.75_fall=1.0
+SOQ-329,insect,0,delta_rise=0.75_fall=1.0
 SOQ-329,ant,2,delta_rise=1.0_fall=0.0
 SOQ-329,insect,0,delta_rise=1.0_fall=0.0
 SOQ-329,african,1,delta_rise=1.0_fall=0.0
@@ -35552,7 +35552,7 @@ SOQ-329,bird,1,delta_rise=1.0_fall=0.0
 SOQ-329,crane,0,delta_rise=1.0_fall=0.0
 SOQ-329,swan,1,delta_rise=1.0_fall=0.0
 SOQ-329,pigeon,1,delta_rise=1.0_fall=0.0
-SOQ-329,insects,1,delta_rise=1.0_fall=0.0
+SOQ-329,insect,1,delta_rise=1.0_fall=0.0
 SOQ-329,ant,2,delta_rise=1.0_fall=0.25
 SOQ-329,insect,0,delta_rise=1.0_fall=0.25
 SOQ-329,african,1,delta_rise=1.0_fall=0.25
@@ -35575,7 +35575,7 @@ SOQ-329,bird,1,delta_rise=1.0_fall=0.25
 SOQ-329,crane,0,delta_rise=1.0_fall=0.25
 SOQ-329,swan,1,delta_rise=1.0_fall=0.25
 SOQ-329,pigeon,1,delta_rise=1.0_fall=0.25
-SOQ-329,insects,1,delta_rise=1.0_fall=0.25
+SOQ-329,insect,1,delta_rise=1.0_fall=0.25
 SOQ-329,ant,2,delta_rise=1.0_fall=0.5
 SOQ-329,insect,0,delta_rise=1.0_fall=0.5
 SOQ-329,african,1,delta_rise=1.0_fall=0.5
@@ -35598,7 +35598,7 @@ SOQ-329,bird,1,delta_rise=1.0_fall=0.5
 SOQ-329,crane,0,delta_rise=1.0_fall=0.5
 SOQ-329,swan,1,delta_rise=1.0_fall=0.5
 SOQ-329,pigeon,1,delta_rise=1.0_fall=0.5
-SOQ-329,insects,1,delta_rise=1.0_fall=0.5
+SOQ-329,insect,1,delta_rise=1.0_fall=0.5
 SOQ-329,ant,2,delta_rise=1.0_fall=0.75
 SOQ-329,insect,0,delta_rise=1.0_fall=0.75
 SOQ-329,african,1,delta_rise=1.0_fall=0.75
@@ -35621,7 +35621,7 @@ SOQ-329,bird,1,delta_rise=1.0_fall=0.75
 SOQ-329,crane,0,delta_rise=1.0_fall=0.75
 SOQ-329,swan,0,delta_rise=1.0_fall=0.75
 SOQ-329,pigeon,0,delta_rise=1.0_fall=0.75
-SOQ-329,insects,0,delta_rise=1.0_fall=0.75
+SOQ-329,insect,0,delta_rise=1.0_fall=0.75
 SOQ-329,ant,2,delta_rise=1.0_fall=1.0
 SOQ-329,insect,0,delta_rise=1.0_fall=1.0
 SOQ-329,african,1,delta_rise=1.0_fall=1.0
@@ -35644,7 +35644,7 @@ SOQ-329,bird,1,delta_rise=1.0_fall=1.0
 SOQ-329,crane,0,delta_rise=1.0_fall=1.0
 SOQ-329,swan,0,delta_rise=1.0_fall=1.0
 SOQ-329,pigeon,0,delta_rise=1.0_fall=1.0
-SOQ-329,insects,0,delta_rise=1.0_fall=1.0
+SOQ-329,insect,0,delta_rise=1.0_fall=1.0
 SOX-335,tiger,2,simdrop
 SOX-335,lion,0,simdrop
 SOX-335,elephant,0,simdrop

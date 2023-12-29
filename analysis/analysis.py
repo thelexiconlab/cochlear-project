@@ -6,8 +6,8 @@ import pandas as pd
 import numpy as np 
 import matplotlib.pyplot as plt
 
-# sys.path.append('..')
-# from forager.run_foraging_function import run_foraging_function
+
+
 
 #Global variables for dimensions and alpha values 
 dimensions = ['50', '100', '200', '300']
@@ -192,22 +192,6 @@ models = [
 ]
 
 
-
-    
-
-def get_results(): 
-    # run_foraging_function('50', 'only_s2v')
-
-    count = 0 
-    for dim in dimensions: 
-        for t in type: 
-            run_foraging_function(dim, t)
-            count += 1
-
-    print(count)
-    return None 
-
-
 def mean_responses(): 
     data = pd.read_csv('../forager/data/fluency_lists/participant_results/participant_word_count.csv')
     
@@ -287,14 +271,13 @@ def add_groupings():
 
             individual_descriptive_stats.to_csv(individual_descriptive_stats_path, index = False)
 
-def mean_statistics(): 
-    
+def statistics(): 
     NH = pd.DataFrame()
     CI = pd.DataFrame()
     
-    for dim in dimensions: 
-        for t in type: 
-            path = '../forager/output/' + dim + '_dim_results/' + t + '_results' +'/individual_descriptive_stats.csv'
+    for dim in dimensions:
+        for t in type:
+            path = '../forager/output/' + dim + '_dim_results/' + t + '_results' + '/individual_descriptive_stats.csv'
             data = pd.read_csv(path)
             data_groups = data.groupby(["Group"])
             
@@ -307,38 +290,148 @@ def mean_statistics():
     NH.reset_index(drop=True, inplace=True)
     CI.reset_index(drop=True, inplace=True)
 
+    # Calculate the means
     NH_Semantic_Similarity_mean = NH['Semantic_Similarity_mean'].mean()
-    NH_Frequency_mean = NH['Frequency_Value_mean'].mean()
     NH_Phonological_Similarity_mean = NH['Phonological_Similarity_mean'].mean()
+    NH_Frequency_mean = NH['Frequency_Value_mean'].mean()
+    
     
     CI_Semantic_Similarity_mean = CI['Semantic_Similarity_mean'].mean()
-    CI_Frequency_mean = CI['Frequency_Value_mean'].mean()
     CI_Phonological_Similarity_mean = CI['Phonological_Similarity_mean'].mean()
+    CI_Frequency_mean = CI['Frequency_Value_mean'].mean()
     
-    X = ['Semantic_Similarity', 'Phonological_Similarity'] 
-    YNH = [NH_Semantic_Similarity_mean, NH_Phonological_Similarity_mean]
-    ZCI = [CI_Semantic_Similarity_mean, CI_Phonological_Similarity_mean]
-    
-    X_axis = np.arange(len(X)) 
-    
-    plt.bar(X_axis - 0.2, YNH, 0.4, label = 'NH') 
-    plt.bar(X_axis + 0.2, ZCI, 0.4, label = 'CI') 
-    
-    plt.xticks(X_axis, X) 
-    plt.xlabel("Groups") 
-    plt.ylabel("Mean Statistics") 
-    plt.title("Mean Statistics for NH and CI") 
-    plt.legend() 
-    plt.savefig('outputs/mean_statistics-semantic-phonological.png')
-    
+    # Create for mean semantic similarity
+    plt.figure()
+    plt.bar(['NH', 'CI'], [NH_Semantic_Similarity_mean, CI_Semantic_Similarity_mean], color=['blue', 'red'])
+    plt.xlabel("Groups")
+    plt.ylabel("Mean")
+    plt.title("Mean Semantic Similarity for NH and CI")
+    plt.savefig('outputs/mean_semantic_similarity.png')
+
+    # Create the second bar plot
+    plt.figure()
+    plt.bar(['NH', 'CI'], [NH_Phonological_Similarity_mean, CI_Phonological_Similarity_mean], color=['blue', 'red'])
+    plt.xlabel("Groups")
+    plt.ylabel("Mean")
+    plt.title("Mean Phonological Similarity for NH and CI")
+    plt.savefig('outputs/mean_phonological_similarity.png')
+
+    # Create the third bar plot
+    plt.figure()
     plt.bar(['NH', 'CI'], [NH_Frequency_mean, CI_Frequency_mean], color=['blue', 'red'])
-    plt.xlabel("Groups") 
-    plt.ylabel("Mean Statistics") 
-    plt.title("Mean Statistics for NH and CI") 
-    plt.legend() 
-    plt.savefig('outputs/mean_statistics-frequency.png')
+    plt.xlabel("Groups")
+    plt.ylabel("Mean")
+    plt.title("Mean Frequency for NH and CI")
+    plt.savefig('outputs/mean_frequency.png')
     
-    return None        
+    return None
+
+
+# def mean_semantic_similarity(): 
+    
+#     NH = pd.DataFrame()
+#     CI = pd.DataFrame()
+    
+#     for dim in dimensions: 
+#         for t in type: 
+#             path = '../forager/output/' + dim + '_dim_results/' + t + '_results' +'/individual_descriptive_stats.csv'
+#             data = pd.read_csv(path)
+#             data_groups = data.groupby(["Group"])
+            
+#             NH_data = data_groups.get_group("NH")
+#             CI_data = data_groups.get_group("CI")
+            
+#             NH = pd.concat([NH, NH_data])
+#             CI = pd.concat([CI, CI_data])
+    
+#     NH.reset_index(drop=True, inplace=True)
+#     CI.reset_index(drop=True, inplace=True)
+
+#     NH_Semantic_Similarity_mean = NH['Semantic_Similarity_mean'].mean()
+    
+#     CI_Semantic_Similarity_mean = CI['Semantic_Similarity_mean'].mean()
+    
+#     # Creating the bar plot
+#     plt.bar(['NH', 'CI'], [NH_Semantic_Similarity_mean, CI_Semantic_Similarity_mean], color=['blue', 'red'])
+
+#     # Adding labels and title
+#     plt.xlabel("Groups")
+#     plt.ylabel("Mean")
+#     plt.title("Mean Semantic Similarity for NH and CI")
+#     plt.savefig('outputs/mean_semantic_similarity.png')
+    
+#     return None        
+
+# def mean_phonological_similarity():
+#     NH = pd.DataFrame()
+#     CI = pd.DataFrame()
+    
+#     for dim in dimensions:
+#         for t in type:
+#             path = '../forager/output/' + dim + '_dim_results/' + t + '_results' + '/individual_descriptive_stats.csv'
+#             data = pd.read_csv(path)
+#             data_groups = data.groupby(["Group"])
+            
+#             NH_data = data_groups.get_group("NH")
+#             CI_data = data_groups.get_group("CI")
+            
+#             NH = pd.concat([NH, NH_data])
+#             CI = pd.concat([CI, CI_data])
+    
+#     NH.reset_index(drop=True, inplace=True)
+#     CI.reset_index(drop=True, inplace=True)
+
+#     NH_Phonological_Similarity_mean = NH['Phonological_Similarity_mean'].mean()
+    
+#     CI_Phonological_Similarity_mean = CI['Phonological_Similarity_mean'].mean()
+    
+#     # Creating the bar plot
+#     plt.bar(['NH', 'CI'], [NH_Phonological_Similarity_mean, CI_Phonological_Similarity_mean], color=['blue', 'red'])
+    
+#     # Adding labels and title
+#     plt.xlabel("Groups")
+#     plt.ylabel("Mean")
+#     plt.title("Mean Phonological Similarity for NH and CI")
+#     plt.savefig('outputs/mean_phonological_similarity.png')
+    
+    
+#     return None
+
+
+# def mean_frequency():
+#     NH = pd.DataFrame()
+#     CI = pd.DataFrame()
+    
+#     for dim in dimensions:
+#         for t in type:
+#             path = '../forager/output/' + dim + '_dim_results/' + t + '_results' + '/individual_descriptive_stats.csv'
+#             data = pd.read_csv(path)
+#             data_groups = data.groupby(["Group"])
+            
+#             NH_data = data_groups.get_group("NH")
+#             CI_data = data_groups.get_group("CI")
+            
+#             NH = pd.concat([NH, NH_data])
+#             CI = pd.concat([CI, CI_data])
+    
+#     NH.reset_index(drop=True, inplace=True)
+#     CI.reset_index(drop=True, inplace=True)
+
+#     NH_Frequency_mean = NH['Frequency_Value_mean'].mean()
+    
+#     CI_Frequency_mean = CI['Frequency_Value_mean'].mean()
+
+#     # Creating the bar plot
+#     plt.bar(['NH', 'CI'], [NH_Frequency_mean, CI_Frequency_mean], color=['blue', 'red'])
+
+#     # Adding labels and title  
+#     plt.xlabel("Groups")
+#     plt.ylabel("Mean")
+#     plt.title("Mean Frequency for NH and CI")
+#     plt.savefig('outputs/mean_frequency.png')
+    
+    
+#     return None
 
 
 def model_results(): 
@@ -394,15 +487,21 @@ def best_NLL():
     dim_nll.to_csv("outputs/best_NLL.csv", index = False)
     return None 
 
-def analysis(): 
-    # get lexical results from running run_foraging_function from forager
-    # get_results() 
+def run_analysis(): 
     
     # create graph of mean number of responses for each group (NH, CI)
     mean_responses()
     
     # add group columns for model_results.csv and individual_descriptive_stats.csv
     add_groupings()
+    
+    # create bar graph for participant statistics 
+    statistics()
+    # mean_semantic_similarity()
+    
+    # mean_phonological_similarity()
+    
+    # mean_frequency()
     
     # create model_results.csv for sum_NLL, mean_beta_semantic, mean_beta_freq, mean_beta_phon
     model_results()
@@ -411,4 +510,5 @@ def analysis():
     best_NLL()
     return None 
 
-analysis()
+
+run_analysis()

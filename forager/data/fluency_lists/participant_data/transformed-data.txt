@@ -314,8 +314,8 @@ CBL-698	elephant
 CBL-698	tiger
 CBL-698	zebra
 CBL-698	lice
-CBL-698	insects
-CBL-698	insects
+CBL-698	insect
+CBL-698	insect
 CBL-698	beetle
 CBM-702	tiger
 CBM-702	dolphin
@@ -361,7 +361,7 @@ CBP-707	dolphin
 CBP-707	whale
 CBP-707	ant
 CBP-707	centipede
-CBP-707	insects
+CBP-707	insect
 CBP-707	lizard
 CBP-707	reptile
 CBP-707	snake
@@ -463,7 +463,7 @@ CCD-722	dolphin
 CCD-722	penguin
 CCD-722	lizard
 CCD-722	snake
-CCD-722	insects
+CCD-722	insect
 CCD-722	shark
 CCD-722	primate
 CCD-722	sloth
@@ -497,7 +497,7 @@ CCH-726	donkey
 CCH-726	horse
 CCH-726	dog
 CCH-726	cat
-CCH-726	insects
+CCH-726	insect
 CCH-726	fish
 CCH-726	american
 CCH-726	deer
@@ -701,7 +701,7 @@ SIU-211	chipmunk
 SIU-211	skunk
 SIU-211	fish
 SIU-211	dog
-SIU-211	insect
+SIU-211	insects
 SIU-211	spider
 SIU-211	fly
 SIU-211	ant
@@ -912,7 +912,7 @@ SOQ-329	bird
 SOQ-329	crane
 SOQ-329	swan
 SOQ-329	pigeon
-SOQ-329	insects
+SOQ-329	insect
 SOX-335	tiger
 SOX-335	lion
 SOX-335	elephant

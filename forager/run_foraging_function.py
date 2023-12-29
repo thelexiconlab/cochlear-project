@@ -24,7 +24,7 @@ def run_foraging_function(dimension, type):
     models = ['static','dynamic','pstatic','pdynamic','all']
     switch_methods = ['simdrop','multimodal','norms_associative', 'norms_categorical', 'delta','all']
     data = 'forager/data/fluency_lists/participant_data/transformed-data.txt'
-
+    data = 'forager/data/fluency_lists/participant_data/transformed-data.txt'
 
     #Methods
     def retrieve_data(path):
@@ -402,9 +402,9 @@ def run_foraging_function(dimension, type):
         print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
         print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
 
-run_foraging_function('100', 'only_s2v')
+# run_foraging_function('100', 'only_s2v')
 
-dimensions = ['200', '300']
+dimensions = ['50', '100', '200', '300']
 type = [
     'alpha_0.0_s2v', # = alpha_1_w2v
     'alpha_0.0_w2v', # = alpha_1_s2v 
@@ -430,3 +430,5 @@ for dim in dimensions:
         count += 1
 
 print(count)
+
+# run_foraging_function('50', 'alpha_0.0_s2v')

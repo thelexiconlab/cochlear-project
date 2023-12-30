@@ -351,5 +351,5 @@ def run_workflow():
     prepare_lexical_data()
     
 
-    
+run_workflow()
 "After running run_workflow, go to run_foraging_function.py and run the file to get the results"

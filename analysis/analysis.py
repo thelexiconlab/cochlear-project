@@ -338,7 +338,7 @@ def model_results():
         for t in type: 
             path = '../forager/output/' + dim + '_dim_results/' + t + '_results' +'/model_results.csv'
 
-            data = pd.read_csv(path)
+            data = pd.read_csv(path).dropna(subset=['Negative_Log_Likelihood_Optimized'])
             data_groups = data.groupby(["Group", "Model"])
 
             for group in groups: 
@@ -382,19 +382,19 @@ def best_NLL():
 def run_analysis(): 
     
     # create graph of mean number of responses for each group (NH, CI)
-    mean_responses()
+    #mean_responses()
     
     # add group columns for model_results.csv and individual_descriptive_stats.csv
-    add_groupings()
+    #add_groupings()
     
     # create bar graph for participant statistics 
-    statistics()
+    #statistics()
     
     # create model_results.csv for sum_NLL, mean_beta_semantic, mean_beta_freq, mean_beta_phon
     model_results()
     
     # create best_NLL.csv for best sum_NLL for each model and switch method (ex. dynamic_simdrop with alpha 0.5 s2v has lowest sum_NLL)
-    best_NLL()
+    #best_NLL()
     return None 
 
 

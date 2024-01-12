@@ -398,4 +398,138 @@ def run_analysis():
     return None 
 
 
-run_analysis()
+# run_analysis()
+
+
+
+class util: 
+    def __init__(self): 
+        self.dimensions = ['50', '100', '200', '300']
+        self.type = [
+            'alpha_0.0_s2v', # = alpha_1_w2v
+            'alpha_0.0_w2v', # = alpha_1_s2v 
+            'alpha_0.1_s2v', # = alpha_0.9_w2v
+            'alpha_0.1_w2v', # = alpha_0.9_s2v
+            'alpha_0.2_s2v', # = alpha_0.8_w2v
+            'alpha_0.2_w2v', # = alpha_0.8_s2v
+            'alpha_0.3_s2v', # = alpha_0.7_w2v
+            'alpha_0.3_w2v', # = alpha_0.7_s2v 
+            'alpha_0.4_s2v', # = alpha_0.6_w2v
+            'alpha_0.4_w2v', # = alpha_0.6_s2v
+            'alpha_0.5_s2v', # = alpha_0.5_w2v
+            'average',
+            'only_w2v',
+            'only_s2v'
+        ]
+        
+        
+    def participants_best_nll(self): 
+        
+        # Model Results for all alphas and dimensions
+        complete_model_results = pd.DataFrame(columns=["Dimension", "Alpha", "Subject", "Group", "Model", "Beta_Frequency", "Beta_Semantic", "Beta_Phonological", "Negative_Log_Likelihood_Optimized"])
+                
+        for dim in dimensions: 
+            for t in type: 
+                model_results = pd.read_csv("../forager/output/" + dim + "_dim_results/" + t + "_results/model_results.csv")
+                model_results['Dimension'] = [dim] * len(model_results)
+                model_results['Alpha'] = [t] * len(model_results)
+                
+                columns = model_results.columns.tolist() 
+                columns = columns[-2:] + columns[0:1] + columns[-3:-2] + columns[1:-3]
+                
+                model_results = model_results[columns]
+
+                complete_model_results = pd.concat([complete_model_results, model_results])
+
+        # save this dataframe in case we need a csv with all of the model results from all alphas and dimensions
+        complete_model_results = complete_model_results.reset_index()
+
+        # Lowest NLL alphas and dimensions
+        individual_best_model = pd.DataFrame(columns=["Dimension", "Alpha", "Subject", "Group", "Model", "Beta_Frequency", "Beta_Semantic", "Beta_Phonological", "Negative_Log_Likelihood_Optimized"])
+        subjects = sorted(list(set(complete_model_results['Subject'].tolist())))
+
+        grouping = complete_model_results.groupby(['Subject'])
+        for subject in subjects: 
+
+                    
+            get_group = grouping.get_group(subject)
+            get_group = get_group.reset_index(drop=True)
+            index = get_group['Negative_Log_Likelihood_Optimized'].idxmin()
+            row = get_group.loc[index]
+            df = pd.DataFrame(row[1:]).T
+            individual_best_model = pd.concat([individual_best_model, df], axis=0)
+
+        individual_best_model = individual_best_model.reset_index(drop=True)
+        individual_best_model.to_csv("outputs/participants_best_nll.csv", index = False)
+        return None
+    
+    def participant_repetitions(self):
+        
+        def consecutive_repetitions(words): 
+            count = 0 
+            i = 1
+            while i < len(words): 
+                if words[i-1] == words[i]: 
+                    count += 1 
+                i += 1
+            return count 
+        
+        # Original Participant Data 
+        original_data = pd.read_csv("../forager/data/fluency_lists/participant_data/raw-data.txt", sep="\t")
+        original_ID = original_data['ID'].tolist()
+        original_words = original_data['Word'].tolist()
+        original_dict = {}
+        original_repetitions = {} 
+        for pair in zip(original_ID, original_words): 
+            if pair[0] in original_dict.keys(): 
+                original_dict[pair[0]].append(pair[1])
+            else: 
+                original_dict[pair[0]] = [pair[1]]
+                original_repetitions[pair[0]] = 0
+
+        for ID in original_dict.keys(): 
+            original_repetitions[ID] = consecutive_repetitions(original_dict[ID])
+
+        # Transformed Participant Data
+        transformed_data = pd.read_csv("../forager/data/fluency_lists/participant_data/transformed-data.txt", sep="\t")
+        transformed_ID = transformed_data['ID'].tolist()
+        transformed_words = transformed_data['Word'].tolist()
+        transformed_dict = {}
+        transformed_repetitions = {} 
+        for pair in zip(transformed_ID, transformed_words): 
+            if pair[0] in transformed_dict.keys(): 
+                transformed_dict[pair[0]].append(pair[1])
+            else: 
+                transformed_dict[pair[0]] = [pair[1]]
+                transformed_repetitions[pair[0]] = 0
+
+        for ID in transformed_dict.keys(): 
+            transformed_repetitions[ID] = consecutive_repetitions(transformed_dict[ID])
+
+        # Removing Participants that have no Group placement (Neither CI or NH)
+        for ID in set(original_ID).difference(set(transformed_ID)):     
+            original_repetitions.pop(ID)
+            
+        repetitions = pd.DataFrame({'ID': list(original_repetitions.keys()), 'Original_Repetitions': list(original_repetitions.values()), 'Transformed_Repetitions': list(transformed_repetitions.values())})
+        repetitions['Difference'] = repetitions['Transformed_Repetitions'] - repetitions['Original_Repetitions']
+        repetitions.to_csv("outputs/participant_repetitions.csv", index = False)
+        
+        print(f"There were {repetitions['Transformed_Repetitions'].sum()} repetitions in the transformed data and {repetitions['Original_Repetitions'].sum()} repetitions in the original data.")
+    
+    
+    def num_replacements(self): 
+        data = pd.read_csv("../forager/data/fluency_lists/participant_data/raw-data.txt", sep="\t")
+        participant_words = list(set(data['Word'].tolist()))
+
+        w2v_s2v_vocab = pd.read_csv("../forager/data/lexical_data/Embeddings/Speech2Vec/speech2vec_200.txt", sep=" ", skiprows=1)
+        w2v_s2v_vocab = w2v_s2v_vocab['the'].tolist()
+        
+        count = len([word for word in participant_words if word not in w2v_s2v_vocab])
+        print("There are {} replacememts from the Participant Data.".format(count))
+            
+            
+"""getting repetitive word count and individual's best model"""
+util = util() 
+# util.participants_best_nll()
+# util.participant_repetitions() #-> 20 repetitions in the transformed data, 11 repetitions in the original data
+# util.num_replacements() #-> 59 word replacements from participant data (OOV words not in W2V or S2V vocab)

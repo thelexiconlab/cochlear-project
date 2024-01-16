@@ -443,7 +443,9 @@ class util:
 
         # save this dataframe in case we need a csv with all of the model results from all alphas and dimensions
         complete_model_results = complete_model_results.reset_index()
-
+        complete_model_results.to_csv("outputs/complete_model_results.csv", index = False)
+        
+        '''
         # Lowest NLL alphas and dimensions
         individual_best_model = pd.DataFrame(columns=["Dimension", "Alpha", "Subject", "Group", "Model", "Beta_Frequency", "Beta_Semantic", "Beta_Phonological", "Negative_Log_Likelihood_Optimized"])
         subjects = sorted(list(set(complete_model_results['Subject'].tolist())))
@@ -461,6 +463,7 @@ class util:
 
         individual_best_model = individual_best_model.reset_index(drop=True)
         individual_best_model.to_csv("outputs/participants_best_nll.csv", index = False)
+        '''
         return None
     
     def participant_repetitions(self):
@@ -530,6 +533,6 @@ class util:
             
 """getting repetitive word count and individual's best model"""
 util = util() 
-# util.participants_best_nll()
+util.participants_best_nll()
 # util.participant_repetitions() #-> 20 repetitions in the transformed data, 11 repetitions in the original data
 # util.num_replacements() #-> 59 word replacements from participant data (OOV words not in W2V or S2V vocab)

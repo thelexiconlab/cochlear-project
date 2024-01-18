@@ -1,0 +1,16 @@
+ID	Word
+SUG-544	dog
+SUG-544	cat
+SUG-544	pig
+SUG-544	cow
+SUG-544	chicken
+SUG-544	elephant
+SUG-544	monkey
+SUG-544	fish
+SUG-544	african
+SUG-544	dolphin
+SUG-544	dolphin
+SUG-544	zebra
+SUG-544	shark
+SUG-544	turtle
+SUG-544	cow

@@ -382,23 +382,23 @@ def best_NLL():
 def run_analysis(): 
     
     # create graph of mean number of responses for each group (NH, CI)
-    #mean_responses()
+    mean_responses()
     
     # add group columns for model_results.csv and individual_descriptive_stats.csv
-    #add_groupings()
+    add_groupings()
     
     # create bar graph for participant statistics 
-    #statistics()
+    statistics()
     
     # create model_results.csv for sum_NLL, mean_beta_semantic, mean_beta_freq, mean_beta_phon
     model_results()
     
     # create best_NLL.csv for best sum_NLL for each model and switch method (ex. dynamic_simdrop with alpha 0.5 s2v has lowest sum_NLL)
-    #best_NLL()
+    best_NLL()
     return None 
 
 
-# run_analysis()
+run_analysis()
 
 
 
@@ -521,18 +521,24 @@ class util:
     
     
     def num_replacements(self): 
-        data = pd.read_csv("../forager/data/fluency_lists/participant_data/raw-data.txt", sep="\t")
-        participant_words = list(set(data['Word'].tolist()))
-
-        w2v_s2v_vocab = pd.read_csv("../forager/data/lexical_data/Embeddings/Speech2Vec/speech2vec_200.txt", sep=" ", skiprows=1)
-        w2v_s2v_vocab = w2v_s2v_vocab['the'].tolist()
+                
+        replacements = pd.read_csv("../forager/data/fluency_lists/participant_results/data-cochlear-replacements.csv")
+        original_words = replacements['Spell Check'].tolist()
+        transformed_words = replacements['Final Words'].tolist()
         
-        count = len([word for word in participant_words if word not in w2v_s2v_vocab])
-        print("There are {} replacememts from the Participant Data.".format(count))
+        word_list = [] 
+        for i in range(len(original_words)): 
+            if original_words[i] != transformed_words[i]: 
+                word_list.append(original_words[i])
+            else: 
+                continue 
+        word_list = set(word_list)
+        print("There are {} replacememts from the Participant Data".format(len(word_list)))
+
             
             
 """getting repetitive word count and individual's best model"""
 util = util() 
 util.participants_best_nll()
-# util.participant_repetitions() #-> 20 repetitions in the transformed data, 11 repetitions in the original data
-# util.num_replacements() #-> 59 word replacements from participant data (OOV words not in W2V or S2V vocab)
+util.participant_repetitions() #-> 20 repetitions in the transformed data, 11 repetitions in the original data
+util.num_replacements() #-> 59 word replacements from participant data (OOV words not in W2V or S2V vocab)

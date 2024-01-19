@@ -23,18 +23,25 @@ def run_foraging_function(dimension, type):
 
     models = ['static','dynamic','pstatic','pdynamic','all']
     switch_methods = ['simdrop','multimodal','norms_associative', 'norms_categorical', 'delta','all']
-    data = 'forager/data/fluency_lists/participant_data/transformed-data.txt'
+    # data = 'forager/data/fluency_lists/participant_data/transformed-data.txt'
     
-    '''original'''
+    '''original - with consecutive repetitions'''
     # data = 'forager/data/fluency_lists/participant_data/transformed-data.txt' 
     
-    '''CBM'''
-    # data = 'forager/data/fluency_lists/participant_data/CBM_original.txt'
-    data = 'forager/data/fluency_lists/participant_data/CBM_modified.txt'
+    '''no_rep_data - without consecutive repetitions'''
+    # data = 'forager/data/fluency_lists/participant_data/no_rep_data.txt'
     
-    '''SUG'''
+    '''CBM - missing NLL'''
+    data = 'forager/data/fluency_lists/participant_data/CBM_original.txt'
+    # data = 'forager/data/fluency_lists/participant_data/CBM_modified.txt'
+    
+    '''SUG - missing NLL'''
     # data = 'forager/data/fluency_lists/participant_data/SUG_original.txt'
     # data = 'forager/data/fluency_lists/participant_data/SUG_modified.txt'
+    
+    '''CAY - all NLL present'''
+    # data = 'forager/data/fluency_lists/participant_data/CAY_original.txt'
+    # data = 'forager/data/fluency_lists/participant_data/CAY_modified.txt'
 
     #Methods
     def retrieve_data(path):
@@ -103,8 +110,10 @@ def run_foraging_function(dimension, type):
             model_name.append('forage_phonologicalstatic')
             model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
         if model == models[3] or model == models[4]:
+            print(switch_vecs)
             for i, switch_vec in enumerate(switch_vecs):
                 # Global Dynamic Phonological Model
+                print(i)
                 r1 = np.random.rand()
                 r2 = np.random.rand()
                 r3 = np.random.rand()
@@ -112,24 +121,27 @@ def run_foraging_function(dimension, type):
                 beta_df = float(v[0]) # Optimized weight for frequency cue
                 beta_ds = float(v[1]) # Optimized weight for similarity cue
                 beta_dp = float(v[2]) # Optimized weight for phonological cue
-                
                 nll, nll_vec = forage.model_dynamic_phon_report([beta_df, beta_ds,beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5],switch_vec,'global')
                 model_name.append('forage_phonologicaldynamicglobal_' + switch_names[i])
-                model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
+                model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))            
         
                 # Local Dynamic Phonological Model
                 r1 = np.random.rand()
                 r2 = np.random.rand()
                 r3 = np.random.rand()
-                v = minimize(forage.model_dynamic_phon, [r1,r2,r3], args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5], switch_vec,'local')).x
+                v = minimize(forage.model_dynamic_phon, [r1,r2,r3], args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5], switch_vec,'local')).x ### ERROR HERE for numrat/denrat number calculations
+                print("beta numbers{v}".format(v=v))
                 beta_df = float(v[0]) # Optimized weight for frequency cue
                 beta_ds = float(v[1]) # Optimized weight for similarity cue
                 beta_dp = float(v[2]) # Optimized weight for phonological cue
-                
-                nll, nll_vec = forage.model_dynamic_phon_report([beta_df, beta_ds,beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5],switch_vec,'local')
-                model_name.append('forage_phonologicaldynamiclocal_' + switch_names[i])
+                """These three beta numbers are extermemly small or large, which the numrat/denrat number calculations give an error"""
+                print("||||")
+                nll, nll_vec = forage.model_dynamic_phon_report([beta_df, beta_ds,beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5],switch_vec,'local') ### ERROR HERE for numrat/denrat number calculations
+                print(nll, nll_vec)
+                print()
+                model_name.append('forage_phonologicaldynamiclocal_' + switch_names[i]) 
                 model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
-        
+
                 # Switch Dynamic Phonological Model
                 r1 = np.random.rand()
                 r2 = np.random.rand()
@@ -186,6 +198,7 @@ def run_foraging_function(dimension, type):
                 for j, f in enumerate(fall):
                     switch_names.append("delta_rise={rise}_fall={fall}".format(rise=r,fall=f))
                     switch_vecs.append(switch_delta(fluency_list, semantic_similarity, r, f))
+                    # print(switch_delta(fluency_list, semantic_similarity, r, f))
 
         return switch_names, switch_vecs
     
@@ -374,48 +387,47 @@ def run_foraging_function(dimension, type):
 
     ind_stats = indiv_desc_stats(lexical_results, switch_results)
     agg_stats = agg_desc_stats(switch_results, forager_results)
-    with zipfile.ZipFile(oname, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        # Save the first DataFrame as a CSV file inside the zip
-        with zipf.open('evaluation_results.csv', 'w') as csvf:
-            replacement_df.to_csv(csvf, index=False)
+    # with zipfile.ZipFile(oname, 'w', zipfile.ZIP_DEFLATED) as zipf:
+    #     # Save the first DataFrame as a CSV file inside the zip
+    #     with zipf.open('evaluation_results.csv', 'w') as csvf:
+    #         replacement_df.to_csv(csvf, index=False)
 
-        # Save the second DataFrame as a CSV file inside the zip
-        with zipf.open('processed_data.csv', 'w') as csvf:
-            processed_df.to_csv(csvf, index=False)
+    #     # Save the second DataFrame as a CSV file inside the zip
+    #     with zipf.open('processed_data.csv', 'w') as csvf:
+    #         processed_df.to_csv(csvf, index=False)
         
-        # Save vocab as a CSV file inside the zip
-        with zipf.open('forager_vocab.csv', 'w') as csvf:
-            vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
-            vocab.to_csv(csvf, index=False)
-        # save lexical results
-        with zipf.open(lexical_name,'w') as csvf:
-            lexical_results.to_csv(csvf, index=False) 
-        # save switch results
-        with zipf.open(switch_name,'w') as csvf:
-            switch_results.to_csv(csvf, index=False) 
-        # save model results
-        with zipf.open(models_name,'w') as csvf:
-            forager_results.to_csv(csvf, index=False) 
-        # save individual descriptive statistics
-        with zipf.open('individual_descriptive_stats.csv', 'w') as csvf:
-            ind_stats.to_csv(csvf, index=False)
-        # save aggregate descriptive statistics
-        with zipf.open('aggregate_descriptive_stats.csv', 'w') as csvf:
-            agg_stats.to_csv(csvf, index=False)
+    #     # Save vocab as a CSV file inside the zip
+    #     with zipf.open('forager_vocab.csv', 'w') as csvf:
+    #         vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
+    #         vocab.to_csv(csvf, index=False)
+    #     # save lexical results
+    #     with zipf.open(lexical_name,'w') as csvf:
+    #         lexical_results.to_csv(csvf, index=False) 
+    #     # save switch results
+    #     with zipf.open(switch_name,'w') as csvf:
+    #         switch_results.to_csv(csvf, index=False) 
+    #     # save model results
+    #     with zipf.open(models_name,'w') as csvf:
+    #         forager_results.to_csv(csvf, index=False) 
+    #     # save individual descriptive statistics
+    #     with zipf.open('individual_descriptive_stats.csv', 'w') as csvf:
+    #         ind_stats.to_csv(csvf, index=False)
+    #     # save aggregate descriptive statistics
+    #     with zipf.open('aggregate_descriptive_stats.csv', 'w') as csvf:
+    #         agg_stats.to_csv(csvf, index=False)
 
-        print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
-        print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
-        print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
-        print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
-        print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
-        print(f"File 'model_results.csv' containing model level NLL results of provided fluency data saved in '{oname}'")
-        print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
-        print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
+        # print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
+        # print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
+        # print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
+        # print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
+        # print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
+        # print(f"File 'model_results.csv' containing model level NLL results of provided fluency data saved in '{oname}'")
+        # print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
+        # print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
 
 # run_foraging_function('100', 'only_s2v')
 
 dimensions = ['50', '100', '200', '300']
-dimensions = ['100']
 type = [
     'alpha_0.0_s2v', # = alpha_1_w2v
     'alpha_0.0_w2v', # = alpha_1_s2v 
@@ -444,7 +456,8 @@ type = [
 
 '''Run these for missing NLL'''
 ### CBM
-run_foraging_function('100', 'alpha_0.2_w2v')
+run_foraging_function('100', 'alpha_0.3_w2v')
 
 ### SUG
 # run_foraging_function('200', 'alpha_0.5_s2v')
+

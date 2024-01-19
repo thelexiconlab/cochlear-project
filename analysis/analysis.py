@@ -338,7 +338,8 @@ def model_results():
         for t in type: 
             path = '../forager/output/' + dim + '_dim_results/' + t + '_results' +'/model_results.csv'
 
-            data = pd.read_csv(path).dropna(subset=['Negative_Log_Likelihood_Optimized'])
+            # data = pd.read_csv(path).dropna(subset=['Negative_Log_Likelihood_Optimized'])
+            data = pd.read_csv(path)
             data_groups = data.groupby(["Group", "Model"])
 
             for group in groups: 

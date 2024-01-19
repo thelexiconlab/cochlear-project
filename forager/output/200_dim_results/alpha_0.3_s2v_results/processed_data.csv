@@ -21,7 +21,6 @@ CAF-657,toad
 CAF-657,rat
 CAF-657,mouse
 CAF-657,rodents
-CAF-657,rodents
 CAF-657,fox
 CAF-657,american
 CAF-657,deer
@@ -200,9 +199,7 @@ CAY-681,insect
 CAY-681,butterfly
 CAY-681,ladybug
 CAY-681,beetle
-CAY-681,beetle
 CAY-681,worm
-CAY-681,ant
 CAY-681,ant
 CAY-681,lizard
 CAY-681,insect
@@ -262,11 +259,9 @@ CBH-693,leopard
 CBH-693,penguin
 CBH-693,polar
 CBH-693,bear
-CBH-693,bear
 CBH-693,antelope
 CBH-693,insect
 CBH-693,lizard
-CBH-693,bird
 CBH-693,bird
 CBH-693,peacock
 CBH-693,monkey
@@ -315,19 +310,16 @@ CBL-698,tiger
 CBL-698,zebra
 CBL-698,lice
 CBL-698,insect
-CBL-698,insect
 CBL-698,beetle
 CBM-702,tiger
 CBM-702,dolphin
 CBM-702,lion
 CBM-702,penguin
 CBM-702,bird
-CBM-702,bird
 CBM-702,pigeon
 CBM-702,woodpecker
 CBM-702,reptile
 CBM-702,snake
-CBM-702,snail
 CBM-702,snail
 CBM-702,goldfish
 CBM-702,fish
@@ -517,7 +509,6 @@ CCL-730,cat
 CCL-730,dog
 CCL-730,butterfly
 CCL-730,bee
-CCL-730,bee
 CCL-730,lion
 CCL-730,zebra
 CCL-730,tiger
@@ -577,14 +568,12 @@ CDG-753,ape
 CDG-753,gorilla
 CDG-753,primate
 CDG-753,eagle
-CDG-753,eagle
 CDG-753,hawk
 CDH-754,wolf
 CDH-754,bear
 CDH-754,reptile
 CDH-754,dragon
 CDH-754,pegasus
-CDH-754,reptile
 CDH-754,reptile
 CDH-754,monster
 CDH-754,turtle
@@ -612,7 +601,6 @@ CDM-759,australian
 CDM-759,bird
 CDM-759,hippopotamus
 CDM-759,african
-CDR-764,african
 CDR-764,primate
 CDR-764,monkey
 CDR-764,elephant
@@ -692,7 +680,6 @@ SIU-211,lion
 SIU-211,tiger
 SIU-211,monkey
 SIU-211,bird
-SIU-211,lizard
 SIU-211,lizard
 SIU-211,deer
 SIU-211,bear
@@ -775,7 +762,6 @@ SMK-401,lion
 SMK-401,elephant
 SMK-401,skunk
 SMK-401,moose
-SMK-401,goose
 SMK-401,goose
 SMK-401,turkey
 SNI-300,dolphin
@@ -929,7 +915,6 @@ SPA-338,horse
 SPA-338,tiger
 SPA-338,lion
 SPA-338,water
-SPA-338,water
 SPA-338,hippopotamus
 SPA-338,dolphin
 SPA-338,shark
@@ -985,7 +970,6 @@ SPL-436,seal
 SPL-436,polar
 SPL-436,porcupine
 SPL-436,horse
-SPL-436,bull
 SPL-436,bull
 SPL-436,oxen
 SPV-450,dog
@@ -1063,7 +1047,6 @@ SRR-498,bear
 SRR-498,goat
 SRR-498,deer
 SRR-498,lion
-SSG-520,lion
 SSG-520,tiger
 SSG-520,bird
 SSG-520,monkey
@@ -1075,9 +1058,7 @@ SSG-520,cat
 SSG-520,dog
 SSG-520,snake
 SSG-520,turtle
-SSG-520,turtle
 SSG-520,crab
-SSG-520,water
 SSG-520,water
 SSZ-539,pig
 SSZ-539,cow
@@ -1101,7 +1082,6 @@ SUG-544,elephant
 SUG-544,monkey
 SUG-544,fish
 SUG-544,african
-SUG-544,dolphin
 SUG-544,dolphin
 SUG-544,zebra
 SUG-544,shark
@@ -1143,10 +1123,8 @@ SUV-558,sheep
 SUV-558,chicken
 SVA-563,rhinoceros
 SVA-563,primate
-SVA-563,primate
 SVA-563,chipmunk
 SVA-563,african
-SVA-563,gorilla
 SVA-563,gorilla
 SVA-563,dog
 SVA-563,cat
@@ -1177,7 +1155,6 @@ SVH-570,prairie
 SVH-570,gorilla
 SVH-570,elephant
 SVH-570,tiger
-SVY-587,tiger
 SVY-587,zebra
 SVY-587,african
 SVY-587,penguin
@@ -1212,4 +1189,3 @@ SZA-781,puppy
 SZA-781,kitten
 SZA-781,goose
 SZA-781,duck
-SZA-781,wolf

@@ -16,6 +16,7 @@ library(ggthemes)
 library(tidyboot)
 library(here)
 library(geomtextpath)
+library(lme4)
 ```
 
 # number of items produced
@@ -25,86 +26,50 @@ library(geomtextpath)
 participant_groupings = read_csv("../forager/data/fluency_lists/participant_results/participant_groupings.csv")
 
 num_items = read_csv('../forager/data/fluency_lists/participant_results/participant_word_count.csv') %>%
-  left_join(participant_groupings) %>% filter(!is.na(Group))
+  left_join(participant_groupings) %>% filter(!is.na(Group)) %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
 
 num_items %>%
   group_by(Group) %>% tidyboot_mean(count, nboot = 1000, na.rm = T) %>% 
   ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
     geom_bar(stat = 'identity') +
     geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05) +
-    geom_point(data = num_items, aes(x= Group, y = count, group = Group), position = position_jitterdodge(0.1), alpha = 0.3)+
-    labs(y = 'mean number of items produced') +
+    geom_point(data = num_items, aes(x= Group, y = count, group = Group),
+               position = position_jitterdodge(0.1), alpha = 0.3)+
+    labs(y = 'mean number of items produced', x = "") +
     theme_few() +
     scale_fill_few() +
-    theme(aspect.ratio = 1, legend.position = 'none') +
-    scale_fill_manual(values = c('#60BD68', '#D8CF23', '#CC253D'))
+    theme(aspect.ratio = 1, legend.position = 'none')
 
-ggsave(here('outputs/items.pdf'), units = 'in', width = 4, height = 4)
+ggsave(here('plots/items.pdf'), units = 'in', width = 4, height = 4)
 
 summary(lm(data = num_items, count ~ Group))
 ```
-
-# 
 
 
 
 # import model results
 
 ```{r}
-model_results = read_csv("outputs/model_results.csv") %>%
-  separate(model, into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_")%>%
-  mutate(group = fct_recode(group, "normal hearing" = "NH", "cochlear implant" = "CI"),
-         group = fct_relevel(group, "normal hearing", "cochlear implant"))
+model_results = read_csv("outputs/complete_model_results.csv") %>%
+  separate(Model, into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_")%>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
 ```
 
-# best structure
 
+# best model
 ```{r}
-additive_models = model_results %>% 
-  separate(type, into = c("alpha", "weight", "structure"), sep = "_")%>%
+
+best_models = model_results %>% 
+  separate(Alpha, into = c("alpha", "weight", "structure"), sep = "_")%>%
   mutate(weight = ifelse(is.na(weight), "average", weight))%>%
   mutate(weight = ifelse((!is.na(structure) & structure == "w2v"), 1-as.numeric(weight), weight))%>%
-  rename("structural model" = "weight")
-
-plot1= additive_models %>%
-  group_by(group, dimension,`structural model`) %>% slice_min(sum_NLL) %>%
-  filter(group == "normal hearing")%>%
-  ggplot(aes(x = dimension, y = sum_NLL, group = `structural model`, color = `structural model`) )+
-  geom_point()+
-  geom_line(linewidth = 0.1)+
-  facet_wrap(~group)+
-  scale_x_continuous(breaks = c(50, 100, 200, 300))+
-  labs(y = "negative log likelihood")+
-  geom_textpath(size  = 4, aes(label = `structural model`))+
-  scale_color_manual(values = viridis::viridis(14))+
-    theme_few() +
-    theme(aspect.ratio = 1, legend.position = "none")
-
-plot2 = additive_models %>%
-  group_by(group, dimension,`structural model`) %>% slice_min(sum_NLL) %>%
-  filter(group == "cochlear implant")%>%
-  ggplot(aes(x = dimension, y = sum_NLL, group = `structural model`, color = `structural model`) )+
-  geom_point()+
-  geom_line(linewidth = 0.1)+
-    scale_x_continuous(breaks = c(50, 100, 200, 300))+
-  facet_wrap(~group)+
-    labs(y = "")+
-  geom_textpath(size  = 4, aes(label = `structural model`))+
-  scale_color_manual(values = viridis::viridis(14))+
-    theme_few() +
-    theme(aspect.ratio = 1, legend.position = "none")
-
-
-
-ggsave(here('plots/structure.pdf'),plot =gridExtra::grid.arrange(plot1, plot2, nrow = 2), units = 'in', width = 4, height = 8)
-
-  
-```
-
-# best process
-```{r}
-
-model_results %>% 
+  rename("structural model" = "weight")%>%
+  mutate(Dimension = paste0("dim=",Dimension),
+         `structural model` = ifelse(`structural model` %in% c("w2v", "s2v", "average"), `structural model`,
+                                     paste0(`structural model`, " s2v")))%>%
   mutate(method = ifelse(is.na(method), foraging_type, method))%>%
   mutate(foraging_type = fct_recode(foraging_type, 
                                     `pstatic` = "phonologicalstatic", 
@@ -113,45 +78,48 @@ model_results %>%
                                     `pswitch` = "phonologicaldynamicswitch",
                                     `static` = "static", `dynamic` = "dynamic", `random` = "random"),
          method = fct_recode(method, `none` = "static", `none` = "phonologicalstatic", `none` = "baseline",
-                             `delta` = "delta", `simdrop` = "simdrop", `multimodal` = "multimodal", `norms` = "norms"))%>%
+                             `delta` = "delta", `simdrop` = "simdrop", `multi` = "multimodal", `norms` = "norms"))%>%
   mutate(foraging_type = fct_relevel(foraging_type, "random", "static", "pstatic", "dynamic", "plocal", "pglobal", "pswitch"),
-         method = fct_relevel(method, "norms", "simdrop", "multimodal", "delta", "none")) %>%
-  rename(`nLL` = "sum_NLL")%>%
-  group_by(group, foraging_type, method) %>% slice_min(nLL)%>%
-  ggplot(aes(x = method, y = foraging_type, fill = nLL)) +
+         method = fct_relevel(method, "norms", "simdrop", "multi", "delta", "none"))
+
+
+best_models_nLLs = best_models %>%
+  group_by(Group, Dimension,`structural model`, foraging_type, method) %>% 
+  summarise(sum_NLL = sum(Negative_Log_Likelihood_Optimized)) %>%
+  rename(`sum nLL` = "sum_NLL")
+  
+NH = best_models_nLLs %>%
+  filter(Group == "normal hearing") %>%
+  filter(method != "none") %>%
+  ggplot(aes(x = method, y = foraging_type, fill = `sum nLL`)) +
   geom_tile()+
-      scale_fill_gradient2(high = "cornflowerblue", mid = "lavender", low = "lightsteelblue", midpoint = 3300) +
-  geom_tile(color = 'black', stat = 'identity', height=1, width=1, size = 1,
-              data = . %>% group_by(group) %>% filter(nLL == min(nLL))) +
-  facet_wrap(~group)+
+  facet_grid(Dimension ~ `structural model`)+
+  scale_fill_gradient2(midpoint =50000)+
+  geom_tile(color = 'white', stat = 'identity', height=1, width=1, size = 1,
+              data = . %>% group_by(Group) %>% filter(`sum nLL` == min(`sum nLL`))) +
+  labs(x = "switch method", y = "foraging model", title = "normal hearing group")+
   theme_few() +
-    labs(y = "process model", x = "switch method")+
-    theme(aspect.ratio = 1)
+  theme(aspect.ratio = 1,
+        plot.title = element_text(hjust = 0.5, size = rel(1.2)),
+        axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave(here('plots/process.pdf'), units = 'in', width = 8, height = 4)
-
-```
-
-# delta heatmap
-
-```{r}
-model_results %>% 
-  separate(param1, into = c("risename", "rise"), sep = "=") %>% 
-  separate(param2, into = c("fallname", "fall"), sep = "=")%>%
-  filter(foraging_type == "phonologicaldynamiclocal" & method == "delta" & dimension == 50) %>%
-  group_by(group, rise, fall) %>% slice_min(sum_NLL)%>%
-  rename(`nLL` = "sum_NLL")%>%
-  ggplot(aes(x = rise, y = fall, fill = nLL)) +
+CI = best_models_nLLs %>%
+  filter(Group != "normal hearing") %>%
+  filter(method != "none") %>%
+  ggplot(aes(x = method, y = foraging_type, fill = `sum nLL`)) +
   geom_tile()+
-      scale_fill_gradient2(low = "salmon", mid = "mistyrose", high = "firebrick", midpoint = 3150) +
-    geom_tile(color = 'black', stat = 'identity', height=1, width=1, size = 1,
-              data = . %>% group_by(group) %>% filter(nLL == min(nLL))) +
-  facet_wrap(~group)+
+  facet_grid(Dimension ~ `structural model`, scales = "free")+
+  scale_fill_gradient2(midpoint =40000)+
+  geom_tile(color = 'white', stat = 'identity', height=1, width=1, size = 1,
+              data = . %>% group_by(Group) %>% filter(`sum nLL` == min(`sum nLL`))) +
+  labs(x = "switch method", y = "foraging model", title = "cochlear implant group")+
   theme_few() +
-  labs(y = "fall threshold", x = "rise threshold")+
-  theme(aspect.ratio = 1)
+  theme(aspect.ratio = 1,
+        plot.title = element_text(hjust = 0.5, size = rel(1.2)),
+        axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave(here('plots/delta.pdf'), units = 'in', width = 8, height = 4)
+ggsave(here('plots/NH.pdf'), plot = NH, units = 'in', width = 15, height = 5)
+ggsave(here('plots/CI.pdf'), plot =CI, units = 'in', width = 15, height = 5)
 
 ```
 
@@ -159,7 +127,39 @@ ggsave(here('plots/delta.pdf'), units = 'in', width = 8, height = 4)
 
 ```{r}
 ## will need this at the participant level 
-model_results %>% group_by(group) %>% slice_min(sum_NLL)
+subject_best_models = best_models %>% group_by(Group, Subject) %>%
+  slice_min(Negative_Log_Likelihood_Optimized)
+
+betas  = subject_best_models %>%
+  pivot_longer(names_to = "beta", cols = c(Beta_Frequency, Beta_Semantic, Beta_Phonological)) 
+
+beta_semantic_model = lm(data = betas %>% filter(beta == "Beta_Semantic"), value ~ Group)
+summary(beta_semantic_model)
+
+beta_freq_model = lm(data = betas %>% filter(beta == "Beta_Frequency"), value ~ Group)
+summary(beta_freq_model)
+
+beta_phon_model = lm(data = betas %>% filter(beta == "Beta_Phonological"), value ~ Group)
+summary(beta_phon_model)
+
+betas %>% 
+  group_by(Group, beta) %>%
+  tidyboot_mean(value, nboot = 1000, na.rm = T) %>%
+  separate(beta, into = c("b", "beta"))%>%
+  mutate(beta = tolower(beta),
+         beta = fct_recode(beta, `semantic\nsimilarity`="semantic", `phonological\nsimilarity` = "phonological",
+                           `frequency` = "frequency"))%>%
+  mutate(beta = fct_relevel(beta, "semantic\nsimilarity", "frequency", "phonological\nsimilarity")) %>%
+  ggplot(aes(x = beta, y = empirical_stat, group = Group, fill = Group)) +
+    geom_bar(stat = 'identity', position = "dodge") +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0, position =  position_dodge(0.9)) +
+    labs(y = bquote(beta ~ "(parameter salience)"), x = "") +
+    theme_few() +
+    scale_fill_few() +
+    theme(aspect.ratio = 1, legend.position = c(0.8,0.8))
+
+ggsave(here('plots/betas.pdf'), units = 'in', width = 6, height = 6)
+
 ```
 
 

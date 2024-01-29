@@ -1,4 +1,9 @@
 import numpy as np
+import time 
+import pandas as pd
+
+'''delete later'''
+import random
 
 
 class forage:
@@ -172,8 +177,13 @@ class forage:
             raise Exception("To use dynamic phonological cue, you must pass a valid parameter value from possible list of values: ['global','local','switch']")
 
         ct = 0
+        # df = pd.DataFrame(columns=['k','beta_freq','beta_sem','beta_phon','numrat','denrat','num/den','phonl','freql','siml', 'simh'])
+
+        # df = pd.read_csv('forager/forager/beta/beta_CBM_with_rep.csv')
+        df = pd.read_csv('forager/forager/beta/beta_CBM_no_rep.csv')
 
         for k in range(0, len(freql)):
+        # for k in range(5,6): -> delete later 
             if k == 0:
                 # P of item based on frequency alone (freq of this item / freq of all items)
                 numrat = pow(freql[k],beta[0])
@@ -194,9 +204,35 @@ class forage:
                 else:
                     numrat = pow(freql[k],beta[0]) * pow(siml[k],beta[1])
                     denrat = sum(pow(freqh[k],beta[0]) * pow(simh[k],beta[1]))
-                
+            
+            
+            # if numrat == float('inf') or denrat == float('inf'):
+            #     print(k)
+            row = [k,beta[0],beta[1],beta[2],numrat,denrat,numrat/denrat,phonl[k], phonh[k],freql[k],freqh[k], siml[k], simh[k]]
+            df.loc[len(df)] = row
+            
+            
+            # print("beta freq: {}".format(beta[0]))
+            # print("beta semant: {}".format(beta[1]))
+            # print("beta phon: {}".format(beta[2]))
+            # print("numrat: {}".format(numrat))
+            # print("denrat: {}".format(denrat))
+            # print('num/den: {}'.format(numrat/denrat))
+            # print("phonl[k]: {}".format(phonl[k]))
+            # print("freql[k]: {}".format(freql[k]))
+            # print("siml[k]: {}".format(siml[k]))
+            # print()
+            
+            
+            
+            
+            
+            # print("simh[k]: {}".format(simh[k]))
+            
             ct += - np.log(numrat/denrat)
-
+        # df.to_csv('forager/forager/beta/beta_CBM_with_rep.csv', index=False)
+        df.to_csv('forager/forager/beta/beta_CBM_no_rep.csv', index=False)
+        print(random.randint(0, 10))
         return ct
 
 

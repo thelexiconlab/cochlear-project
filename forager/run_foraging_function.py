@@ -32,8 +32,8 @@ def run_foraging_function(dimension, type):
     # data = 'forager/data/fluency_lists/participant_data/no_rep_data.txt'
     
     '''CBM - missing NLL'''
-    data = 'forager/data/fluency_lists/participant_data/CBM_original.txt'
-    # data = 'forager/data/fluency_lists/participant_data/CBM_modified.txt'
+    # data = 'forager/data/fluency_lists/participant_data/CBM_original.txt'
+    data = 'forager/data/fluency_lists/participant_data/CBM_modified.txt'
     
     '''SUG - missing NLL'''
     # data = 'forager/data/fluency_lists/participant_data/SUG_original.txt'
@@ -110,10 +110,10 @@ def run_foraging_function(dimension, type):
             model_name.append('forage_phonologicalstatic')
             model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
         if model == models[3] or model == models[4]:
-            print(switch_vecs)
+            # print(switch_vecs)
             for i, switch_vec in enumerate(switch_vecs):
                 # Global Dynamic Phonological Model
-                print(i)
+                # print(i)
                 r1 = np.random.rand()
                 r2 = np.random.rand()
                 r3 = np.random.rand()
@@ -130,15 +130,15 @@ def run_foraging_function(dimension, type):
                 r2 = np.random.rand()
                 r3 = np.random.rand()
                 v = minimize(forage.model_dynamic_phon, [r1,r2,r3], args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5], switch_vec,'local')).x ### ERROR HERE for numrat/denrat number calculations
-                print("beta numbers{v}".format(v=v))
+                # print("beta numbers{v}".format(v=v))
                 beta_df = float(v[0]) # Optimized weight for frequency cue
                 beta_ds = float(v[1]) # Optimized weight for similarity cue
                 beta_dp = float(v[2]) # Optimized weight for phonological cue
                 """These three beta numbers are extermemly small or large, which the numrat/denrat number calculations give an error"""
-                print("||||")
+                # print("||||")
                 nll, nll_vec = forage.model_dynamic_phon_report([beta_df, beta_ds,beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5],switch_vec,'local') ### ERROR HERE for numrat/denrat number calculations
-                print(nll, nll_vec)
-                print()
+                # print(nll, nll_vec)
+                # print()
                 model_name.append('forage_phonologicaldynamiclocal_' + switch_names[i]) 
                 model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
 

@@ -201,5 +201,36 @@ subject_best_models = subject_best_models %>%
 
 ```
 
+# phonology analysis
+
+```{r}
+participant_groupings = read_csv("../forager/data/fluency_lists/participant_results/participant_groupings.csv")
+
+psim = read_csv("../forager/output/50_dim_results/alpha_0.5_s2v_results/lexical_results.csv")%>%
+  rename(ID = "Subject") %>% left_join(participant_groupings)%>%
+  group_by(ID) %>%
+  mutate(itemno = row_number())
+
+psim %>%
+  ggplot(aes(x = itemno, y = Phonological_Similarity, group = Group, color = Group )) +
+  geom_smooth(method = "lm")
+
+## length matching
+items = psim %>%group_by(Group, ID) %>% 
+  summarise(items = n()) %>%
+  arrange(Group, desc(items))
+
+len_match = cbind(items %>% filter(Group == "NH"), 
+                  items %>% filter(Group == "CI"))
+colnames(len_match) = c("NH", "ID_NH", "n_NH", "CI", "ID_CI", "n_CI")
+len_match = len_match %>% rowwise()%>%
+  mutate(n_final = min(n_NH, n_CI))
+
+write.csv(len_match, file = "outputs/length_matched_items.csv", row.names = FALSE)
+
+
+```
+
+
 
 

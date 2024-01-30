@@ -52,7 +52,13 @@ summary(lm(data = num_items, count ~ Group))
 # import model results
 
 ```{r}
-model_results = read_csv("outputs/complete_model_results.csv") %>%
+trunc_model_results = read_csv("analysis trunc/outputs/complete_model_results.csv") %>%
+  mutate(analysis_type = "truncated")
+
+complete_model_results = read_csv("analysis without rep/outputs/complete_model_results.csv") %>%
+  mutate(analysis_type = "full")
+
+model_results = rbind(trunc_model_results, complete_model_results) %>%
   mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
          Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
 ```
@@ -61,7 +67,7 @@ model_results = read_csv("outputs/complete_model_results.csv") %>%
 # best model
 ```{r}
 best_models_nLLs = model_results %>%
-  group_by(Group, Dimension,Alpha, Model) %>% 
+  group_by(analysis_type, Group, Dimension,Alpha, Model) %>% 
   summarise(sum_NLL = sum(Negative_Log_Likelihood_Optimized)) %>%
   rename(`sum nLL` = "sum_NLL") %>%
   separate(Model, into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_")%>%
@@ -86,7 +92,7 @@ best_models_nLLs = model_results %>%
          method = fct_relevel(method, "norms", "simdrop", "multi", "delta", "none"))
   
 NH = best_models_nLLs %>%
-  filter(Group == "normal hearing") %>%
+  filter(Group == "normal hearing" & analysis_type == "full") %>%
   filter(method != "none") %>%
   ggplot(aes(x = method, y = foraging_type, fill = `sum nLL`)) +
   geom_tile()+
@@ -101,7 +107,7 @@ NH = best_models_nLLs %>%
         axis.text.x = element_text(angle = 45, hjust = 1))
 
 CI = best_models_nLLs %>%
-  filter(Group != "normal hearing") %>%
+  filter(Group != "normal hearing" & analysis_type == "full") %>%
   filter(method != "none") %>%
   ggplot(aes(x = method, y = foraging_type, fill = `sum nLL`)) +
   geom_tile()+
@@ -124,7 +130,9 @@ ggsave(here('plots/overall.pdf'), plot = gridExtra::grid.arrange(NH,CI, nrow= 2)
 
 ```{r}
 ## will need this at the participant level 
-subject_best_models = model_results %>% group_by(Group, Subject) %>%
+subject_best_models = model_results %>% 
+  filter(analysis_type == "full") %>%
+  group_by(Group, Subject) %>%
   slice_min(Negative_Log_Likelihood_Optimized)
 
 betas  = subject_best_models %>%
@@ -206,14 +214,62 @@ subject_best_models = subject_best_models %>%
 ```{r}
 participant_groupings = read_csv("../forager/data/fluency_lists/participant_results/participant_groupings.csv")
 
-psim = read_csv("../forager/output/50_dim_results/alpha_0.5_s2v_results/lexical_results.csv")%>%
+psim = rbind(read_csv("lexical_results_no_rep.csv")%>% mutate(analysis_type = "full"),
+             read_csv("lexical_results_no_rep_trunc.csv")%>% mutate(analysis_type = "truncated")) %>%
   rename(ID = "Subject") %>% left_join(participant_groupings)%>%
-  group_by(ID) %>%
+  group_by(analysis_type, ID) %>%
   mutate(itemno = row_number())
 
 psim %>%
   ggplot(aes(x = itemno, y = Phonological_Similarity, group = Group, color = Group )) +
-  geom_smooth(method = "lm")
+  geom_smooth(method = "lm")+
+  facet_wrap(~analysis_type)
+
+mean_psim = psim %>% group_by(analysis_type, Group,ID) %>%
+  summarise(mean_psim = mean(Phonological_Similarity),
+            n = n())
+
+psim_model = lm(data = mean_psim, 
+                n ~ mean_psim*Group*analysis_type)
+car::Anova(psim_model)
+sjPlot::plot_model(psim_model, type = "int")
+
+
+truncated_psim = mean_psim %>% filter(analysis_type == "truncated") %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
+
+
+points = truncated_psim %>%
+  ggplot(aes(x= mean_psim, y = n, group = Group, color = Group )) +
+  geom_point(alpha = 0.5)+
+  labs(y = "number of items", x = "mean phonological similarity") +
+    theme_few() +
+    scale_color_few() +
+    theme(aspect.ratio = 1, legend.position = c(0.6,0.8))
+
+
+truncated_psim_psim_model = lm(data = truncated_psim, n ~ mean_psim*Group)
+sjPlot::plot_model(truncated_psim_psim_model, type = "int")
+
+# Get fitted values
+truncated_psim$fitted_values <- predict(truncated_psim_psim_model, newdata = truncated_psim )
+truncated_psim$lower_ci <- predict(truncated_psim_psim_model, newdata = truncated_psim, interval = "confidence")[, "lwr"]
+truncated_psim$upper_ci <- predict(truncated_psim_psim_model, newdata = truncated_psim, interval = "confidence")[, "upr"]
+
+
+
+# Overlay the points and fitted values from sjPlot
+points +
+  geom_line(data = truncated_psim, aes(x = mean_psim, y = fitted_values, group = Group, color = Group))
+
+
+ggsave(here('plots/item-psim.pdf'), units = 'in', width = 4, height = 4)
+
+
+```
+
+```{r}
 
 ## length matching
 items = psim %>%group_by(Group, ID) %>% 

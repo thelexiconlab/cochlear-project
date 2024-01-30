@@ -23,8 +23,10 @@ def run_foraging_function(dimension, type):
 
     models = ['static','dynamic','pstatic','pdynamic','all']
     switch_methods = ['simdrop','multimodal','norms_associative', 'norms_categorical', 'delta','all']
-    data = 'forager/data/fluency_lists/participant_data/transformed-data.txt'
-    data = 'forager/data/fluency_lists/participant_data/transformed-data.txt'
+
+    #truncated data
+    data = 'forager/data/fluency_lists/participant_data/truncated_data.txt'
+    
 
     #Methods
     def retrieve_data(path):
@@ -93,8 +95,10 @@ def run_foraging_function(dimension, type):
             model_name.append('forage_phonologicalstatic')
             model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
         if model == models[3] or model == models[4]:
+            # print(switch_vecs)
             for i, switch_vec in enumerate(switch_vecs):
                 # Global Dynamic Phonological Model
+                # print(i)
                 r1 = np.random.rand()
                 r2 = np.random.rand()
                 r3 = np.random.rand()
@@ -102,24 +106,27 @@ def run_foraging_function(dimension, type):
                 beta_df = float(v[0]) # Optimized weight for frequency cue
                 beta_ds = float(v[1]) # Optimized weight for similarity cue
                 beta_dp = float(v[2]) # Optimized weight for phonological cue
-                
                 nll, nll_vec = forage.model_dynamic_phon_report([beta_df, beta_ds,beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5],switch_vec,'global')
                 model_name.append('forage_phonologicaldynamicglobal_' + switch_names[i])
-                model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
+                model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))            
         
                 # Local Dynamic Phonological Model
                 r1 = np.random.rand()
                 r2 = np.random.rand()
                 r3 = np.random.rand()
-                v = minimize(forage.model_dynamic_phon, [r1,r2,r3], args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5], switch_vec,'local')).x
+                v = minimize(forage.model_dynamic_phon, [r1,r2,r3], args=(history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5], switch_vec,'local')).x ### ERROR HERE for numrat/denrat number calculations
+                # print("beta numbers{v}".format(v=v))
                 beta_df = float(v[0]) # Optimized weight for frequency cue
                 beta_ds = float(v[1]) # Optimized weight for similarity cue
                 beta_dp = float(v[2]) # Optimized weight for phonological cue
-                
-                nll, nll_vec = forage.model_dynamic_phon_report([beta_df, beta_ds,beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5],switch_vec,'local')
-                model_name.append('forage_phonologicaldynamiclocal_' + switch_names[i])
+                """These three beta numbers are extermemly small or large, which the numrat/denrat number calculations give an error"""
+                # print("||||")
+                nll, nll_vec = forage.model_dynamic_phon_report([beta_df, beta_ds,beta_dp], history_vars[2], history_vars[3], history_vars[0], history_vars[1],history_vars[4],history_vars[5],switch_vec,'local') ### ERROR HERE for numrat/denrat number calculations
+                # print(nll, nll_vec)
+                # print()
+                model_name.append('forage_phonologicaldynamiclocal_' + switch_names[i]) 
                 model_results.append((beta_df, beta_ds, beta_dp, nll, nll_vec))
-        
+
                 # Switch Dynamic Phonological Model
                 r1 = np.random.rand()
                 r2 = np.random.rand()
@@ -176,6 +183,7 @@ def run_foraging_function(dimension, type):
                 for j, f in enumerate(fall):
                     switch_names.append("delta_rise={rise}_fall={fall}".format(rise=r,fall=f))
                     switch_vecs.append(switch_delta(fluency_list, semantic_similarity, r, f))
+                    # print(switch_delta(fluency_list, semantic_similarity, r, f))
 
         return switch_names, switch_vecs
     
@@ -429,6 +437,12 @@ for dim in dimensions:
         run_foraging_function(dim, t)
         count += 1
 
-print(count)
+# print(count)
 
-# run_foraging_function('50', 'alpha_0.0_s2v')
+'''Run these for missing NLL'''
+### CBM
+# run_foraging_function('100', 'alpha_0.3_w2v')
+
+### SUG
+# run_foraging_function('200', 'alpha_0.5_s2v')
+

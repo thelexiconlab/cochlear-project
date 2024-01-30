@@ -1,4 +1,9 @@
 import numpy as np
+import time 
+import pandas as pd
+
+'''delete later'''
+import random
 
 
 class forage:
@@ -194,9 +199,9 @@ class forage:
                 else:
                     numrat = pow(freql[k],beta[0]) * pow(siml[k],beta[1])
                     denrat = sum(pow(freqh[k],beta[0]) * pow(simh[k],beta[1]))
-                
+             
             ct += - np.log(numrat/denrat)
-
+            
         return ct
 
 

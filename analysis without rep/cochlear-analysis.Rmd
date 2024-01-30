@@ -1,0 +1,165 @@
+---
+title: "cochlear-analysis"
+output: html_document
+date: "2024-01-02"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# import packages
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(ggthemes)
+library(tidyboot)
+library(here)
+library(geomtextpath)
+```
+
+# number of items produced
+
+```{r}
+
+participant_groupings = read_csv("../forager/data/fluency_lists/participant_results/participant_groupings.csv")
+
+num_items = read_csv('../forager/data/fluency_lists/participant_results/participant_word_count.csv') %>%
+  left_join(participant_groupings) %>% filter(!is.na(Group))
+
+num_items %>%
+  group_by(Group) %>% tidyboot_mean(count, nboot = 1000, na.rm = T) %>% 
+  ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity') +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05) +
+    geom_point(data = num_items, aes(x= Group, y = count, group = Group), position = position_jitterdodge(0.1), alpha = 0.3)+
+    labs(y = 'mean number of items produced') +
+    theme_few() +
+    scale_fill_few() +
+    theme(aspect.ratio = 1, legend.position = 'none') +
+    scale_fill_manual(values = c('#60BD68', '#D8CF23', '#CC253D'))
+
+ggsave(here('outputs/items.pdf'), units = 'in', width = 4, height = 4)
+
+summary(lm(data = num_items, count ~ Group))
+```
+
+# 
+
+
+
+# import model results
+
+```{r}
+model_results = read_csv("outputs/model_results.csv") %>%
+  separate(model, into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_")%>%
+  mutate(group = fct_recode(group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         group = fct_relevel(group, "normal hearing", "cochlear implant"))
+```
+
+# best structure
+
+```{r}
+additive_models = model_results %>% 
+  separate(type, into = c("alpha", "weight", "structure"), sep = "_")%>%
+  mutate(weight = ifelse(is.na(weight), "average", weight))%>%
+  mutate(weight = ifelse((!is.na(structure) & structure == "w2v"), 1-as.numeric(weight), weight))%>%
+  rename("structural model" = "weight")
+
+plot1= additive_models %>%
+  group_by(group, dimension,`structural model`) %>% slice_min(sum_NLL) %>%
+  filter(group == "normal hearing")%>%
+  ggplot(aes(x = dimension, y = sum_NLL, group = `structural model`, color = `structural model`) )+
+  geom_point()+
+  geom_line(linewidth = 0.1)+
+  facet_wrap(~group)+
+  scale_x_continuous(breaks = c(50, 100, 200, 300))+
+  labs(y = "negative log likelihood")+
+  geom_textpath(size  = 4, aes(label = `structural model`))+
+  scale_color_manual(values = viridis::viridis(14))+
+    theme_few() +
+    theme(aspect.ratio = 1, legend.position = "none")
+
+plot2 = additive_models %>%
+  group_by(group, dimension,`structural model`) %>% slice_min(sum_NLL) %>%
+  filter(group == "cochlear implant")%>%
+  ggplot(aes(x = dimension, y = sum_NLL, group = `structural model`, color = `structural model`) )+
+  geom_point()+
+  geom_line(linewidth = 0.1)+
+    scale_x_continuous(breaks = c(50, 100, 200, 300))+
+  facet_wrap(~group)+
+    labs(y = "")+
+  geom_textpath(size  = 4, aes(label = `structural model`))+
+  scale_color_manual(values = viridis::viridis(14))+
+    theme_few() +
+    theme(aspect.ratio = 1, legend.position = "none")
+
+
+
+ggsave(here('plots/structure.pdf'),plot =gridExtra::grid.arrange(plot1, plot2, nrow = 2), units = 'in', width = 4, height = 8)
+
+  
+```
+
+# best process
+```{r}
+
+model_results %>% 
+  mutate(method = ifelse(is.na(method), foraging_type, method))%>%
+  mutate(foraging_type = fct_recode(foraging_type, 
+                                    `pstatic` = "phonologicalstatic", 
+                                    `plocal` = "phonologicaldynamiclocal",
+                                    `pglobal` = "phonologicaldynamicglobal",
+                                    `pswitch` = "phonologicaldynamicswitch",
+                                    `static` = "static", `dynamic` = "dynamic", `random` = "random"),
+         method = fct_recode(method, `none` = "static", `none` = "phonologicalstatic", `none` = "baseline",
+                             `delta` = "delta", `simdrop` = "simdrop", `multimodal` = "multimodal", `norms` = "norms"))%>%
+  mutate(foraging_type = fct_relevel(foraging_type, "random", "static", "pstatic", "dynamic", "plocal", "pglobal", "pswitch"),
+         method = fct_relevel(method, "norms", "simdrop", "multimodal", "delta", "none")) %>%
+  rename(`nLL` = "sum_NLL")%>%
+  group_by(group, foraging_type, method) %>% slice_min(nLL)%>%
+  ggplot(aes(x = method, y = foraging_type, fill = nLL)) +
+  geom_tile()+
+      scale_fill_gradient2(high = "cornflowerblue", mid = "lavender", low = "lightsteelblue", midpoint = 3300) +
+  geom_tile(color = 'black', stat = 'identity', height=1, width=1, size = 1,
+              data = . %>% group_by(group) %>% filter(nLL == min(nLL))) +
+  facet_wrap(~group)+
+  theme_few() +
+    labs(y = "process model", x = "switch method")+
+    theme(aspect.ratio = 1)
+
+ggsave(here('plots/process.pdf'), units = 'in', width = 8, height = 4)
+
+```
+
+# delta heatmap
+
+```{r}
+model_results %>% 
+  separate(param1, into = c("risename", "rise"), sep = "=") %>% 
+  separate(param2, into = c("fallname", "fall"), sep = "=")%>%
+  filter(foraging_type == "phonologicaldynamiclocal" & method == "delta" & dimension == 50) %>%
+  group_by(group, rise, fall) %>% slice_min(sum_NLL)%>%
+  rename(`nLL` = "sum_NLL")%>%
+  ggplot(aes(x = rise, y = fall, fill = nLL)) +
+  geom_tile()+
+      scale_fill_gradient2(low = "salmon", mid = "mistyrose", high = "firebrick", midpoint = 3150) +
+    geom_tile(color = 'black', stat = 'identity', height=1, width=1, size = 1,
+              data = . %>% group_by(group) %>% filter(nLL == min(nLL))) +
+  facet_wrap(~group)+
+  theme_few() +
+  labs(y = "fall threshold", x = "rise threshold")+
+  theme(aspect.ratio = 1)
+
+ggsave(here('plots/delta.pdf'), units = 'in', width = 8, height = 4)
+
+```
+
+# beta from best model
+
+```{r}
+## will need this at the participant level 
+model_results %>% group_by(group) %>% slice_min(sum_NLL)
+```
+
+

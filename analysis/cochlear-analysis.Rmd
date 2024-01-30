@@ -1,0 +1,292 @@
+---
+title: "cochlear-analysis"
+output: html_document
+date: "2024-01-02"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# import packages
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(ggthemes)
+library(tidyboot)
+library(here)
+library(geomtextpath)
+library(lme4)
+```
+
+# number of items produced
+
+```{r}
+
+participant_groupings = read_csv("../forager/data/fluency_lists/participant_results/participant_groupings.csv")
+
+num_items = read_csv('../forager/data/fluency_lists/participant_results/participant_word_count.csv') %>%
+  left_join(participant_groupings) %>% filter(!is.na(Group)) %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
+
+num_items %>%
+  group_by(Group) %>% tidyboot_mean(count, nboot = 1000, na.rm = T) %>% 
+  ggplot(aes(x = Group, y = empirical_stat, fill = Group)) +
+    geom_bar(stat = 'identity') +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0.05) +
+    geom_point(data = num_items, aes(x= Group, y = count, group = Group),
+               position = position_jitterdodge(0.1), alpha = 0.3)+
+    labs(y = 'mean number of items produced', x = "") +
+    theme_few() +
+    scale_fill_few() +
+    theme(aspect.ratio = 1, legend.position = 'none')
+
+ggsave(here('plots/items.pdf'), units = 'in', width = 4, height = 4)
+
+summary(lm(data = num_items, count ~ Group))
+```
+
+
+
+# import model results
+
+```{r}
+trunc_model_results = read_csv("analysis trunc/outputs/complete_model_results.csv") %>%
+  mutate(analysis_type = "truncated")
+
+complete_model_results = read_csv("analysis without rep/outputs/complete_model_results.csv") %>%
+  mutate(analysis_type = "full")
+
+model_results = rbind(trunc_model_results, complete_model_results) %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
+```
+
+
+# best model
+```{r}
+best_models_nLLs = model_results %>%
+  group_by(analysis_type, Group, Dimension,Alpha, Model) %>% 
+  summarise(sum_NLL = sum(Negative_Log_Likelihood_Optimized)) %>%
+  rename(`sum nLL` = "sum_NLL") %>%
+  separate(Model, into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_")%>%
+  separate(Alpha, into = c("alpha", "weight", "structure"), sep = "_")%>%
+  mutate(weight = ifelse(is.na(weight), "average", weight))%>%
+  mutate(weight = ifelse((!is.na(structure) & structure == "w2v"), 1-as.numeric(weight), weight))%>%
+  rename("structural model" = "weight")%>%
+  mutate(Dimension = paste0("dim=",Dimension),
+         `structural model` = ifelse(`structural model` %in% c("w2v", "s2v", "average"), `structural model`,
+                                     paste0(`structural model`, " s2v")))%>%
+  mutate(method = ifelse(is.na(method), foraging_type, method))%>%
+  mutate(foraging_type = fct_recode(foraging_type, 
+                                    `pstatic` = "phonologicalstatic", 
+                                    `plocal` = "phonologicaldynamiclocal",
+                                    `pglobal` = "phonologicaldynamicglobal",
+                                    `pswitch` = "phonologicaldynamicswitch",
+                                    `static` = "static", `dynamic` = "dynamic", `random` = "random"),
+         method = fct_recode(method, `none` = "static", `none` = "phonologicalstatic", `none` = "baseline",
+                             `delta` = "delta", `simdrop` = "simdrop", `multi` = "multimodal", `norms` = "norms"))%>%
+  mutate(foraging_type = fct_relevel(foraging_type, "random", "static", "pstatic", 
+                                     "dynamic", "plocal", "pglobal", "pswitch"),
+         method = fct_relevel(method, "norms", "simdrop", "multi", "delta", "none"))
+  
+NH = best_models_nLLs %>%
+  filter(Group == "normal hearing" & analysis_type == "full") %>%
+  filter(method != "none") %>%
+  ggplot(aes(x = method, y = foraging_type, fill = `sum nLL`)) +
+  geom_tile()+
+  facet_grid(Dimension ~ `structural model`)+
+  scale_fill_gradient2(midpoint =3450)+
+  geom_tile(color = 'black', stat = 'identity', height=1, width=1, size = 1,
+              data = . %>% group_by(Group) %>% filter(`sum nLL` == min(`sum nLL`))) +
+  labs(x = "", y = "foraging model", title = "normal hearing group")+
+  theme_few() +
+  theme(aspect.ratio = 1,
+        plot.title = element_text(hjust = 0.5, size = rel(1.2)),
+        axis.text.x = element_text(angle = 45, hjust = 1))
+
+CI = best_models_nLLs %>%
+  filter(Group != "normal hearing" & analysis_type == "full") %>%
+  filter(method != "none") %>%
+  ggplot(aes(x = method, y = foraging_type, fill = `sum nLL`)) +
+  geom_tile()+
+  facet_grid(Dimension ~ `structural model`, scales = "free")+
+  scale_fill_gradient2(midpoint =2900)+
+  geom_tile(color = 'black', stat = 'identity', height=1, width=1, size = 1,
+              data = . %>% group_by(Group) %>% filter(`sum nLL` == min(`sum nLL`))) +
+  labs(x = "switch method", y = "foraging model", title = "cochlear implant group")+
+  theme_few() +
+  theme(aspect.ratio = 1,
+        plot.title = element_text(hjust = 0.5, size = rel(1.2)),
+        axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave(here('plots/overall.pdf'), plot = gridExtra::grid.arrange(NH,CI, nrow= 2), units = 'in', width = 15, height = 10)
+
+
+```
+
+# beta from best model
+
+```{r}
+## will need this at the participant level 
+subject_best_models = model_results %>% 
+  filter(analysis_type == "full") %>%
+  group_by(Group, Subject) %>%
+  slice_min(Negative_Log_Likelihood_Optimized)
+
+betas  = subject_best_models %>%
+  pivot_longer(names_to = "beta", cols = c(Beta_Frequency, Beta_Semantic, Beta_Phonological)) 
+
+beta_semantic_model = lm(data = betas %>% filter(beta == "Beta_Semantic"), value ~ Group)
+summary(beta_semantic_model)
+
+beta_freq_model = lm(data = betas %>% filter(beta == "Beta_Frequency"), value ~ Group)
+summary(beta_freq_model)
+
+beta_phon_model = lm(data = betas %>% filter(beta == "Beta_Phonological"), value ~ Group)
+summary(beta_phon_model)
+
+betas %>% 
+  group_by(Group, beta) %>%
+  tidyboot_mean(value, nboot = 1000, na.rm = T) %>%
+  separate(beta, into = c("b", "beta"))%>%
+  mutate(beta = tolower(beta),
+         beta = fct_recode(beta, `semantic\nsimilarity`="semantic", `phonological\nsimilarity` = "phonological",
+                           `frequency` = "frequency"))%>%
+  mutate(beta = fct_relevel(beta, "semantic\nsimilarity", "frequency", "phonological\nsimilarity")) %>%
+  ggplot(aes(x = beta, y = empirical_stat, group = Group, fill = Group)) +
+    geom_bar(stat = 'identity', position = "dodge") +
+    geom_errorbar(aes(ymin = ci_lower, ymax = ci_upper), width = 0, position =  position_dodge(0.9)) +
+    labs(y = bquote(beta ~ "(parameter salience)"), x = "") +
+    theme_few() +
+    scale_fill_few() +
+    theme(aspect.ratio = 1, legend.position = c(0.8,0.8))
+
+ggsave(here('plots/betas.pdf'), units = 'in', width = 6, height = 6)
+
+```
+
+# best model analysis
+
+```{r}
+subject_best_models = subject_best_models %>%
+  ungroup()%>%
+  separate(Model, into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_")%>%
+  separate(Alpha, into = c("alpha", "weight", "structure"), sep = "_")%>%
+  mutate(weight = ifelse(is.na(weight), "average", weight))%>%
+  mutate(weight = ifelse((!is.na(structure) & structure == "w2v"), 1-as.numeric(weight), weight))%>%
+  rename("structural model" = "weight")%>%
+  mutate(Dimension = paste0("dim=",Dimension),
+         `structural model` = ifelse(`structural model` %in% c("w2v", "s2v", "average"), `structural model`,
+                                     paste0(`structural model`, " s2v")))%>%
+  mutate(method = ifelse(is.na(method), foraging_type, method))%>%
+  mutate(foraging_type = fct_recode(foraging_type, 
+                                    `pstatic` = "phonologicalstatic", 
+                                    `plocal` = "phonologicaldynamiclocal",
+                                    `pglobal` = "phonologicaldynamicglobal",
+                                    `pswitch` = "phonologicaldynamicswitch",
+                                    `static` = "static", `dynamic` = "dynamic", `random` = "random"),
+         method = fct_recode(method, `none` = "static", `none` = "phonologicalstatic", `none` = "baseline",
+                             `delta` = "delta", `simdrop` = "simdrop", `multi` = "multimodal", `norms` = "norms"))%>%
+  mutate(foraging_type = fct_relevel(foraging_type, "random", "static", "pstatic", 
+                                     "dynamic", "plocal", "pglobal", "pswitch"),
+         method = fct_relevel(method, "norms", "simdrop", "multi", "delta", "none"))
+  
+
+  subject_best_models %>%
+    group_by(Group, foraging_type) %>%
+    count() %>%
+    rename(model = "foraging_type") %>%
+    ggplot(aes(x = Group, y = n, group = model, fill = model)) +
+    geom_col()+
+    labs(y = "number of participants", x = "") +
+    theme_few() +
+    scale_fill_calc() +
+    theme(aspect.ratio = 1, legend.position = c(0.8,0.8))
+
+  ggsave(here('plots/subject-models.pdf'), units = 'in', width = 5, height = 5)
+
+```
+
+# phonology analysis
+
+```{r}
+participant_groupings = read_csv("../forager/data/fluency_lists/participant_results/participant_groupings.csv")
+
+psim = rbind(read_csv("lexical_results_no_rep.csv")%>% mutate(analysis_type = "full"),
+             read_csv("lexical_results_no_rep_trunc.csv")%>% mutate(analysis_type = "truncated")) %>%
+  rename(ID = "Subject") %>% left_join(participant_groupings)%>%
+  group_by(analysis_type, ID) %>%
+  mutate(itemno = row_number())
+
+psim %>%
+  ggplot(aes(x = itemno, y = Phonological_Similarity, group = Group, color = Group )) +
+  geom_smooth(method = "lm")+
+  facet_wrap(~analysis_type)
+
+mean_psim = psim %>% group_by(analysis_type, Group,ID) %>%
+  summarise(mean_psim = mean(Phonological_Similarity),
+            n = n())
+
+psim_model = lm(data = mean_psim, 
+                n ~ mean_psim*Group*analysis_type)
+car::Anova(psim_model)
+sjPlot::plot_model(psim_model, type = "int")
+
+
+truncated_psim = mean_psim %>% filter(analysis_type == "truncated") %>%
+  mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
+
+
+points = truncated_psim %>%
+  ggplot(aes(x= mean_psim, y = n, group = Group, color = Group )) +
+  geom_point(alpha = 0.5)+
+  labs(y = "number of items", x = "mean phonological similarity") +
+    theme_few() +
+    scale_color_few() +
+    theme(aspect.ratio = 1, legend.position = c(0.6,0.8))
+
+
+truncated_psim_psim_model = lm(data = truncated_psim, n ~ mean_psim*Group)
+sjPlot::plot_model(truncated_psim_psim_model, type = "int")
+
+# Get fitted values
+truncated_psim$fitted_values <- predict(truncated_psim_psim_model, newdata = truncated_psim )
+truncated_psim$lower_ci <- predict(truncated_psim_psim_model, newdata = truncated_psim, interval = "confidence")[, "lwr"]
+truncated_psim$upper_ci <- predict(truncated_psim_psim_model, newdata = truncated_psim, interval = "confidence")[, "upr"]
+
+
+
+# Overlay the points and fitted values from sjPlot
+points +
+  geom_line(data = truncated_psim, aes(x = mean_psim, y = fitted_values, group = Group, color = Group))
+
+
+ggsave(here('plots/item-psim.pdf'), units = 'in', width = 4, height = 4)
+
+
+```
+
+```{r}
+
+## length matching
+items = psim %>%group_by(Group, ID) %>% 
+  summarise(items = n()) %>%
+  arrange(Group, desc(items))
+
+len_match = cbind(items %>% filter(Group == "NH"), 
+                  items %>% filter(Group == "CI"))
+colnames(len_match) = c("NH", "ID_NH", "n_NH", "CI", "ID_CI", "n_CI")
+len_match = len_match %>% rowwise()%>%
+  mutate(n_final = min(n_NH, n_CI))
+
+write.csv(len_match, file = "outputs/length_matched_items.csv", row.names = FALSE)
+
+
+```
+
+
+
+

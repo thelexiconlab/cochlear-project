@@ -180,7 +180,7 @@ class forage:
         # df = pd.DataFrame(columns=['k','beta_freq','beta_sem','beta_phon','numrat','denrat','num/den','phonl','freql','siml', 'simh'])
 
         # df = pd.read_csv('forager/forager/beta/beta_CBM_with_rep.csv')
-        df = pd.read_csv('forager/forager/beta/beta_CBM_no_rep.csv')
+        # df = pd.read_csv('forager/forager/beta/beta_CBM_no_rep.csv')
 
         for k in range(0, len(freql)):
         # for k in range(5,6): -> delete later 
@@ -208,8 +208,8 @@ class forage:
             
             # if numrat == float('inf') or denrat == float('inf'):
             #     print(k)
-            row = [k,beta[0],beta[1],beta[2],numrat,denrat,numrat/denrat,phonl[k], phonh[k],freql[k],freqh[k], siml[k], simh[k]]
-            df.loc[len(df)] = row
+            # row = [k,beta[0],beta[1],beta[2],numrat,denrat,numrat/denrat,phonl[k], phonh[k],freql[k],freqh[k], siml[k], simh[k]]
+            # df.loc[len(df)] = row
             
             
             # print("beta freq: {}".format(beta[0]))
@@ -231,8 +231,8 @@ class forage:
             
             ct += - np.log(numrat/denrat)
         # df.to_csv('forager/forager/beta/beta_CBM_with_rep.csv', index=False)
-        df.to_csv('forager/forager/beta/beta_CBM_no_rep.csv', index=False)
-        print(random.randint(0, 10))
+        # df.to_csv('forager/forager/beta/beta_CBM_no_rep.csv', index=False)
+        # print(random.randint(0, 10))
         return ct
 
 

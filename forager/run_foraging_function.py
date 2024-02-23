@@ -24,6 +24,9 @@ def run_foraging_function(dimension, type):
     models = ['static','dynamic','pstatic','pdynamic','all']
     switch_methods = ['simdrop','multimodal','norms_associative', 'norms_categorical', 'delta','all']
     # data = 'forager/data/fluency_lists/participant_data/transformed-data.txt'
+    # data = 'forager/data/fluency_lists/participant_data/truncated_data.txt'
+    # data = 'forager/data/fluency_lists/participant_data/CBM_original.txt'
+    data = 'forager/data/fluency_lists/participant_data/no pets with rep/no-pets.txt'
     
     '''original - with consecutive repetitions'''
     # data = 'forager/data/fluency_lists/participant_data/transformed-data.txt' 
@@ -33,7 +36,7 @@ def run_foraging_function(dimension, type):
     
     '''CBM - missing NLL'''
     # data = 'forager/data/fluency_lists/participant_data/CBM_original.txt'
-    data = 'forager/data/fluency_lists/participant_data/CBM_modified.txt'
+    # data = 'forager/data/fluency_lists/participant_data/CBM_modified.txt'
     
     '''SUG - missing NLL'''
     # data = 'forager/data/fluency_lists/participant_data/SUG_original.txt'
@@ -47,7 +50,7 @@ def run_foraging_function(dimension, type):
     def retrieve_data(path):
         """
         1. Verify that data path exists
-
+˜
         """
         if os.path.exists(path) == False:
             ex_str = "Provided path to data \"{path}\" does not exist. Please specify a proper path".format(path=path)
@@ -387,43 +390,43 @@ def run_foraging_function(dimension, type):
 
     ind_stats = indiv_desc_stats(lexical_results, switch_results)
     agg_stats = agg_desc_stats(switch_results, forager_results)
-    # with zipfile.ZipFile(oname, 'w', zipfile.ZIP_DEFLATED) as zipf:
-    #     # Save the first DataFrame as a CSV file inside the zip
-    #     with zipf.open('evaluation_results.csv', 'w') as csvf:
-    #         replacement_df.to_csv(csvf, index=False)
+    with zipfile.ZipFile(oname, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        # Save the first DataFrame as a CSV file inside the zip
+        with zipf.open('evaluation_results.csv', 'w') as csvf:
+            replacement_df.to_csv(csvf, index=False)
 
-    #     # Save the second DataFrame as a CSV file inside the zip
-    #     with zipf.open('processed_data.csv', 'w') as csvf:
-    #         processed_df.to_csv(csvf, index=False)
+        # Save the second DataFrame as a CSV file inside the zip
+        with zipf.open('processed_data.csv', 'w') as csvf:
+            processed_df.to_csv(csvf, index=False)
         
-    #     # Save vocab as a CSV file inside the zip
-    #     with zipf.open('forager_vocab.csv', 'w') as csvf:
-    #         vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
-    #         vocab.to_csv(csvf, index=False)
-    #     # save lexical results
-    #     with zipf.open(lexical_name,'w') as csvf:
-    #         lexical_results.to_csv(csvf, index=False) 
-    #     # save switch results
-    #     with zipf.open(switch_name,'w') as csvf:
-    #         switch_results.to_csv(csvf, index=False) 
-    #     # save model results
-    #     with zipf.open(models_name,'w') as csvf:
-    #         forager_results.to_csv(csvf, index=False) 
-    #     # save individual descriptive statistics
-    #     with zipf.open('individual_descriptive_stats.csv', 'w') as csvf:
-    #         ind_stats.to_csv(csvf, index=False)
-    #     # save aggregate descriptive statistics
-    #     with zipf.open('aggregate_descriptive_stats.csv', 'w') as csvf:
-    #         agg_stats.to_csv(csvf, index=False)
+        # Save vocab as a CSV file inside the zip
+        with zipf.open('forager_vocab.csv', 'w') as csvf:
+            vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
+            vocab.to_csv(csvf, index=False)
+        # save lexical results
+        with zipf.open(lexical_name,'w') as csvf:
+            lexical_results.to_csv(csvf, index=False) 
+        # save switch results
+        with zipf.open(switch_name,'w') as csvf:
+            switch_results.to_csv(csvf, index=False) 
+        # save model results
+        with zipf.open(models_name,'w') as csvf:
+            forager_results.to_csv(csvf, index=False) 
+        # save individual descriptive statistics
+        with zipf.open('individual_descriptive_stats.csv', 'w') as csvf:
+            ind_stats.to_csv(csvf, index=False)
+        # save aggregate descriptive statistics
+        with zipf.open('aggregate_descriptive_stats.csv', 'w') as csvf:
+            agg_stats.to_csv(csvf, index=False)
 
-        # print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
-        # print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
-        # print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
-        # print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
-        # print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
-        # print(f"File 'model_results.csv' containing model level NLL results of provided fluency data saved in '{oname}'")
-        # print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
-        # print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
+        print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
+        print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
+        print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
+        print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
+        print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
+        print(f"File 'model_results.csv' containing model level NLL results of provided fluency data saved in '{oname}'")
+        print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
+        print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
 
 # run_foraging_function('100', 'only_s2v')
 
@@ -456,8 +459,17 @@ type = [
 
 '''Run these for missing NLL'''
 ### CBM
-run_foraging_function('100', 'alpha_0.3_w2v')
+# run_foraging_function('100', 'alpha_0.3_w2v')
 
 ### SUG
 # run_foraging_function('200', 'alpha_0.5_s2v')
+
+### no pets with rep 
+run_foraging_function('100', 'alpha_0.3_w2v')
+run_foraging_function('100', 'alpha_0.2_w2v')
+run_foraging_function('200', 'alpha_0.5_s2v')
+run_foraging_function('100', 'average')
+
+
+
 

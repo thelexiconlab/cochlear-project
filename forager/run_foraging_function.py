@@ -25,7 +25,7 @@ def run_foraging_function(dimension, type):
     switch_methods = ['simdrop','multimodal','norms_associative', 'norms_categorical', 'delta','all']
 
     #truncated data
-    data = 'forager/data/fluency_lists/participant_data/truncated_data.txt'
+    data = 'forager/data/fluency_lists/participant_data/transformed-data.txt'
     
 
     #Methods
@@ -433,7 +433,7 @@ type = [
 count = 0 
 for dim in dimensions: 
     for t in type: 
-        print(t)
+        print(dim, t)
         run_foraging_function(dim, t)
         count += 1
 

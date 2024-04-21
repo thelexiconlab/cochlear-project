@@ -6,9 +6,9 @@ This project investigates how individuals search through memory, and how differe
 
 This repository hosts the code and data for the following paper presented at the Annual Meeting of the Cognitive Science Society:
 
-```
-Kumar, A.A., Kang, M., Kronenberger, W.G., Pisoni, D. Jones, M.N. (in press). Structure and process-level lexical interactions in memory search: A case study of individuals with cochlear implants and normal hearing.
-```
+
+- Kumar, A.A., Kang, M., Kronenberger, W.G., Pisoni, D. Jones, M.N. (in press). Structure and process-level lexical interactions in memory search: A case study of individuals with cochlear implants and normal hearing.
+
 
 ## Organization
 
@@ -19,8 +19,8 @@ Kumar, A.A., Kang, M., Kronenberger, W.G., Pisoni, D. Jones, M.N. (in press). St
 - Details about the speech2vec model can be found [here](https://arxiv.org/abs/1803.08976)
 
 ### analysis folder
-- The `analysis` folder consists of all the analysis this project achieved by using/modifying the forager package. In the analysis folder, there are two  files 'workflow.py' and 'analysis.py'. 
-- The `analysis/outputs_full` folder consists the aggregated data from all participants across different model configurations. The `analysis/outputs_truncated` folder consists of the aggregated data from all participants across different model configurations but for fluency lists that were truncated to match the total number of items produced across groups. The list of length matched participants can be found in the same folder as well.
+- The `analysis` folder consists of all the analysis this project achieved by using/modifying the forager package. 
+- The `cochlear-analysis.Rmd` file uses outputs generated via the forager package to conduct the analysis. These outputs can be found in the `forager/output` folder and are separated by whether the outputs were generated based on the full fluency lists OR the truncated fluency lists (to control for list length, see paper for more details).
 - The `analysis/plots` folder consists of all the plots generated from the analysis conducted within the .Rmd file.
 
 ### error check folder

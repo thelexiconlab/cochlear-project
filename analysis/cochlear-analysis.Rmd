@@ -42,7 +42,7 @@ num_items %>%
     scale_fill_few() +
     theme(aspect.ratio = 1, legend.position = 'none')
 
-ggsave(here('plots/items.pdf'), units = 'in', width = 4, height = 4)
+#ggsave(here('plots/items.pdf'), units = 'in', width = 4, height = 4)
 
 summary(lm(data = num_items, count ~ Group))
 ```
@@ -52,11 +52,11 @@ summary(lm(data = num_items, count ~ Group))
 # import model results
 
 ```{r}
-trunc_model_results = read_csv("outputs_truncated/all_model_results.csv") %>%
-  mutate(analysis_type = "truncated")
+trunc_model_results = read_csv("../forager/output/Truncated_data_results/all_model_results.csv") %>%
+  mutate(analysis_type = "truncated") %>% left_join(participant_groupings %>% rename(Subject = ID))
 
-complete_model_results = read_csv("outputs_full/all_model_results.csv") %>%
-  mutate(analysis_type = "full")
+complete_model_results = read_csv("../forager/output/Full_data_results/all_model_results.csv") %>%
+  mutate(analysis_type = "full")%>% left_join(participant_groupings %>% rename(Subject = ID))
 
 model_results = rbind(trunc_model_results, complete_model_results) %>%
   mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
@@ -127,7 +127,7 @@ CI = best_models_nLLs %>%
 
 gridExtra::grid.arrange(NH,CI, nrow= 2)
 
-ggsave(here('plots/overall.pdf'), plot = gridExtra::grid.arrange(NH,CI, nrow= 2), units = 'in', width = 15, height = 10)
+#ggsave(here('plots/overall.pdf'), plot = gridExtra::grid.arrange(NH,CI, nrow= 2), units = 'in', width = 15, height = 10)
 
 
 ```
@@ -170,7 +170,7 @@ betas %>%
     scale_fill_few() +
     theme(aspect.ratio = 1, legend.position = c(0.8,0.8))
 
-ggsave(here('plots/betas.pdf'), units = 'in', width = 6, height = 6)
+#ggsave(here('plots/betas.pdf'), units = 'in', width = 6, height = 6)
 
 ```
 
@@ -204,7 +204,7 @@ subject_best_models = subject_best_models %>%
          method = fct_relevel(method, "norms", "simdrop", "multi", "delta", "none"))
   
 
-  subject_best_models %>%
+subject_best_models %>%
     group_by(Group, foraging_type) %>%
     count() %>%
     rename(model = "foraging_type") %>%
@@ -215,7 +215,7 @@ subject_best_models = subject_best_models %>%
     scale_fill_calc() +
     theme(aspect.ratio = 1, legend.position = c(0.8,0.8))
 
-ggsave(here('plots/subject-models.pdf'), units = 'in', width = 5, height = 5)
+#ggsave(here('plots/subject-models.pdf'), units = 'in', width = 5, height = 5)
 
 ```
 
@@ -226,10 +226,10 @@ participant_groupings = read_csv("../forager/data/fluency_lists/participant_resu
 
 ## we pick ONE model (dim-type) since lexical results are independent of the model
 
-psim = rbind(read_csv("outputs_full/all_lexical_results.csv")%>% 
+psim = rbind(read_csv("../forager/output/Full_data_results/all_lexical_results.csv")%>% 
                filter(Dimension == 50 & Type == "alpha_0.5_s2v") %>%
                mutate(analysis_type = "full"),
-             read_csv("outputs_truncated/all_lexical_results.csv")%>% 
+             read_csv("../forager/output/Truncated_data_results/all_lexical_results.csv")%>% 
                filter(Dimension == 50 & Type == "alpha_0.5_s2v") %>%
                mutate(analysis_type = "truncated")) %>%
   rename(ID = "Subject") %>% left_join(participant_groupings)%>%
@@ -281,7 +281,7 @@ points +
   geom_line(data = truncated_psim, aes(x = mean_psim, y = fitted_values, group = Group, color = Group))
 
 
-ggsave(here('plots/item-psim.pdf'), units = 'in', width = 4, height = 4)
+#ggsave(here('plots/item-psim.pdf'), units = 'in', width = 4, height = 4)
 
 
 ```

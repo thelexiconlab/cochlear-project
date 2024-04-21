@@ -286,6 +286,30 @@ points +
 
 ```
 
+# demographics
+
+```{r}
+demo = read_csv("../forager/data/fluency_lists/participant_data/latest_demo.csv") %>% 
+  mutate(ID = as.character(ID)) %>%
+  rename(newGroup = Group)%>% filter(!CM %in% "Sign/TC")
+
+demo_summary = demo%>%
+  group_by(newGroup) %>%
+  summarise(N = n(),
+    age_mean = mean(CAYRS2),
+            age_range = str_c(range(CAYRS2), collapse = "-"),
+            implantage_mean = mean(FitMOS),
+            implantage_range = str_c(range(FitMOS), collapse = "-"),
+            use_mean = mean(UseYRS2),
+            use_range = str_c(range(UseYRS2), collapse = "-"),
+            onset_mean = mean(OnsetMOS),
+            onset_range = str_c(range(OnsetMOS), collapse = "-"),
+            vocab_mean = mean(`@4ppvtss`),
+            vocab_range = str_c(range(`@4ppvtss`), collapse = "-")) 
+
+```
+
+
 
 
 

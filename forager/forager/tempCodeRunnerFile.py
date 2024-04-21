@@ -1,0 +1,1 @@
+create_semantic_matrix('../data/lexical_data/50_dim_lexical_data/alpha_0.0_s2v/embeddings.csv', '../data/lexical_data/50_dim_lexical_data/alpha_0.0_s2v')

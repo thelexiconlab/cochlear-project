@@ -52,15 +52,16 @@ summary(lm(data = num_items, count ~ Group))
 # import model results
 
 ```{r}
-trunc_model_results = read_csv("analysis trunc/outputs/complete_model_results.csv") %>%
+trunc_model_results = read_csv("outputs_truncated/all_model_results.csv") %>%
   mutate(analysis_type = "truncated")
 
-complete_model_results = read_csv("analysis without rep/outputs/complete_model_results.csv") %>%
+complete_model_results = read_csv("outputs_full/all_model_results.csv") %>%
   mutate(analysis_type = "full")
 
 model_results = rbind(trunc_model_results, complete_model_results) %>%
   mutate(Group = fct_recode(Group, "normal hearing" = "NH", "cochlear implant" = "CI"),
-         Group = fct_relevel(Group, "normal hearing", "cochlear implant"))
+         Group = fct_relevel(Group, "normal hearing", "cochlear implant")) %>%
+  rename(Alpha = "Type")
 ```
 
 
@@ -70,13 +71,15 @@ best_models_nLLs = model_results %>%
   group_by(analysis_type, Group, Dimension,Alpha, Model) %>% 
   summarise(sum_NLL = sum(Negative_Log_Likelihood_Optimized)) %>%
   rename(`sum nLL` = "sum_NLL") %>%
-  separate(Model, into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_")%>%
+  separate(Model, 
+           into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_")%>%
   separate(Alpha, into = c("alpha", "weight", "structure"), sep = "_")%>%
   mutate(weight = ifelse(is.na(weight), "average", weight))%>%
   mutate(weight = ifelse((!is.na(structure) & structure == "w2v"), 1-as.numeric(weight), weight))%>%
   rename("structural model" = "weight")%>%
   mutate(Dimension = paste0("dim=",Dimension),
-         `structural model` = ifelse(`structural model` %in% c("w2v", "s2v", "average"), `structural model`,
+         `structural model` = 
+           ifelse(`structural model` %in% c("w2v", "s2v", "average"), `structural model`,
                                      paste0(`structural model`, " s2v")))%>%
   mutate(method = ifelse(is.na(method), foraging_type, method))%>%
   mutate(foraging_type = fct_recode(foraging_type, 
@@ -85,8 +88,9 @@ best_models_nLLs = model_results %>%
                                     `pglobal` = "phonologicaldynamicglobal",
                                     `pswitch` = "phonologicaldynamicswitch",
                                     `static` = "static", `dynamic` = "dynamic", `random` = "random"),
-         method = fct_recode(method, `none` = "static", `none` = "phonologicalstatic", `none` = "baseline",
-                             `delta` = "delta", `simdrop` = "simdrop", `multi` = "multimodal", `norms` = "norms"))%>%
+         method = fct_recode(method, 
+                             `none` = "static", `none` = "phonologicalstatic", `none` = "baseline",
+              `delta` = "delta", `simdrop` = "simdrop", `multi` = "multimodal", `norms` = "norms"))%>%
   mutate(foraging_type = fct_relevel(foraging_type, "random", "static", "pstatic", 
                                      "dynamic", "plocal", "pglobal", "pswitch"),
          method = fct_relevel(method, "norms", "simdrop", "multi", "delta", "none"))
@@ -121,6 +125,8 @@ CI = best_models_nLLs %>%
         plot.title = element_text(hjust = 0.5, size = rel(1.2)),
         axis.text.x = element_text(angle = 45, hjust = 1))
 
+gridExtra::grid.arrange(NH,CI, nrow= 2)
+
 ggsave(here('plots/overall.pdf'), plot = gridExtra::grid.arrange(NH,CI, nrow= 2), units = 'in', width = 15, height = 10)
 
 
@@ -152,7 +158,8 @@ betas %>%
   tidyboot_mean(value, nboot = 1000, na.rm = T) %>%
   separate(beta, into = c("b", "beta"))%>%
   mutate(beta = tolower(beta),
-         beta = fct_recode(beta, `semantic\nsimilarity`="semantic", `phonological\nsimilarity` = "phonological",
+         beta = fct_recode(beta, 
+                    `semantic\nsimilarity`="semantic", `phonological\nsimilarity` = "phonological",
                            `frequency` = "frequency"))%>%
   mutate(beta = fct_relevel(beta, "semantic\nsimilarity", "frequency", "phonological\nsimilarity")) %>%
   ggplot(aes(x = beta, y = empirical_stat, group = Group, fill = Group)) +
@@ -172,13 +179,15 @@ ggsave(here('plots/betas.pdf'), units = 'in', width = 6, height = 6)
 ```{r}
 subject_best_models = subject_best_models %>%
   ungroup()%>%
-  separate(Model, into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_")%>%
+  separate(Model, 
+           into = c("forage", "foraging_type", "method", "param1", "param2", "param3"), sep = "_")%>%
   separate(Alpha, into = c("alpha", "weight", "structure"), sep = "_")%>%
   mutate(weight = ifelse(is.na(weight), "average", weight))%>%
   mutate(weight = ifelse((!is.na(structure) & structure == "w2v"), 1-as.numeric(weight), weight))%>%
   rename("structural model" = "weight")%>%
   mutate(Dimension = paste0("dim=",Dimension),
-         `structural model` = ifelse(`structural model` %in% c("w2v", "s2v", "average"), `structural model`,
+         `structural model` = 
+           ifelse(`structural model` %in% c("w2v", "s2v", "average"), `structural model`,
                                      paste0(`structural model`, " s2v")))%>%
   mutate(method = ifelse(is.na(method), foraging_type, method))%>%
   mutate(foraging_type = fct_recode(foraging_type, 
@@ -187,8 +196,9 @@ subject_best_models = subject_best_models %>%
                                     `pglobal` = "phonologicaldynamicglobal",
                                     `pswitch` = "phonologicaldynamicswitch",
                                     `static` = "static", `dynamic` = "dynamic", `random` = "random"),
-         method = fct_recode(method, `none` = "static", `none` = "phonologicalstatic", `none` = "baseline",
-                             `delta` = "delta", `simdrop` = "simdrop", `multi` = "multimodal", `norms` = "norms"))%>%
+         method = fct_recode(method, 
+                             `none` = "static", `none` = "phonologicalstatic", `none` = "baseline",
+              `delta` = "delta", `simdrop` = "simdrop", `multi` = "multimodal", `norms` = "norms"))%>%
   mutate(foraging_type = fct_relevel(foraging_type, "random", "static", "pstatic", 
                                      "dynamic", "plocal", "pglobal", "pswitch"),
          method = fct_relevel(method, "norms", "simdrop", "multi", "delta", "none"))
@@ -205,7 +215,7 @@ subject_best_models = subject_best_models %>%
     scale_fill_calc() +
     theme(aspect.ratio = 1, legend.position = c(0.8,0.8))
 
-  ggsave(here('plots/subject-models.pdf'), units = 'in', width = 5, height = 5)
+ggsave(here('plots/subject-models.pdf'), units = 'in', width = 5, height = 5)
 
 ```
 
@@ -214,11 +224,18 @@ subject_best_models = subject_best_models %>%
 ```{r}
 participant_groupings = read_csv("../forager/data/fluency_lists/participant_results/participant_groupings.csv")
 
-psim = rbind(read_csv("lexical_results_no_rep.csv")%>% mutate(analysis_type = "full"),
-             read_csv("lexical_results_no_rep_trunc.csv")%>% mutate(analysis_type = "truncated")) %>%
+## we pick ONE model (dim-type) since lexical results are independent of the model
+
+psim = rbind(read_csv("outputs_full/all_lexical_results.csv")%>% 
+               filter(Dimension == 50 & Type == "alpha_0.5_s2v") %>%
+               mutate(analysis_type = "full"),
+             read_csv("outputs_truncated/all_lexical_results.csv")%>% 
+               filter(Dimension == 50 & Type == "alpha_0.5_s2v") %>%
+               mutate(analysis_type = "truncated")) %>%
   rename(ID = "Subject") %>% left_join(participant_groupings)%>%
+  
   group_by(analysis_type, ID) %>%
-  mutate(itemno = row_number())
+  mutate(itemno = row_number()) 
 
 psim %>%
   ggplot(aes(x = itemno, y = Phonological_Similarity, group = Group, color = Group )) +
@@ -265,24 +282,6 @@ points +
 
 
 ggsave(here('plots/item-psim.pdf'), units = 'in', width = 4, height = 4)
-
-
-```
-
-```{r}
-
-## length matching
-items = psim %>%group_by(Group, ID) %>% 
-  summarise(items = n()) %>%
-  arrange(Group, desc(items))
-
-len_match = cbind(items %>% filter(Group == "NH"), 
-                  items %>% filter(Group == "CI"))
-colnames(len_match) = c("NH", "ID_NH", "n_NH", "CI", "ID_CI", "n_CI")
-len_match = len_match %>% rowwise()%>%
-  mutate(n_final = min(n_NH, n_CI))
-
-write.csv(len_match, file = "outputs/length_matched_items.csv", row.names = FALSE)
 
 
 ```

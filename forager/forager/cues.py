@@ -92,7 +92,7 @@ def get_labels_and_frequencies(path_to_frequencies):
 
     return labels, freq_matrix
 
-def create_semantic_matrix(path_to_embeddings, path_for_lexical_data=None):
+def create_semantic_matrix(path_to_embeddings, path_for_lexical_data):
     '''
         Description:
             Takes in N word embeddings and returns a semantic similarity matrix (NxN np.array)
@@ -109,7 +109,7 @@ def create_semantic_matrix(path_to_embeddings, path_for_lexical_data=None):
     # convert to dataframe without header or index
     semantic_matrix_df = pd.DataFrame(semantic_matrix)
     semantic_matrix_df.to_csv(path_for_lexical_data + '/semantic_matrix.csv', header=False, index=False)
-    
+    # return path_for_lexical_data + '/semantic_matrix.csv'
     '''
     #changed
     # semantic_matrix_df.to_csv("data processing/Lexical Data/word2vec/semantic_matrix.csv", header=False, index=False)
@@ -196,3 +196,5 @@ class phonology_funcs:
 
 ### SAMPLE RUN CODE ###
 # create_semantic_matrix('data processing/Lexical Data/word2vec/embeddings.csv')
+# /Users/mingikang/Desktop/cochlear-project/forager/forager/cues.py
+# create_semantic_matrix('../data/lexical_data/50_dim_lexical_data/alpha_0.0_s2v/embeddings.csv', '../data/lexical_data/50_dim_lexical_data/alpha_0.0_s2v')

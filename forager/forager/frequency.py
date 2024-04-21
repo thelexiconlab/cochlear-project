@@ -5,7 +5,7 @@ import requests
 import pandas as pd
 from tqdm import tqdm
 import numpy as np
-# from string import punctuation
+from string import punctuation
 import re
 
 def get_frequencies(embeddings,path_for_lexical_data):
@@ -54,3 +54,4 @@ def get_frequencies(embeddings,path_for_lexical_data):
     return None
 
 #get_frequencies('data/lexical data/semantic_embeddings.csv')
+# get_frequencies('../data/lexical_data/50_dim_lexical_data/alpha_0.0_s2v/embeddings.csv', '../data/lexical_data/50_dim_lexical_data/alpha_0.0_s2v')

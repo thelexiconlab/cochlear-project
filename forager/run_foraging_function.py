@@ -25,7 +25,16 @@ def run_foraging_function(dimension, type):
     switch_methods = ['simdrop','multimodal','norms_associative', 'norms_categorical', 'delta','all']
 
     #truncated data
-    data = 'forager/data/fluency_lists/participant_data/truncated_data.txt'
+    #data = 'forager/data/fluency_lists/participant_data/transformed-data.txt'
+    #data = 'forager/data/fluency_lists/participant_data/additional data/error_with_rep_with_sub.txt'
+    #data = 'forager/data/fluency_lists/participant_data/additional data/error_without_rep_with_sub.txt'
+    # data = 'forager/data/fluency_lists/participant_data/additional data/error_with_rep_without_sub.txt'
+    
+    ## full no rep data 
+    # data = 'forager/data/fluency_lists/participant_data/no_rep_data.csv' 
+    
+    ## truncated no rep data 
+    data = 'forager/data/fluency_lists/participant_data/truncated_data.csv'
     
 
     #Methods
@@ -354,11 +363,12 @@ def run_foraging_function(dimension, type):
 
         return agg_df
     
-    oname = 'forager/output/' + dimension + '_dim_results/' + type + '_results.zip'
+    # oname = 'forager/output/Mar16test/' + dimension + '_dim_results/' + type + '_results/'
 
-    switch_name = 'switch_results.csv'
-    lexical_name = 'lexical_results.csv'
-    models_name = 'model_results.csv'
+    # # Create directories if they don't exist
+    # directory = os.path.dirname(oname)
+    # if not os.path.exists(directory):
+    #     os.makedirs(directory)
 
     # Run subroutine for getting model outputs
     print("Checking Data ...")
@@ -369,48 +379,41 @@ def run_foraging_function(dimension, type):
     switch_results = run_switches(data, "all")
     print("Running Forager Models...")
     forager_results = run_model(data, 'all', 'all')
+    return lexical_results, forager_results, switch_results
 
-    ind_stats = indiv_desc_stats(lexical_results, switch_results)
-    agg_stats = agg_desc_stats(switch_results, forager_results)
-    with zipfile.ZipFile(oname, 'w', zipfile.ZIP_DEFLATED) as zipf:
-        # Save the first DataFrame as a CSV file inside the zip
-        with zipf.open('evaluation_results.csv', 'w') as csvf:
-            replacement_df.to_csv(csvf, index=False)
+    # check if the Negative_Log_Likelihood_Optimized column has empty values 
+    # and record the full row(s) where the empty value(s) are located
 
-        # Save the second DataFrame as a CSV file inside the zip
-        with zipf.open('processed_data.csv', 'w') as csvf:
-            processed_df.to_csv(csvf, index=False)
-        
-        # Save vocab as a CSV file inside the zip
-        with zipf.open('forager_vocab.csv', 'w') as csvf:
-            vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
-            vocab.to_csv(csvf, index=False)
-        # save lexical results
-        with zipf.open(lexical_name,'w') as csvf:
-            lexical_results.to_csv(csvf, index=False) 
-        # save switch results
-        with zipf.open(switch_name,'w') as csvf:
-            switch_results.to_csv(csvf, index=False) 
-        # save model results
-        with zipf.open(models_name,'w') as csvf:
-            forager_results.to_csv(csvf, index=False) 
-        # save individual descriptive statistics
-        with zipf.open('individual_descriptive_stats.csv', 'w') as csvf:
-            ind_stats.to_csv(csvf, index=False)
-        # save aggregate descriptive statistics
-        with zipf.open('aggregate_descriptive_stats.csv', 'w') as csvf:
-            agg_stats.to_csv(csvf, index=False)
+    # empty_nll = forager_results[forager_results['Negative_Log_Likelihood_Optimized'].isnull()]
+    # # save the full row(s) where the empty value(s) are located to a csv file else print a message
+    # if not empty_nll.empty:
+    #     empty_nll.to_csv(os.path.join(oname, 'empty_nll.csv'), index=False)
+    #     print(f"File 'empty_nll.csv' containing the full row(s) where the empty value(s) are located has been saved in '{oname}'")
+    # else:
+    #     print("No empty values found in the Negative_Log_Likelihood_Optimized column")
+    # # ind_stats = indiv_desc_stats(lexical_results, switch_results)
+    # # agg_stats = agg_desc_stats(switch_results, forager_results)
+    
+    # replacement_df.to_csv(os.path.join(oname, 'evaluation_results.csv'), index=False)
+    # processed_df.to_csv(os.path.join(oname, 'processed_data.csv'), index=False)
+            
+    # vocab = pd.read_csv(vocabpath, encoding="unicode-escape")
+    # vocab.to_csv(os.path.join(oname, 'forager_vocab.csv'), index=False)
+    # # save lexical results
+    # lexical_results.to_csv(os.path.join(oname, 'lexical_results.csv'), index=False) 
+    # # save switch results
+    # switch_results.to_csv(os.path.join(oname, 'switch_results.csv'), index=False) 
+    # # save model results
+    # forager_results.to_csv(os.path.join(oname, 'model_results.csv'), index=False)
 
-        print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
-        print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
-        print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
-        print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
-        print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
-        print(f"File 'model_results.csv' containing model level NLL results of provided fluency data saved in '{oname}'")
-        print(f"File 'individual_descriptive_stats.csv' containing individual-level statistics saved in '{oname}'")
-        print(f"File 'aggregate_descriptive_stats.csv' containing the overall group-level statistics saved in '{oname}'")
-
-# run_foraging_function('100', 'only_s2v')
+    
+    # print(f"File 'evaluation_results.csv' detailing the changes made to the dataset has been saved in '{oname}'")
+    # print(f"File 'processed_data.csv' containing the processed dataset used in the forager pipeline saved in '{oname}'")
+    # print(f"File 'forager_vocab.csv' containing the full vocabulary used by forager saved in '{oname}'")
+    # print(f"File 'lexical_results.csv' containing similarity and frequency values of fluency list data saved in '{oname}'")
+    # print(f"File 'switch_results.csv' containing designated switch methods and switch values of fluency list data saved in '{oname}'")
+    # print(f"File 'model_results.csv' containing model level NLL results of provided fluency data saved in '{oname}'")
+    
 
 dimensions = ['50', '100', '200', '300']
 type = [
@@ -431,18 +434,34 @@ type = [
 ]
 
 count = 0 
+all_lexical_results = pd.DataFrame()
+all_model_results = pd.DataFrame()
+all_switch_results = pd.DataFrame()
+
 for dim in dimensions: 
     for t in type: 
-        print(t)
-        run_foraging_function(dim, t)
+        print(dim, t)
+        lexical_results, model_results, switch_results = run_foraging_function(dim, t)
+        
+        #lexical results 
+        lexical_results["Dimension"] = dim
+        lexical_results["Type"] = t
+        all_lexical_results = pd.concat([all_lexical_results, lexical_results])
+        
+        #model results 
+        model_results["Dimension"] = dim
+        model_results["Type"] = t
+        all_model_results = pd.concat([all_model_results, model_results])
+        
+        #switch results
+        switch_results["Dimension"] = dim
+        switch_results["Type"] = t
+        all_switch_results = pd.concat([all_switch_results, switch_results])
         count += 1
+        count += 1
+        
 
-# print(count)
 
-'''Run these for missing NLL'''
-### CBM
-# run_foraging_function('100', 'alpha_0.3_w2v')
-
-### SUG
-# run_foraging_function('200', 'alpha_0.5_s2v')
-
+all_lexical_results.to_csv('forager/output/Full_data_results/all_lexical_results.csv', index=False)
+all_model_results.to_csv('forager/output/Full_data_results/all_model_results.csv', index=False)
+all_switch_results.to_csv('forager/output/Truncated_data_results/all_switch_results.csv', index=False)

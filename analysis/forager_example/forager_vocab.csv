@@ -1,0 +1,2046 @@
+,vocab
+0,aardvark
+1,aardwolf
+2,abalone
+3,abeja
+4,addax
+5,adder
+6,adelgid
+7,adelie penguin
+8,aedes aegypti
+9,affenpinscher
+10,afghan hound
+11,african dog
+12,agama
+13,agouti
+14,airedale terrier
+15,akita
+16,albacore
+17,albatross
+18,albino python
+19,alga
+20,alligator
+21,alligator lizard
+22,alligator snapping turtle
+23,allosaurus
+24,alpaca
+25,amberjack
+26,amoeba
+27,amphibian
+28,amphioxus
+29,amphipod
+30,anaconda
+31,anchovy
+32,anemone
+33,angelfish
+34,anglerfish
+35,angora goat
+36,angora rabbit
+37,anhinga
+38,ankylosaur
+39,annelid
+40,anole
+41,ant
+42,anteater
+43,antelope
+44,antelope squirrel
+45,anthropoid
+46,antlion
+47,apatosaurus
+48,ape
+49,aphid
+50,aplysia
+51,appaloosa
+52,apple maggot
+53,arachnid
+54,arapaima
+55,archaea
+56,archeopteryx
+57,archosaur
+58,arctic char
+59,arctic fox
+60,argali
+61,armadillo
+62,armyworm
+63,arrowhead dogfish
+64,arrowhead shark
+65,arthropod
+66,ascidians
+67,asp
+68,ass
+69,assassin bug
+70,auk
+71,auklet
+72,auroch
+73,australopithecine
+74,avian
+75,avocet
+76,axolotl
+77,babirusa
+78,baboon
+79,baby
+80,baca
+81,bacteria
+82,badger
+83,bald eagle
+84,baleen whale
+85,banana slug
+86,bandicoot
+87,bantam
+88,bark beetle
+89,barn owl
+90,barnacle
+91,barnacle goose
+92,barracuda
+93,barramundi
+94,barred owl
+95,basenji
+96,basilisk
+97,basking shark
+98,bass
+99,basset hound
+100,bat
+101,batfish
+102,bay scallop
+103,baya
+104,beaded lizard
+105,beagle
+106,beaked whale
+107,bear
+108,bear cub
+109,bearcat
+110,bearded dragon
+111,bearded vulture
+112,beaver
+113,bedbug
+114,bee
+115,bee eater
+116,bee moth
+117,beef cattle
+118,beefalo
+119,beet armyworm
+120,beetle
+121,bellbird
+122,belted kingfisher
+123,beluga
+124,beluga whale
+125,bengal tiger
+126,bernese mountain dog
+127,bessbug
+128,beta fish
+129,betta
+130,betta fish
+131,bettong
+132,bichon
+133,bigeye
+134,bighorn
+135,bighorn sheep
+136,bilbies
+137,bilby
+138,billfish
+139,billy goat
+140,binturong
+141,bird
+142,bison
+143,biting midge
+144,bittern
+145,bivalve
+146,black bear
+147,black headed gull
+148,black lab
+149,black labrador
+150,black mamba
+151,black panther
+152,black squirrel
+153,black widow
+154,black-capped chickadee
+155,blackbird
+156,blackbuck
+157,blackcap
+158,blackfish
+159,blackfly
+160,blackpoll
+161,blacktail
+162,blacktail deer
+163,blacktip reef shark
+164,blacktip shark
+165,blenny
+166,blister beetle
+167,blobfish
+168,bloodhound
+169,bloodworm
+170,blowfish
+171,blowfly
+172,blubber fish
+173,blue catfish
+174,blue heron
+175,blue jay
+176,blue marlin
+177,blue shark
+178,blue whale
+179,bluebill
+180,bluebird
+181,bluefin
+182,bluefin tuna
+183,bluefish
+184,bluefooted booby
+185,bluegill
+186,bluetick
+187,boa
+188,boa constrictor
+189,boar
+190,bobcat
+191,bobolink
+192,bobtail
+193,bobwhite
+194,bobwhite quail
+195,boll weevil
+196,bollworm
+197,bolognese
+198,bombardier beetle
+199,bonefish
+200,bongo
+201,bonito
+202,bonnethead
+203,bonobo
+204,bony fish
+205,booby
+206,border collie
+207,borzoi
+208,boston terrier
+209,botfly
+210,boto
+211,bottlenose
+212,bottlenose dolphin
+213,bottlenose whale
+214,bovine
+215,bowerbird
+216,bowfin
+217,bowhead
+218,bowhead whale
+219,box turtle
+220,boxelder bug
+221,boxer
+222,boxfish
+223,brachiopod
+224,brachiosaurus
+225,bream
+226,brimfish
+227,brine shrimp
+228,broadbill
+229,broadtail
+230,bronc
+231,bronco
+232,brontosaurus
+233,broodmare
+234,broody hen
+235,brook trout
+236,brown bear
+237,brown bullhead
+238,brown creeper
+239,brown hyena
+240,brown recluse
+241,brown recluse spider
+242,brown thrasher
+243,brown trout
+244,bruin
+245,bryozoan
+246,buck
+247,bucking bronco
+248,budgerigar
+249,budgie
+250,buffalo
+251,bufflehead
+252,bufo
+253,bug
+254,bulbul
+255,bull
+256,bull mastiff
+257,bull shark
+258,bull snake
+259,bull terrier
+260,bulldog
+261,bullfinch
+262,bullfrog
+263,bullhead
+264,bullhead catfish
+265,bullmastiff
+266,bullock
+267,bullsnake
+268,bumblebee
+269,bunny
+270,bunny rabbit
+271,bunting
+272,burbot
+273,burmese mountain dog
+274,burro
+275,bush squirrel
+276,bushbaby
+277,bushbuck
+278,bushmaster
+279,bustard
+280,butterfish
+281,butterflies
+282,butterfly
+283,butterflyfish
+284,buzzard
+285,cactus wren
+286,caddis fly
+287,caecilian
+288,caiman
+289,cairn terrier
+290,calf
+291,calico cat
+292,camel
+293,cameo
+294,canary
+295,canebrake rattlesnake
+296,canine
+297,canis lupus
+298,cankerworm
+299,canvasback
+300,canvasback duck
+301,cape buffalo
+302,capelin
+303,capercaillie
+304,capibara
+305,caplin
+306,capon
+307,capuchin
+308,capuchin monkey
+309,capybara
+310,carabao
+311,caracal
+312,caracara
+313,cardinal
+314,caribou
+315,carp
+316,carpenter ant
+317,carpenter bee
+318,carpet beetle
+319,carrier pigeon
+320,carrion crow
+321,carthorse
+322,cartilaginous fish
+323,cassowary
+324,cat
+325,catamount
+326,catbird
+327,caterpillar
+328,catfish
+329,cattle
+330,cattle egret
+331,cavalier king charles spaniel
+332,cavy
+333,cayote
+334,cedar waxwing
+335,centipede
+336,cephalopod
+337,ceratopsian
+338,cervid
+339,cetacean
+340,chachalaca
+341,chaffinch
+342,chain pickerel
+343,chambered nautilus
+344,chameleon
+345,chamois
+346,channel catfish
+347,char
+348,charolais
+349,cheep
+350,cheetah
+351,chetah
+352,chewbacca
+353,chick
+354,chickadee
+355,chicken
+356,chigger
+357,chihuahua
+358,chimaera
+359,chimp
+360,chimpanzee
+361,chinch bug
+362,chinchilla
+363,chinook
+364,chinook salmon
+365,chipmunk
+366,chipping sparrow
+367,chocolate labrador
+368,chough
+369,chow chow
+370,christmas tree worm
+371,chub
+372,chum salmon
+373,cicada
+374,cicada killer
+375,cichlid
+376,cichlid fish
+377,civet
+378,civet cat
+379,clam
+380,cleaner shrimp
+381,clown fish
+382,clownfish
+383,clydesdale
+384,coati
+385,coatimundi
+386,cobia
+387,cobra
+388,cochineal
+389,cock
+390,cockatiel
+391,cockatoo
+392,cocker
+393,cocker spaniel
+394,cockerel
+395,cockle
+396,cockroach
+397,cockroaches
+398,cod
+399,codfish
+400,codling
+401,codling moth
+402,coelacanth
+403,coho
+404,coho salmon
+405,collared lizard
+406,collared peccary
+407,collie
+408,colobus
+409,colobus monkey
+410,colt
+411,colugo
+412,comb jelly
+413,common murre
+414,common scoter
+415,common yellowthroat
+416,conch
+417,condor
+418,coney
+419,conger
+420,conger eel
+421,constrictor
+422,conure
+423,coonhound
+424,coot
+425,cooter
+426,copepod
+427,copperhead
+428,copperhead snake
+429,coq
+430,coral
+431,coral reef snake
+432,coral snake
+433,corbina
+434,corgi
+435,cormorant
+436,corn borer
+437,corn borer moth
+438,corn earworm
+439,corn snake
+440,corncrake
+441,cornish game hen
+442,cotton bollworm
+443,cottonmouth
+444,cottonmouth moccasin
+445,cottontail
+446,cottontail rabbit
+447,cougar
+448,courser
+449,cow
+450,cowbird
+451,cownose ray
+452,cowrie
+453,cowry
+454,cows
+455,coyote
+456,coypu
+457,crab
+458,crane
+459,cranefly
+460,crappie
+461,crawdad
+462,crawfish
+463,crawler
+464,crayfish
+465,crevalle jack
+466,cricket
+467,crinoid
+468,croaker
+469,croc
+470,crocodile
+471,crossbill
+472,crow
+473,crucian carp
+474,crustacean
+475,cub
+476,cuckoo
+477,culex pipiens
+478,curlew
+479,cuscus
+480,cusk
+481,cuttlefish
+482,cutworm
+483,cygnet
+484,dace
+485,dachshund
+486,daddy longlegs
+487,dairy cattle
+488,dairy cow
+489,dall sheep
+490,dalmatian
+491,damsel fish
+492,damselfish
+493,damselfly
+494,daphnia
+495,darkling beetle
+496,darning needle
+497,darter
+498,darwin frog
+499,daschund
+500,dear
+501,decapod
+502,deer
+503,deerhound
+504,degu
+505,desert tortoise
+506,devil
+507,diamondback
+508,diamondback rattlesnake
+509,diamondback terrapin
+510,dik-dik
+511,dingo
+512,dinosaur
+513,dinosaurs
+514,diplodocus
+515,doberman
+516,doberman pinscher
+517,dodo
+518,dodo bird
+519,doe
+520,dog
+521,dogfish
+522,doggie
+523,doggy
+524,dogs
+525,dolphin
+526,dolphinfish
+527,domingo
+528,donkey
+529,doodlebug
+530,dormouse
+531,dory
+532,dotterel
+533,double-crested cormorant
+534,dove
+535,downy woodpecker
+536,dragon
+537,dragon lizard
+538,dragonfly
+539,drake
+540,dray horse
+541,dromedary
+542,drosophila
+543,drum fish
+544,duck
+545,duckbill
+546,duckbilled platypus
+547,duckling
+548,ducks
+549,dugong
+550,duiker
+551,dung beetle
+552,dungeness crab
+553,dunlin
+554,dusky shark
+555,dwarf hamster
+556,dwarf rabbit
+557,dwarf sperm whale
+558,eagle
+559,eagle ray
+560,eaglet
+561,eared grebe
+562,earthworm
+563,earwig
+564,eastern cottontail
+565,eastern indigo snake
+566,eastern kingbird
+567,eastern lowland gorilla
+568,eastern meadowlark
+569,eastern toebiter
+570,echidna
+571,echinoderm
+572,eel
+573,eelpout
+574,eels
+575,egret
+576,eider
+577,eider duck
+578,eland
+579,electric eel
+580,elephant
+581,elephant seal
+582,elk
+583,elkhound
+584,elver
+585,emerald shiner
+586,emperor penguin
+587,emu
+588,equine
+589,ermine
+590,escolar
+591,eugarie
+592,evening grosbeak
+593,ewe
+594,fairy shrimp
+595,falcon
+596,fall armyworm
+597,fall webworm
+598,fallow deer
+599,fawn
+600,feline
+601,fennec fox
+602,ferret
+603,fiddler crab
+604,filaria
+605,filly
+606,fin whale
+607,finback
+608,finback whale
+609,finch
+610,fire ant
+611,firebird
+612,firebug
+613,firefly
+614,fish
+615,fish eagle
+616,fisher
+617,fisher cat
+618,flacon
+619,flamingo
+620,flatfish
+621,flathead catfish
+622,flatworm
+623,flea
+624,flea beetle
+625,flies
+626,flounder
+627,fly
+628,fly fish
+629,flycatcher
+630,flying fish
+631,flying monkey
+632,flying snake
+633,flying squirrel
+634,foal
+635,forest tent caterpillar
+636,fossa
+637,four eye butterfly fish
+638,foureye butterflyfish
+639,fowl
+640,fox
+641,fox squirrel
+642,fox terrier
+643,foxes
+644,foxhound
+645,french bulldog
+646,fresh water fish
+647,freshwater eel
+648,freshwater fish
+649,freshwater mussel
+650,friesian
+651,frog
+652,frogfish
+653,froghopper
+654,frogmouth
+655,fruit bat
+656,fruit fly
+657,fulmar
+658,fungi
+659,fungus gnat
+660,gaboon viper
+661,gadfly
+662,gal
+663,gall midge
+664,gall wasp
+665,gallinule
+666,gamecock
+667,gander
+668,gannet
+669,gar
+670,garden snake
+671,garfish
+672,garibaldi
+673,garter snake
+674,gator
+675,gaur
+676,gavial
+677,gazelle
+678,gecko
+679,geese
+680,gelding
+681,gemsbok
+682,genet
+683,geoduck
+684,gerbil
+685,gerbils
+686,german shepard
+687,german shepherd
+688,gharial
+689,ghost crab
+690,giant
+691,giant anteater
+692,giant panda
+693,giant schnauzer
+694,giant squid
+695,giant tortoise
+696,gibbon
+697,giraffe
+698,glaucus
+699,glia monster
+700,glider
+701,globefish
+702,glowworm
+703,gnat
+704,gnatcatcher
+705,gnu
+706,goanna
+707,goat
+708,goatfish
+709,goats
+710,goby
+711,godwit
+712,godzilla
+713,gold fish
+714,golden eagle
+715,golden labrador
+716,golden marmot
+717,golden plover
+718,golden retriever
+719,golden shiner
+720,goldendoodle
+721,goldfinch
+722,goldfish
+723,gooney bird
+724,goose
+725,gopher
+726,gopher snake
+727,gopher tortoise
+728,gopher turtle
+729,gorgonian
+730,gorilla
+731,goshawk
+732,gosling
+733,grackle
+734,grass snake
+735,grasshopper
+736,grasshopper mouse
+737,gray catbird
+738,gray fox
+739,gray jay
+740,gray mullet
+741,gray partridge
+742,gray whale
+743,gray wolf
+744,graywolf
+745,great auk
+746,great blue heron
+747,great crested grebe
+748,great dane
+749,great horned owl
+750,great pyrenees
+751,great white shark
+752,greater yellowlegs
+753,grebe
+754,green lacewing
+755,green mamba
+756,greenfly
+757,greenling
+758,greenshank
+759,grenadier
+760,grey squirrel
+761,grey whale
+762,greyhound
+763,greylag goose
+764,griffon
+765,griffon vulture
+766,grizzly
+767,grizzly bear
+768,grosbeak
+769,ground hog
+770,ground squirrel
+771,groundfish
+772,groundhog
+773,grouper
+774,grouse
+775,grub
+776,grunt
+777,guan
+778,guanaco
+779,gudgeon
+780,guenon
+781,guerrilla
+782,guillemot
+783,guinea fowl
+784,guinea hen
+785,guinea pig
+786,guinea worm
+787,guineafowl
+788,gull
+789,gumboot chiton
+790,gunnel
+791,guppy
+792,gurnard
+793,gypsy moth
+794,gyrfalcon
+795,hackney
+796,haddock
+797,hadrosaur
+798,hagfish
+799,hairless cat
+800,hairstreak
+801,hairstreak butterfly
+802,hairy woodpecker
+803,hake
+804,halcyon
+805,halibut
+806,hammerhead
+807,hammerhead shark
+808,hamster
+809,harambe
+810,harbor porpoise
+811,harbor seal
+812,hare
+813,harp seal
+814,harpy eagle
+815,harrier
+816,hart
+817,hartebeest
+818,hawk
+819,hawk moth
+820,hawk owl
+821,hawkmoth
+822,hawksbill
+823,hawksbill turtle
+824,heath hen
+825,hedgehog
+826,heifer
+827,hellbender
+828,helminth
+829,hen
+830,hen harrier
+831,hermit
+832,hermit crab
+833,hermit thrush
+834,heron
+835,herring
+836,herring gull
+837,hexapod
+838,hinny
+839,hippo
+840,hippopotamus
+841,hoary marmot
+842,hoatzin
+843,hog
+844,hogfish
+845,hogg
+846,hogget
+847,hognose snake
+848,hogs
+849,holstein
+850,homing pigeon
+851,hominid
+852,hominoid
+853,homo erectus
+854,homo habilis
+855,homo sapiens
+856,honey badger
+857,honey bee
+858,honey buzzard
+859,honeybee
+860,honeycreeper
+861,hooded merganser
+862,hoofed mammal
+863,hookworm
+864,hoopoe
+865,hoot owl
+866,hornbill
+867,horned dinosaur
+868,horned lizard
+869,horned owl
+870,horned toad
+871,hornet
+872,horse
+873,horsefly
+874,horsehead
+875,horseshoe crab
+876,hound
+877,hound dog
+878,housefly
+879,hoverfly
+880,howler monkey
+881,howling monkey
+882,human
+883,human being
+884,hummingbird
+885,hummingbird moth
+886,humpback whale
+887,humuhumunukunukuapua
+888,huntsman
+889,huntsman spider
+890,huskie
+891,huskies
+892,husky
+893,hydra
+894,hyena
+895,hyenas
+896,hyrax
+897,ibex
+898,ibis
+899,ichthyosaur
+900,iguana
+901,imago
+902,impala
+903,inchworm
+904,indigo bunting
+905,indigo snake
+906,indri
+907,insect
+908,invertebrate
+909,isopod
+910,itch mite
+911,ivory billed
+912,ivory gull
+913,jabiru
+914,jack
+915,jack crevalle
+916,jack mackerel
+917,jack rabbit
+918,jack russell
+919,jack russell terrier
+920,jackal
+921,jackalope
+922,jackass
+923,jackass penguin
+924,jackdaw
+925,jackrabbit
+926,jaguar
+927,jaguarundi
+928,javelina
+929,jawless fish
+930,jay
+931,jaybird
+932,jellyfish
+933,jerboa
+934,jewfish
+935,jigger
+936,joey
+937,junco
+938,june beetle
+939,june bug
+940,jungle fowl
+941,kangaroo
+942,kangaroo rat
+943,karakul
+944,katydid
+945,kea
+946,keeshond
+947,kelp greenling
+948,kelpie
+949,kestrel
+950,keyhole limpet
+951,kid
+952,killdeer
+953,killer bee
+954,killer whale
+955,killifish
+956,king cobra
+957,king crab
+958,king mackerel
+959,king salmon
+960,kingbird
+961,kingfish
+962,kingfisher
+963,kingsnake
+964,kinkajou
+965,kite
+966,kitfox
+967,kitten
+968,kittiwake
+969,kitty
+970,kitty cat
+971,kiwi
+972,koala
+973,koala bear
+974,kodiak
+975,kodiak bear
+976,koi
+977,koi fish
+978,komodo dragon
+979,kongoni
+980,kookaburra
+981,krait
+982,krill
+983,kuala
+984,kudu
+985,lab
+986,labrador
+987,labrador retriever
+988,lacewing
+989,lady bug
+990,ladybird
+991,ladybird beetle
+992,ladybug
+993,ladyfish
+994,lake trout
+995,lake whitefish
+996,lamb
+997,lamprey
+998,lamprey eel
+999,landlocked salmon
+1000,langur
+1001,lanternfish
+1002,lapdog
+1003,lapin
+1004,lapwing
+1005,largemouth bass
+1006,lark
+1007,larva
+1008,larvae
+1009,laughing gull
+1010,leach
+1011,leaf beetle
+1012,leaf insect
+1013,leafhopper
+1014,leatherback
+1015,leatherback turtle
+1016,leatherjacket
+1017,lechwe
+1018,leech
+1019,legless lizard
+1020,lemming
+1021,lemur
+1022,leopard
+1023,leopard frog
+1024,leopard seal
+1025,leopard shark
+1026,leopardess
+1027,lepidopteran
+1028,lesser scaup
+1029,lesser yellowlegs
+1030,lhasa apso
+1031,liger
+1032,limpet
+1033,lingcod
+1034,linnet
+1035,lion
+1036,lion cub
+1037,lioness
+1038,lionfish
+1039,lions
+1040,little brown myotis
+1041,lizard
+1042,llama
+1043,loach
+1044,lobster
+1045,locust
+1046,loggerhead
+1047,loggerhead shrike
+1048,loggerhead turtle
+1049,longhorn
+1050,longneck
+1051,loon
+1052,lorikeet
+1053,loris
+1054,louse
+1055,lovebird
+1056,lugworm
+1057,lumpfish
+1058,luna moth
+1059,lungfish
+1060,lungless salamander
+1061,lynx
+1062,lyrebird
+1063,macaque
+1064,macaque monkey
+1065,macaw
+1066,mackerel
+1067,mackerel tuna
+1068,madagascar hissing cockroach
+1069,maggot
+1070,magpie
+1071,mahi
+1072,mahimahi
+1073,mako shark
+1074,malamute
+1075,malarial mosquito
+1076,maleo
+1077,malinois
+1078,mallard
+1079,mallee fowl
+1080,maltese
+1081,maltese terrier
+1082,mamba
+1083,mammal
+1084,mammoth
+1085,man
+1086,manakin
+1087,manatee
+1088,mandrill
+1089,maned wolf
+1090,mangabey
+1091,mangrove snapper
+1092,manowar
+1093,manta
+1094,manta ray
+1095,mantis
+1096,mantis shrimp
+1097,marabou
+1098,marabou stork
+1099,mare
+1100,markhor
+1101,marlin
+1102,marmoset
+1103,marmot
+1104,marsh harrier
+1105,marsh wren
+1106,marsupial
+1107,marten
+1108,mason bee
+1109,massasauga
+1110,mastiff
+1111,mastodon
+1112,maverick
+1113,mayfly
+1114,meadow pipit
+1115,meadow vole
+1116,meadowlark
+1117,mealworm
+1118,mealy bug
+1119,mealybug
+1120,medfly
+1121,medicinal leech
+1122,medusa
+1123,meerkat
+1124,megalodon
+1125,menhaden
+1126,merganser
+1127,merino sheep
+1128,merlin
+1129,metazoan
+1130,mice
+1131,microbe
+1132,midge
+1133,milch cow
+1134,milkfish
+1135,milking shorthorn
+1136,millipede
+1137,miniature pinscher
+1138,miniature pony
+1139,miniature poodle
+1140,miniature schnauzer
+1141,mink
+1142,minke whale
+1143,minnow
+1144,minnow fish
+1145,minx
+1146,mirid bug
+1147,mistle thrush
+1148,mite
+1149,moccasin
+1150,mockingbird
+1151,mojarra
+1152,mola
+1153,mole
+1154,mole rat
+1155,mollusk
+1156,monarch butterfly
+1157,mongoose
+1158,monitor
+1159,monitor lizard
+1160,monkey
+1161,monkeys
+1162,monkfish
+1163,monotreme
+1164,monster
+1165,moonfish
+1166,moorhen
+1167,moose
+1168,moray
+1169,moray eel
+1170,mosquito
+1171,mosquitofish
+1172,moth
+1173,moths
+1174,mouflon
+1175,mountain cat
+1176,mountain goat
+1177,mountain gorilla
+1178,mountain lion
+1179,mourning dove
+1180,mouse
+1181,mud dauber
+1182,mudskipper
+1183,mule
+1184,mule deer
+1185,mules
+1186,mullet
+1187,mulloway
+1188,muntjac
+1189,murre
+1190,muscovy duck
+1191,musk deer
+1192,musk ox
+1193,musk turtle
+1194,muskellunge
+1195,muskox
+1196,muskrat
+1197,mussel
+1198,mustang
+1199,mute swan
+1200,mutton snapper
+1201,myna
+1202,myna bird
+1203,mynah
+1204,mynah bird
+1205,naked mole rat
+1206,narwhal
+1207,nautilus
+1208,neanderthal
+1209,needlefish
+1210,nematode
+1211,nematode worm
+1212,newt
+1213,nightcrawler
+1214,nightingale
+1215,nightjar
+1216,nilgai
+1217,northern bobwhite
+1218,northern harrier
+1219,northern parula
+1220,northern pike
+1221,northern pocket gopher
+1222,northern shrike
+1223,northern snakehead
+1224,nudibranch
+1225,nurse shark
+1226,nuthatch
+1227,nutria
+1228,nyala
+1229,oarfish
+1230,ocean pout
+1231,ocean sunfish
+1232,oceanic whitetip shark
+1233,ocelot
+1234,octopus
+1235,okapi
+1236,olive ridley
+1237,omnivore
+1238,onion thrips
+1239,opah
+1240,opossum
+1241,opossum shrimp
+1242,orang
+1243,orange roughie
+1244,orangutan
+1245,orangutang
+1246,orca
+1247,orca whale
+1248,orchard oriole
+1249,oriole
+1250,ormer
+1251,ornithopod
+1252,ortolan
+1253,oryx
+1254,osprey
+1255,ostrich
+1256,ostriches
+1257,otter
+1258,ovenbird
+1259,owl
+1260,owlet
+1261,ox
+1262,oxen
+1263,oyster
+1264,oystercatcher
+1265,oysters
+1266,pachyderm
+1267,packhorse
+1268,packrat
+1269,paddlefish
+1270,pajero
+1271,palm civet
+1272,palo verde borer
+1273,palomino
+1274,panda
+1275,panda bear
+1276,pangolin
+1277,panther
+1278,papillon
+1279,parakeet
+1280,parasitic worm
+1281,parrot
+1282,parrotfish
+1283,partridge
+1284,passerine
+1285,peacock
+1286,peafowl
+1287,peahen
+1288,pearl oyster
+1289,peccary
+1290,peckerwood
+1291,pectoral sandpiper
+1292,pelican
+1293,pembroke welsh corgi
+1294,penguin
+1295,perch
+1296,peregrine
+1297,peregrine falcon
+1298,periodical cicada
+1299,perro
+1300,persian cat
+1301,person
+1302,pescador
+1303,petrel
+1304,pewee
+1305,phalarope
+1306,pheasant
+1307,phoenix
+1308,pickerel
+1309,piffle
+1310,pig
+1311,pigeon
+1312,pigfish
+1313,piggy
+1314,piglet
+1315,pika
+1316,pike
+1317,pike perch
+1318,pilchard
+1319,pileated woodpecker
+1320,pill bug
+1321,pilot whale
+1322,pincher
+1323,pine grosbeak
+1324,pine marten
+1325,pine siskin
+1326,pinfish
+1327,pink bollworm
+1328,pink salmon
+1329,pinniped
+1330,pinscher
+1331,pintail
+1332,pinto horse
+1333,pinworm
+1334,pipefish
+1335,piping plover
+1336,pipistrelle
+1337,pipit
+1338,piranha
+1339,pistol shrimp
+1340,pit bull
+1341,pit bull terrier
+1342,pit viper
+1343,pitbull
+1344,placental mammal
+1345,placoderm
+1346,plaice
+1347,planaria
+1348,plankton
+1349,platypus
+1350,plesiosaur
+1351,plover
+1352,pochard
+1353,pocket gopher
+1354,poison dart frog
+1355,polar
+1356,polar bear
+1357,polecat
+1358,pollack
+1359,pollock
+1360,pollywog
+1361,polo pony
+1362,polychaeta
+1363,pomeranian
+1364,pompano
+1365,pony
+1366,pooch
+1367,poodle
+1368,popinjay
+1369,porbeagle
+1370,porcupine
+1371,porgy
+1372,pork
+1373,porpoise
+1374,portuguese water dog
+1375,possum
+1376,potato beetle
+1377,potbellied pig
+1378,potoroo
+1379,poultry
+1380,pouter
+1381,prairie cat
+1382,prairie chicken
+1383,prairie dog
+1384,prairie grouse
+1385,prairie rattlesnake
+1386,prairie vole
+1387,prawn
+1388,praying mantis
+1389,primate
+1390,proboscis monkey
+1391,pronghorn
+1392,pronghorn antelope
+1393,protists
+1394,psyllid
+1395,ptarmigan
+1396,pterodactyl
+1397,pterosaur
+1398,pubic louse
+1399,puff adder
+1400,puffer
+1401,puffer fish
+1402,pufferfish
+1403,puffin
+1404,pug
+1405,puggle
+1406,pullet
+1407,puma
+1408,pumpkinseed
+1409,pup
+1410,pupa
+1411,puppy
+1412,purple finch
+1413,purple gallinule
+1414,purple marten
+1415,puss
+1416,pussycat
+1417,pygmy chimpanzee
+1418,pygmy elephant
+1419,pygmy goat
+1420,pygmy marmoset
+1421,pygmy sperm whale
+1422,python
+1423,quagga
+1424,quahog
+1425,quail
+1426,queen bee
+1427,queenfish
+1428,quetzal
+1429,rabbit
+1430,raccoon
+1431,raccoon fox
+1432,racehorse
+1433,racoon
+1434,ragdoll cat
+1435,rainbow lorikeet
+1436,rainbow smelt
+1437,rainbow trout
+1438,rainbowfish
+1439,ram
+1440,raptor
+1441,rat
+1442,rat snake
+1443,rat terrier
+1444,ratite
+1445,raton
+1446,rattler
+1447,rattlesnake
+1448,raven
+1449,ray
+1450,razor clam
+1451,razorback
+1452,razorbill
+1453,red admiral butterfly
+1454,red bellied woodpecker
+1455,red drum
+1456,red fox
+1457,red kangaroo
+1458,red panda
+1459,red robin
+1460,red shouldered hawk
+1461,red snapper
+1462,red squirrel
+1463,red tailed hawk
+1464,red winged blackbird
+1465,redbird
+1466,redbone
+1467,redbreast
+1468,redbug
+1469,redear
+1470,redfish
+1471,redheaded woodpecker
+1472,redhorse
+1473,redhorse sucker
+1474,redpoll
+1475,redshank
+1476,redstart
+1477,redtail
+1478,redtail hawk
+1479,redwing
+1480,reed bunting
+1481,reef shark
+1482,reindeer
+1483,remora
+1484,reptile
+1485,reticulated python
+1486,retriever
+1487,rhea
+1488,rhesus macaque
+1489,rhesus monkey
+1490,rhino
+1491,rhinoceros
+1492,rhinoceros beetle
+1493,ribbonfish
+1494,right whale
+1495,ring-tailed lemur
+1496,ringtail
+1497,ringtail cat
+1498,river otter
+1499,river rat
+1500,roach
+1501,roadrunner
+1502,robin
+1503,robin redbreast
+1504,rock hyrax
+1505,rockfish
+1506,rockhead
+1507,rodent
+1508,roe
+1509,roe deer
+1510,roly-poly
+1511,rook
+1512,rooster
+1513,roseate spoonbill
+1514,roseate tern
+1515,rotifer
+1516,rottweiler
+1517,roundworm
+1518,rudd
+1519,ruddy duck
+1520,ruddy turnstone
+1521,ruffed grouse
+1522,ruminant
+1523,russian blue
+1524,rusty blackbird
+1525,saber tooth
+1526,sabertoothed cat
+1527,sabertoothed tiger
+1528,sable
+1529,sable antelope
+1530,sacred ibis
+1531,sage grouse
+1532,saiga
+1533,sailfish
+1534,saint bernard
+1535,saki monkey
+1536,salamander
+1537,salmon
+1538,salmonid
+1539,saltwater crocodile
+1540,saltwater fish
+1541,saluki
+1542,sand cat
+1543,sand crab
+1544,sand dab
+1545,sand dollar
+1546,sand lance
+1547,sand shark
+1548,sandbar shark
+1549,sandfish
+1550,sandfly
+1551,sandhill crane
+1552,sandpiper
+1553,sapsucker
+1554,sardine
+1555,sauropod
+1556,sauropod dinosaur
+1557,saury
+1558,sawfish
+1559,sawfly
+1560,scallop
+1561,scaly anteater
+1562,scarab
+1563,scarlet macaw
+1564,scarlet tanager
+1565,scaup
+1566,schipperke
+1567,schistosome
+1568,schnauzer
+1569,scorpion
+1570,scorpionfish
+1571,scoter
+1572,scottish fold
+1573,scottish shetland
+1574,screech owl
+1575,scrod
+1576,scrub jay
+1577,sculpin
+1578,scup
+1579,sea anemone
+1580,sea bass
+1581,sea bear
+1582,sea bream
+1583,sea cow
+1584,sea cucumber
+1585,sea lamprey
+1586,sea lion
+1587,sea lions
+1588,sea monkey
+1589,sea otter
+1590,sea otters
+1591,sea ray
+1592,sea scorpion
+1593,sea slug
+1594,sea slug aplysia
+1595,sea snake
+1596,sea sponge
+1597,sea squirt
+1598,sea star
+1599,sea turtle
+1600,sea urchin
+1601,seabird
+1602,seagull
+1603,seahawk
+1604,seahorse
+1605,seal
+1606,sealion
+1607,sedge wren
+1608,sei whale
+1609,serow
+1610,serpent
+1611,serval
+1612,shad
+1613,shar pei
+1614,shark
+1615,shearwater
+1616,sheep
+1617,sheepdog
+1618,sheepshead
+1619,shelduck
+1620,shellfish
+1621,shepherd
+1622,shetland pony
+1623,shetland sheepdog
+1624,shih tzu
+1625,shipworm
+1626,shorebird
+1627,shortfin mako
+1628,shorthorn
+1629,shoveler
+1630,shrew
+1631,shrike
+1632,shrimp
+1633,siamang
+1634,siamese cat
+1635,siberian blue robin
+1636,siberian husky
+1637,siberian tiger
+1638,sidewinder
+1639,sika
+1640,silkworm
+1641,silkworm moth
+1642,silky terrier
+1643,silverback
+1644,silverback gorilla
+1645,silverfish
+1646,silvertip
+1647,siphonophore
+1648,siskin
+1649,skate
+1650,skink
+1651,skipjack
+1652,skipjack tuna
+1653,skua
+1654,skunk
+1655,skylark
+1656,sled dog
+1657,slender loris
+1658,slime eels
+1659,sloth
+1660,sloth bear
+1661,slow loris
+1662,slug
+1663,smallmouth
+1664,smallmouth bass
+1665,smalltooth sawfish
+1666,smelt
+1667,smooth dogfish
+1668,smooth hammerhead
+1669,snail
+1670,snail darter
+1671,snailfish
+1672,snake
+1673,snapper
+1674,snapping turtle
+1675,snipe
+1676,snoek
+1677,snook
+1678,snow crab
+1679,snow leopard
+1680,snow lion
+1681,snow monkey
+1682,snowbird
+1683,snowshoe hare
+1684,snowy egret
+1685,snowy owl
+1686,sockeye
+1687,sockeye salmon
+1688,song thrush
+1689,songbird
+1690,soupfin
+1691,sow
+1692,spadefish
+1693,spadefoot
+1694,spadefoot toad
+1695,spaniel
+1696,spanish mackerel
+1697,sparrow
+1698,sparrow hawk
+1699,spearfish
+1700,speckled trout
+1701,spectacled caiman
+1702,sperm whale
+1703,sphinx moth
+1704,spider
+1705,spider crab
+1706,spider mite
+1707,spider monkey
+1708,spiny anteater
+1709,spiny dogfish
+1710,spiny dogfish shark
+1711,spiny lobster
+1712,spitting cobra
+1713,spitz
+1714,sponge
+1715,spoonbill
+1716,spotted flycatcher
+1717,spotted hyena
+1718,spotted owl
+1719,spotted salamander
+1720,spotted sandpiper
+1721,sprat
+1722,spring peeper
+1723,springbok
+1724,springer spaniel
+1725,spruce bark beetle
+1726,spruce grouse
+1727,squab
+1728,squid
+1729,squirrel
+1730,squirrel monkey
+1731,staffordshire bull terrier
+1732,staffordshire terrier
+1733,stag
+1734,stag beetle
+1735,staghorn coral
+1736,stallion
+1737,standard poodle
+1738,star-nosed mole
+1739,starfish
+1740,stargazer
+1741,starling
+1742,steed
+1743,steenbok
+1744,steeplechase horse
+1745,steer
+1746,stegosaurus
+1747,steller jay
+1748,stick bug
+1749,stick insect
+1750,stickleback
+1751,stilt
+1752,stingray
+1753,stinkbug
+1754,stoat
+1755,stone curlew
+1756,stone marten
+1757,stonefish
+1758,stonefly
+1759,stony coral
+1760,stork
+1761,storm petrel
+1762,stormy petrel
+1763,striped bass
+1764,striped hyena
+1765,striped marlin
+1766,striped mullet
+1767,striped skunk
+1768,striper
+1769,sturgeon
+1770,suckerfish
+1771,sugar glider
+1772,summer tanager
+1773,sun bear
+1774,sun conure
+1775,sunfish
+1776,superbug
+1777,surfperch
+1778,surgeon fish
+1779,surgeonfish
+1780,swallow
+1781,swallowtail
+1782,swamp sparrow
+1783,swan
+1784,swift
+1785,swiftlet
+1786,swine
+1787,swordfish
+1788,swordtail
+1789,t rex
+1790,tabby
+1791,tabby cat
+1792,tadpole
+1793,tadpole shrimp
+1794,taipan
+1795,takahe
+1796,takin
+1797,tamarin
+1798,tammar wallaby
+1799,tanager
+1800,tapeworm
+1801,tapir
+1802,tarantula
+1803,tardigrade
+1804,tarpon
+1805,tarsier
+1806,tasmanian devil
+1807,tautog
+1808,tawny owl
+1809,teacup chihuahua
+1810,teleost
+1811,teleost fish
+1812,tench
+1813,tent caterpillar
+1814,termite
+1815,tern
+1816,terrapin
+1817,terrier
+1818,tetra
+1819,tetrapod
+1820,theropod
+1821,theropod dinosaur
+1822,thorny devil
+1823,thoroughbred
+1824,threadfin
+1825,thresher shark
+1826,thrip
+1827,thrush
+1828,thylacine
+1829,tick
+1830,tiger
+1831,tiger beetle
+1832,tiger cub
+1833,tiger moth
+1834,tiger rattlesnake
+1835,tiger salamander
+1836,tiger shark
+1837,tigon
+1838,tigress
+1839,tilapia
+1840,tilefish
+1841,timber rattlesnake
+1842,timber wolf
+1843,titanosaur
+1844,titi
+1845,titi monkey
+1846,titmouse
+1847,toad
+1848,toadfish
+1849,tobacco budworm
+1850,tobacco hornworm
+1851,tody
+1852,tom turkey
+1853,tomato hornworm
+1854,tomcat
+1855,toothed whale
+1856,tortes
+1857,tortoise
+1858,tortoiseshell
+1859,tortuga
+1860,toucan
+1861,towhee
+1862,toy poodle
+1863,toy spaniel
+1864,tragopan
+1865,trapdoor spider
+1866,tree shrew
+1867,treefrog
+1868,trematode
+1869,trepang
+1870,triceratops
+1871,triggerfish
+1872,trilobite
+1873,tripletail
+1874,trogon
+1875,trotter
+1876,trout
+1877,trumpeter
+1878,trumpeter swan
+1879,tsetse
+1880,tsetse fly
+1881,tuatara
+1882,tubeworm
+1883,tufted puffin
+1884,tufted titmouse
+1885,tuna
+1886,tundra swan
+1887,tunicate
+1888,tunny
+1889,turbot
+1890,turkey
+1891,turkey buzzard
+1892,turkey vulture
+1893,turtle
+1894,turtle dove
+1895,turtledove
+1896,tusker
+1897,tussock moth
+1898,tyrannosaur
+1899,tyrannosaurus
+1900,tyrannosaurus rex
+1901,ungulate
+1902,unicorn
+1903,upland sandpiper
+1904,urchin
+1905,vampire bat
+1906,vaquita
+1907,varmint
+1908,veal
+1909,veery
+1910,velociraptor
+1911,venomous lizard
+1912,vermin
+1913,vertebrate
+1914,vervet monkey
+1915,vesper sparrow
+1916,vicuna
+1917,vinegarroon
+1918,viper
+1919,vireo
+1920,vizsla
+1921,vole
+1922,vulture
+1923,wagtail
+1924,wahoo
+1925,wallaby
+1926,wallaroo
+1927,walleye
+1928,walleyed pike
+1929,walrus
+1930,wandering albatross
+1931,wapiti
+1932,warbler
+1933,warthog
+1934,wasp
+1935,water bear
+1936,water buffalo
+1937,water bug
+1938,water moccasin
+1939,water snake
+1940,waterbird
+1941,waterbuck
+1942,waterfowl
+1943,waxwing
+1944,weakfish
+1945,weasel
+1946,webworm
+1947,weevil
+1948,weimaraner
+1949,western lowland gorilla
+1950,western meadowlark
+1951,western tanager
+1952,westie
+1953,whale
+1954,whale shark
+1955,wheatear
+1956,whelk
+1957,whelp
+1958,whiff
+1959,whippet
+1960,whippoorwill
+1961,whipsnake
+1962,whiptail
+1963,whirligig beetle
+1964,white marlin
+1965,white tailed deer
+1966,white tiger
+1967,white wolf
+1968,whitebait
+1969,whitefish
+1970,whitefly
+1971,whitetail deer
+1972,whiting
+1973,whooper
+1974,whooper swan
+1975,whooping crane
+1976,widgeon
+1977,widow spider
+1978,wiener dog
+1979,wigeon
+1980,wiggler
+1981,wild boar
+1982,wild dog
+1983,wildcat
+1984,wildebeest
+1985,willet
+1986,winkle
+1987,winter wren
+1988,wireworm
+1989,wolf
+1990,wolf cub
+1991,wolf pup
+1992,wolf spider
+1993,wolffish
+1994,wolfhound
+1995,wolverine
+1996,wolves
+1997,woman
+1998,wombat
+1999,wood pewee
+2000,wood stork
+2001,wood thrush
+2002,woodchuck
+2003,woodcock
+2004,woodcock snipe
+2005,woodland caribou
+2006,woodpecker
+2007,woodworm
+2008,woolly adelgid
+2009,woolly bear
+2010,woolly mammoth
+2011,woolly monkey
+2012,woolly rhinoceros
+2013,worm
+2014,wrasse
+2015,wren
+2016,wriggler
+2017,xerus
+2018,yak
+2019,yearling
+2020,yellow lab
+2021,yellow labrador
+2022,yellow perch
+2023,yellow warbler
+2024,yellowfin
+2025,yellowfin croaker
+2026,yellowfin tuna
+2027,yellowhammer
+2028,yellowjacket
+2029,yellowlegs
+2030,yellowtail
+2031,yellowtail flounder
+2032,yellowtail snapper
+2033,yellowthroat
+2034,yorkie
+2035,yorkshire terrier
+2036,zebra
+2037,zebra finch
+2038,zebra fish
+2039,zebra mussel
+2040,zebrafish
+2041,zebu
+2042,zooplankton
+2043,zorillo
+2044,UNK

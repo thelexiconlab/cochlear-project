@@ -309,6 +309,49 @@ demo_summary = demo%>%
 
 ```
 
+# cluster-switch example
+
+```{r}
+lexical_file = read_csv("forager_example/lexical_results.csv") %>%
+  group_by(Subject) %>%
+  mutate(response_number = row_number())%>%
+  rename(semantic = Semantic_Similarity,
+         phonological = Phonological_Similarity) %>% select(-1)
+  
+
+switch_sample = read_csv("forager_example/switch_results.csv") %>%
+  filter(Switch_Method %in% c("simdrop", "norms_associative",
+                                   "delta_rise=0.75_fall=0.75",
+                                   "multimodal_alpha=0.7000000000000001"))  %>%
+  left_join(lexical_file, by = c("Subject", "Fluency_Item")) %>%
+  pivot_longer(names_to = "type", cols = c(semantic, phonological)) %>%
+  mutate(Switch_Method = as.factor(Switch_Method)) %>%
+  filter(response_number != 1) %>%
+  group_by(Switch_Method, type) %>%
+  mutate(row = row_number())%>%
+  mutate(Switch_Value = ifelse(Switch_Value == 1, "switch", "cluster"))%>%
+  rename(method = Switch_Method,
+         transition = Switch_Value)
+
+clusterplot =switch_sample %>%
+  filter(method == "norms_associative")%>%
+  ggplot(aes(x = row, y = value, group= type, color = type)) +
+  geom_line(aes(linetype = type))+
+  facet_wrap(~method)+
+  scale_color_stata()+
+  geom_point(size = 4, aes(shape = type))+
+  ggthemes::theme_few()+
+  labs(x = "retrieval order", y = "similarity value")+
+  theme(axis.title = element_text(face = "bold", size = rel(1)),
+        strip.text= element_blank(),
+          legend.title = element_text(face = "bold", size = rel(1)),
+         plot.title = element_text(hjust = .5),
+         axis.text.x = element_text(face = "bold", size = rel(1.2)))
+
+## saved plot skeleton, modified/added features in powerpoint
+#ggsave('plots/switch-example.pdf', clusterplot)  
+```
+
 
 
 
